@@ -1,0 +1,22 @@
+
+<form class="col-sm-9 p-3" action="/privado/user/actualizar" method="post">
+    <caption>ACTUALIZAR CONTRASEÑA</caption>
+        <div class="form-floating mb-3">
+			<input type="email" class="form-control" id="email" placeholder="name@example.com" value="{{ @usuario }}" disabled>
+			<label for="email">email</label>
+        </div>
+        
+        <div class="form-floating mb-3">
+			<input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+			<label for="password">Password</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password2" name="password2" placeholder="repita password" />
+            <label for="password2">repita password</label>
+        </div>
+
+    <a class="btn btn-secondary" href="/privado/user" role="button">cancelar</a>
+    <button type="submit" class="btn btn-primary">guardar</button>
+
+</form>
+

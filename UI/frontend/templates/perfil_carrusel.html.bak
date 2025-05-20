@@ -1,0 +1,75 @@
+<ignore>
+<div id="carruselslide" class="carousel slide">
+
+    <div class="carousel-inner">
+        
+        <repeat group="{{ @medios }}" value="{{ @medio }}" counter="{{ @ctr }}">
+            <div class="carousel-item {{ @ctr==1?'active':'' }}">
+                <img src="{{ @medio.ubicacion }}" class="d-block " />
+                
+                <div class="mx-auto">
+                    <button class="btn btn-sm {{ @medio.si_me_gusta?'btn-primary':'btn-outline-primary' }}  btn-me-gusta {{ @estados.habilitado }}" role="button" id="{{ @medio.id }}" type="button">
+                        <i id="{{ @medio.id }}" class="corazones bi {{ @medio.si_me_gusta?'bi-heart-fill':'bi-heart' }}"></i> 
+                        <dato id="{{ @medio.id }}" class="me_gusta">{{ @medio.total_me_gusta }}</dato> me gusta
+                    </button>
+                </div>
+
+            </div>
+        </repeat>
+
+    </div>
+
+
+    <div class="carousel-inner">
+        
+        <repeat group="{{ @medios }}" value="{{ @medio }}" counter="{{ @ctr }}">
+            <div class="carousel-item {{ @ctr==1?'active':'' }}"
+                x-data="carrusel({{ @medio.id }}, {{ @medio.si_me_gusta ? 'true' : 'false' }}, {{ @medio.total_me_gusta }})"
+            >
+                <img src="{{ @medio.ubicacion }}" class="d-block " />
+                
+                <div class="mx-auto">
+                    <button class="btn btn-sm {{ @medio.si_me_gusta?'btn-primary':'btn-outline-primary' }}  btn-me-gusta {{ @estados.habilitado }}" role="button" id="{{ @medio.id }}" type="button">
+                        <i id="{{ @medio.id }}" class="corazones bi {{ @medio.si_me_gusta?'bi-heart-fill':'bi-heart' }}"></i> 
+                        <dato id="{{ @medio.id }}" class="me_gusta">{{ @medio.total_me_gusta }}</dato> me gusta
+                    </button>
+                </div>
+
+            </div>
+        </repeat>
+
+    </div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselslide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselslide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<script>
+    function carrusel(id, estadoInicial, totalInicial) {
+        return {
+            meGusta: estadoInicial,
+            total: totalInicial,
+            toggle() {
+                this.meGusta = !this.meGusta;
+                this.total += this.meGusta ? 1 : -1;
+
+                fetch('/api/me-gusta', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        id_medio: id,
+                        me_gusta: this.meGusta
+                    })
+                });
+            }
+        }
+    }
+</script>
+</ignore>

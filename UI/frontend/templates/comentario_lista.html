@@ -1,0 +1,127 @@
+
+<div id="lista-comentarios" class="row g-3">
+    {{ var_dump(@tengoComentario) }}
+    <check if="{{ @tengoComentario.0 }}">
+        <true>
+            <!-- 1. Comentario del usuario conectado (si existe) -->
+            <repeat group="{{ @comentarios }}" value="{{ @comentario }}">
+                <check if="{{ @comentario.idUserOrigen == @SESSION.usuario.id }}">
+                    <div class="col-12" 
+                        x-data="{ editing: false, tempComment: '{{ @comentario.comentario }}' }">
+                        <!-- Estado: Editando -->
+                        <template x-if="editing">
+                            <div class="card border-primary">
+                                <div class="card-body">
+
+                                    <textarea x-model="tempComment" class="form-control mb-2"></textarea>
+                                    <button @click="editing = false; $dispatch('update-comment', { id: {{ @comentario.id }}, texto: tempComment })" 
+                                            class="btn btn-sm btn-success me-2">
+                                        Guardar
+                                    </button>
+                                    <button @click="editing = false; tempComment = '{{ @comentario.comentario }}'" 
+                                            class="btn btn-sm btn-outline-secondary">
+                                        Cancelar
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                        </template>
+
+                        <!-- Estado: Normal -->
+                        <template x-if="!editing">
+                            <div class="card">
+                                <div class="card-body">
+                                    <figure>
+                                        <blockquote class="blockquote ">
+                                            <p class="small" x-text="tempComment"></p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer small">
+                                            {{ date('l d, F \d\e Y', @comentario.fecha)  }}
+                                        </figcaption>
+                                        <button @click="editing = true" class="btn btn-sm btn-outline-primary mt-2">
+                                            <i class="bi bi-pencil"></i> Editar
+                                        </button>
+                                    </figure>
+                                    
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </check>
+            </repeat>
+        </true>
+        <false>
+            <div class="col-12" 
+                x-data="{ tempComment: '' }"
+            >
+                <div class="card border-primary">
+                    <div class="card-body">
+                        <input type="hidden" name="id" value="{{ @perfil.idUser  }}">
+                        <textarea x-model="tempComment" class="form-control mb-2"></textarea>
+                        <button @click="$dispatch('nuevo-comentario', { id: {{ @perfil.idUser }}, texto: tempComment })" 
+                                class="btn btn-sm btn-success me-2">
+                            Guardar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </false>
+    </check>
+
+    <!-- 2. Comentarios de otros usuarios -->
+    <repeat group="{{ @comentarios }}" value="{{ @comentario }}">
+        <check if="{{ @comentario.idUserOrigen != @SESSION.usuario.id }}">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <figure>
+                            <blockquote class="blockquote ">
+                                <p class="small">{{ htmlspecialchars((string)@comentario.comentario, ENT_QUOTES, 'UTF-8') }}</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer small">
+                                {{ date('l d, F \d\e Y', @comentario.fecha)  }}
+                            </figcaption>
+                                
+                        </figure>
+                        
+                    </div>
+                </div>
+            </div>
+        </check>
+    </repeat>
+</div>
+
+<script>
+    document.addEventListener('update-comment', (e) => {
+        // Enviar datos al backend via AJAX
+        fetch(`/actualizar-comentario/${e.detail.id}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({ texto: e.detail.texto })
+        }).then(response => {
+            if (!response.ok) {
+                // Si el servidor respondió con error HTTP (ej: 400, 500)
+                throw new Error(`Error HTTP: ${response.status}`);
+            }
+            return response.json(); // intentar parsear JSON
+        }).then(data => {
+            // Aquí tienes la respuesta del servidor en formato JSON
+            console.log('Respuesta OK:', data);
+
+            // puedes mostrar una notificación, actualizar la UI, etc.
+        }).catch(error => {
+            // Aquí manejas cualquier error de red o del servidor
+            console.error('Hubo un problema:', error.message);
+        })
+    });
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+    .card {
+        transition: all 0.5s ease;
+    }
+</style>

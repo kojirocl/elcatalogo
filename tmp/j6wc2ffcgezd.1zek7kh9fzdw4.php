@@ -1,0 +1,54 @@
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <?php if (isset($mensaje)): ?>
+        <div class="alert alert-danger alert-dismissible fade show" id="alerta" role="alert">
+          <strong>ERROR!</strong> <?= ($mensaje)."
+" ?>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      <?php endif; ?>
+
+      <form method="POST" >
+        <caption>FORMULARIO DE INGRESO.</caption>
+        <p><?= ("session csrf:".$SESSION['csrf']) ?></p>
+        <p><?= ("csrf:".$CSRF) ?></p>
+        <input type="hidden" name="csrf" value="<?= ($CSRF) ?>">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name="dato[]" aria-describedby="emailHelp" value="<?= ($email) ?>" required>
+          <div id="emailHelp" class="form-text">
+            <p class="text-light">
+              <em>We'll never share your email with anyone else.</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password (8 caracteres minimo):</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="dato[]" minlength="8" required>
+        </div>
+
+        <div class="mb-3">
+          <img src="/captcha" title="captcha image" alt="captcha"/>
+
+          <div>
+            <label for="code">Security Code</label><br>
+            <input type="text" id="code" name="dato[]"/>
+            <br><br>
+            <?php if (isset($mensaje_captcha)): ?>
+              <div class="alert alert-danger alert-dismissible fade show" id="alerta" role="alert">
+                <strong>ERROR!</strong> <?= ($mensaje_captcha)."
+" ?>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            <?php endif; ?>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+    </div>
+  </div>
+</div>

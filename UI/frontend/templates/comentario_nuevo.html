@@ -1,0 +1,35 @@
+
+<div x-data="comentarios" class="container py-3" id="nuevo_comentario">
+    <form id="form-comentario" @submit.prevent="enviarComentario">
+        <input type="hidden" id="idUser_origen" value="{{ @SESSION.usuario.id }}" />                
+        <input type="hidden" id="idUser_destino" value="{{ @perfil.idUser }}" />
+        
+        <!-- Grupo de entrada con validación -->
+        <div class="mb-3">
+            <div class="input-group has-validation">
+                <textarea 
+                    class="form-control" 
+                    x-model="comentario"
+                    placeholder="Escribe tu comentario..." 
+                    :class="{ 'is-invalid': mensaje && !exito }"
+                    required
+                ></textarea>
+                
+                <button 
+                    class="btn btn-outline-primary" 
+                    type="submit" 
+                    :disabled="cargando || !comentario.trim()"
+                >
+                    <span x-show="!cargando">Comentar</span>
+                    <span x-show="cargando" class="spinner-border spinner-border-sm"></span>
+                </button>
+            </div>
+            
+            <!-- Mensaje de estado con alertas de Bootstrap -->
+            <div x-show="mensaje" class="mt-2" x-transition>
+                <div class="alert" :class="exito ? 'alert-success' : 'alert-danger'" x-text="mensaje"></div>
+            </div>
+        </div>
+    </form>
+</div>
+

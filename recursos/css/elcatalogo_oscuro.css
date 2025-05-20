@@ -1,0 +1,27 @@
+/* TEMA OSCURO */
+
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: #8e0fc9;  /* Texto claro para contraste */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: #1e1e1e; /* Fondo oscuro para las tarjetas */
+    color: #8e0fc9;  /* Texto claro */
+    border: 1px solid #333333; /* Borde sutil */
+}
+
+.btn {
+    background-color: #333333; /* Fondo oscuro */
+    color: #ffffff; /* Texto claro */
+    border: 1px solid #444444; /* Borde sutil */
+}
+
+.btn:hover {
+    background-color: #444444; /* Fondo más claro al pasar el mouse */
+    color: #ffffff;
+} 
+

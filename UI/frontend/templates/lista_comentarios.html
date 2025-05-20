@@ -1,0 +1,16 @@
+
+<div class="row g-4 row-cols-1 row-cols-lg-3" id="lista_comentarios">
+
+<repeat group="{{ @comentarios }}" value="{{ @comentario }}">
+    <div class="feature col">
+        <figure class="text-end">
+            <blockquote class="blockquote">
+                <p class="small" style="font-size: 1rem;">{{ @comentario.comentario }}</p>
+            </blockquote>
+            <figcaption class="blockquote-footer small" style="font-size: 0.7rem;">
+                {{ date('l d, F \d\e Y', @comentario.fecha)  }}
+            </figcaption>
+        </figure>
+    </div>
+</repeat>
+</div>

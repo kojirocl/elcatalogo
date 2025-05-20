@@ -1,0 +1,59 @@
+<button class="btn btn-lg" onclick="window.history.back();"><i class="bi bi-arrow-left"></i></button>
+<main>
+  <section class="py-2 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+
+        <img src="{{ @datos.foto_perfil }}" class="img-fluid img-thumbnail rounded-start" alt="..." width="250px" height="250px">
+        <h1 class="fw-light custom-nickname">{{ strtoupper(@datos.nickname) }} Portafolio</h1>
+        <p class="lead text-body-secondary">{{ @datos.descripcion }}</p>
+        <p>
+          <!--
+          <button class="btn btn-sm btn-outline-secondary btn-visitas " role="button" id="{{@datos.idUser}}" type="button"><i class="estrellas bi"></i> <dato></dato> visitas</button>
+          <button class="btn btn-sm btn-outline-secondary btn-me-gusta {{ @estados.habilitado }}" role="button" id="{{@datos.idUser}}" type="button"><i class="estrellas bi {{ @estados.icono_me_gusta }}"></i> <dato>{{ @datos.total_me_gusta }}</dato> me gusta</button>
+          <button class="btn btn-sm btn-outline-secondary btn-comentarios {{ @estados.habilitado }}" role="button" type="button"><i class="bi bi-chat-square-text"></i> comentarios</button>
+        -->
+          <a href="/whatsapp/{{ @datos.idUser }}" target="_blank" class="btn btn-success" role="button"><i class="bi bi-whatsapp"></i> Enviar WhatsApp</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <div class="nuevo_comentario">
+      <check if="{{ @estados.habilitado == '' }}">
+      <form action="" method="post">
+        <input type="hidden" id="idUser_origen" value="1" />                
+        <input type="hidden" id="idUser_destino" value="{{ @datos.idUser }}" />
+        <div class="input-group">
+            <textarea class="form-control" id="comentario_texto" placeholder="aqui para ingresar comentario"></textarea>
+            <button class="btn btn-outline-primary" type="submit" id="button-comentar">comentar</button>
+        </div>
+      </form>
+      </check>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          ultimos comentarios...
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          {{ @lista_comentarios | raw}}
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container album py-4 bg-body-tertiary">
+      <h6 class="pb-2 border-bottom">album de fotos...</h6>
+      {{ @lista_medios | raw}}
+    </div>
+  </div>
+
+</main>
+  

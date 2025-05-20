@@ -1,0 +1,58 @@
+<script src="/recursos/js/vendor/alpinejs.min.js" defer></script>
+<script src="/recursos/js/vendor/axios.min.js"></script>
+
+<div x-data="tarjetasApp()" class="row row-cols-1 row-cols-md-4 g-4">
+    <!-- Iteración sobre las tarjetas -->
+    <template x-for="usuario in usuarios" :key="usuario.idUser">
+        <div class="col">
+            <div class="card h-100 tarjeta">
+                <div class="card-img-container">
+                    <a :href="`/mostrar/perfil/${usuario.idUser}`">
+                        <template x-if="usuario.foto_perfil">
+                            <img :src="usuario.foto_perfil" class="card-img-top img-thumbnail">
+                        </template>
+                        <template x-if="!usuario.foto_perfil">
+                            <svg class="bd-placeholder-img img-thumbnail img-rounded" role="img" aria-label="Aqui va foto!" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#868e96"></rect>
+                                <text x="35%" y="50%" fill="#dee2e6" dy=".3em">90x90</text>
+                            </svg>
+                        </template>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title custom-nickname" x-text="usuario.nickname"></h5>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p class="fs-6"><em x-text="usuario.descripcion"></em></p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-end" x-text="usuario.ciudad"></figcaption>
+                    </figure>
+                </div>
+                <div class="card-footer text-end">
+                    <a :href="`/mostrar/perfil/${usuario.idUser}`" class="btn btn-outline-info btn-sm">
+                        <span>ver más </span><i class="bi bi-arrow-right-circle-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>
+
+<script>
+    function tarjetasApp() {
+        return {
+            usuarios: [], // Lista de usuarios
+            async cargarUsuarios() {
+                try {
+                    const response = await axios.get('/api/usuarios'); // Cambia la URL según tu API
+                    this.usuarios = response.data;
+                } catch (error) {
+                    console.error('Error al cargar usuarios:', error);
+                }
+            },
+            init() {
+                this.cargarUsuarios(); // Carga los usuarios al inicializar el componente
+            },
+        };
+    }
+</script>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es"
+      x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }"
+      x-init="$watch('darkMode', val => {
+          document.documentElement.setAttribute('data-bs-theme', val ? 'dark' : 'light');
+          localStorage.setItem('darkMode', val);
+      })"
+      :data-bs-theme="darkMode ? 'dark' : 'light'"
+>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<base href="<?= ($SCHEME.'://'. $HOST .':'. $PORT.'/') ?>">
+    
+    <title><?= ($SITIO['titulo']) ?></title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="recursos/img/icons8-libro-ios-17-outlined-32.png" />
+    <script src="recursos/js/vendor/alpinejs.min.js" defer></script>
+
+
+<!-- assets-head -->   
+
+<style>
+  html {
+    transition: background-color 0.5s ease;
+  }
+  .switch-lg .form-check-input {
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  .switch-lg .form-check-input:checked {
+    background-color: #0d6efd;
+  }
+  .switch-lg label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+</style>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm border-bottom border-body sticky-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <i class="bi bi-book"></i> El Catalogo / Bienvenid@ <?= (ucfirst($SESSION['usuario']['nickname']))."
+" ?>
+                </a>
+                <span class="navbar-text">
+                    <a class="btn" href="/privado/salir" role="button">salir</a>
+                    
+                </span>  
+            </div>        
+        </nav>
+    </div>
+    <div>
+        <?php echo $this->render('components/lightsComp.html',NULL,get_defined_vars(),0); ?>
+    </div>
+
+    <div class="d-flex flex-nowrap h-100">
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary toggled" style="width: 170px;">
+            <title>aqui la foto del user</title>
+            <?php if (strlen($SESSION['usuario']['fotoPerfilLocation']) == 0): ?>
+                
+                    <svg class="bd-placeholder-img img-thumbnail" width="90" height="90" role="img" aria-label="Aqui va foto!" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="25%" y="50%" fill="#dee2e6" dy=".3em">90x90</text>
+                    </svg>
+                
+                <?php else: ?>
+                    <img src="<?= ('/'.str_replace('uploads','thumbs', $SESSION['usuario']['fotoPerfilLocation'])) ?>" width="90" height="90" style="width: 7rem;" />
+                
+            <?php endif; ?>
+
+            <ul class="nav flex-column mb-auto">
+                <?php foreach (($items_menu?:[]) as $titulo=>$item): ?>
+                    <li class="nav-item click"><a class="nav-link" href="<?= ($item['url']) ?>"><i class="bi <?= ($item['icono']) ?>"></i> <?= ($titulo) ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+
+            
+        </div>
+        <?php if (isset($mensaje)): ?>
+            <div class="col-sm-9 p-3">
+                <div class="alert <?= ($mensaje['tipo']) ?> alert-dismissible fade show" role="<?= ($mensaje['rol']) ?>">
+                    <h4 class="alert-heading"><?= ($mensaje['titulo']) ?></h4>
+                    <p><?= ($mensaje['contenido']) ?></p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+        <?php endif; ?>
+        
+        <div id="contenido" class="container" name="contenido" style="margin-top: 15px;">
+            <?= ($this->raw($vista))."
+" ?>
+        </div>
+
+            
+    </div>
+
+    <!-- assets-footer -->
+
+    
+</body>
+</html>
+

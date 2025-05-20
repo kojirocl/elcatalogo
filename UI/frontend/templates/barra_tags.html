@@ -1,0 +1,10 @@
+<div id="tags" class="container" name="filtros">
+    <div class="container">
+      <div class="btn-group btn-group-sm" role="group">
+      <repeat group="{{ @tags }}" value="{{ @valor }}">
+        <button class="btn btn-outline-secondary tag" data-bs-toggle="button" id="{{ @valor['idTag'] }}">{{ @valor['tag'] }}</button>
+      </repeat>
+      </div>  
+
+    </div>
+</div>

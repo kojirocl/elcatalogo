@@ -1,0 +1,39 @@
+<div id="regiones" class="container">
+	<form id="filtrar-form">
+		<div class="row">
+			<div class="col-auto">
+				<select class="form-select form-select-sm" aria-label="Regiones" id="region" name="region">
+					<option selected>Todas</option>
+					<repeat group="{{ @regiones }}" value="{{ @region }}" >
+						<option value="{{ @region.admin_name }}">{{ @region.admin_name }}</option>	
+					</repeat>
+				</select>
+			</div>
+
+			<div class="col-auto" >
+				<select class="form-select form-select-sm" aria-label="Regiones" name="ciudad" id="ciudades">
+					<option selected>Todas</option>
+					<repeat group="{{ @ciudades }}" value="{{ @ciudad }}" >
+						<option value="{{ @ciudad.city }}">{{ @ciudad.city }}</option>	
+					</repeat>
+				</select>
+			</div>
+
+		
+		</div>
+	</form>	
+	
+</div>
+
+<br>
+<div id="tags" class="container" name="filtros">
+    <div class="container">
+      <div class="btn-group btn-group-sm" role="group">
+      <repeat group="{{ @tags }}" value="{{ @valor }}">
+        <button class="btn btn-outline-secondary tag" data-bs-toggle="button" id="{{ @valor['idTag'] }}">{{ @valor['tag'] }}</button>
+      </repeat>
+      </div>  
+
+    </div>
+</div>
+

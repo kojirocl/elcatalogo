@@ -1,0 +1,47 @@
+
+<div id="carruselslide" class="carousel slide position-relative"> <!-- Añadido position-relative -->
+    <div class="carousel-inner ratio ratio-16x9">
+        <?php $ctr=0; foreach (($medios?:[]) as $medio): $ctr++; ?>
+            <div class="carousel-item <?= ($ctr==1?'active':'') ?>" 
+                x-data="likeSystem(<?= ($medio['id']) ?>, <?= ($medio['si_me_gusta'] ? 'true' : 'false') ?>, <?= ($medio['total_me_gusta']) ?>)">
+                
+                <div class="position-relative h-100"> <!-- Contenedor relativo adicional -->
+                    <img src="<?= ($medio['ubicacion']) ?>" class="d-block w-100 h-100 object-fit-contain" />
+                    
+                    <!-- Botón posicionado absolutamente dentro del contenedor -->
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 z-3">
+                        <button @click="toggle()" 
+                                :class="`btn btn-sm ${meGusta ? 'btn-primary' : 'btn-outline-primary'}`" 
+                                <?= ($estados['habilitado']) ?>>
+                            <i :class="`bi ${meGusta ? 'bi-heart-fill' : 'bi-heart'}`"></i>
+                            <span x-text="total"></span> me gusta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+    
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselslide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselslide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<style>
+    /* Asegura que los controles no tapen el botón */
+.carousel-control-prev, .carousel-control-next {
+    z-index: 2; /* Menor que el botón (z-3) */
+}
+
+/* Mejor adaptación de imágenes */
+.object-fit-contain {
+    object-position: center;
+}
+</style>
+

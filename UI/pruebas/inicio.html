@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Sitio</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <form id="filtrar-form">
+        <div class="row">
+          <div class="col-auto">
+            <select class="form-select form-select-sm" v-model="selectedRegion" @change="cargarCiudades">
+              <option selected>Todas</option>
+              <option v-for='region in regiones' :value='region.admin_name'>[[ region.admin_name ]]</option>
+            
+            </select>
+          </div>
+
+          <div class="col-auto">
+            <select class="form-select form-select-sm" v-model="selectedCiudad">
+              <option selected>Todas</option>
+              <option v-for="ciudad in ciudades" :value="ciudad.city">[[ ciudad.city ]]</option>
+            </select>
+          </div>
+        </div>
+      </form>
+
+      <div id="tarjetas">
+        <!-- Aquí se cargarán las tarjetas de usuarios filtradas -->
+        <div v-for="usuario in usuarios" :key="usuario.id">
+          <div class="card">
+            <img :src="usuario.foto" class="card-img-top" alt="Imagen de perfil">
+            <div class="card-body">
+              <h5 class="card-title">[[ usuario.nickname ]]</h5>
+              <p class="card-text"> [[usuario.descripcion]] </p>
+              <a href="#" class="btn btn-primary" @click="verPerfil(usuario.id)">Ver Perfil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal para mostrar detalles del perfil -->
+    <div class="modal" tabindex="-1" v-if="modalVisible">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title"> [[modalUsuario.nickname]] </h5>
+            <button type="button" class="btn-close" @click="closeModal"></button>
+          </div>
+          <div class="modal-body">
+            <p>[[ modalUsuario.descripcion ]]</p>
+            <img :src="modalUsuario.foto" class="img-fluid" alt="Imagen de perfil">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" @click="closeModal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      delimiters: ['[[', ']]'],
+      data: {
+        regiones: JSON.parse(' {{ @regiones | json }} '), // Las regiones desde PHP
+        ciudades: [],
+        selectedRegion: '',
+        selectedCiudad: '',
+        usuarios: [], // Aquí almacenaremos los usuarios filtrados
+        modalVisible: false,
+        modalUsuario: {} // Datos del usuario a mostrar en el modal
+      },
+      methods: {
+        cargarCiudades() {
+          // Filtrar las ciudades por región
+          axios.post('/getCiudades', { region: this.selectedRegion })
+            .then(response => {
+              this.ciudades = response.data.ciudades;
+              this.cargarUsuarios(); // Cargar los usuarios después de actualizar las ciudades
+            });
+        },
+        cargarUsuarios() {
+          // Filtrar los usuarios por región, ciudad y tags seleccionados
+          axios.post('/filtrarUsuarios', {
+            region: this.selectedRegion,
+            ciudad: this.selectedCiudad,
+            tags: this.getSelectedTags()
+          })
+          .then(response => {
+            this.usuarios = response.data.usuarios;
+          });
+        },
+        getSelectedTags() {
+          // Aquí puedes obtener los tags seleccionados si los tienes en el frontend
+          return ['tag1', 'tag2']; // Cambia esto por la lógica que necesites
+        },  
+        verPerfil(id) {
+          // Mostrar el perfil en un modal
+          this.modalUsuario = this.usuarios.find(usuario => usuario.id === id);
+          this.modalVisible = true;
+        },
+        closeModal() {
+          this.modalVisible = false;
+          this.modalUsuario = {};
+        }
+      }
+    });
+    console.log(this.regiones);
+  </script>
+</body>
+</html>

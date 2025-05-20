@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="/recursos/bootstrap/css/bootstrap.min.css">
+<script src="/recursos/js/vendor/alpinejs.min.js" defer></script>
+
+<div x-data="data" class="container py-3" id="nuevo_comentario">
+    <form id="form-comentario" method="GET" action="/api/comentarios" @submit.prevent>
+        <input type="hidden" id="idUser_origen" value="12" />                
+        <input type="hidden" id="idUser_destino" value="3" />
+        <input type="hidden" id="idComentario" value="" />
+        <!-- Grupo de entrada con validación -->
+        <div class="mb-3">
+            <div class="input-group has-validation">
+                
+                <textarea class="form-control" id="{{ @miComentario.id }}" required
+                    x-model="FormData.comentario"   
+                    x-bind:disabled="isDisabled" 
+                >
+                </textarea>
+                <div class="btn-group" role="group">
+                    <button id="btn_accion" class="btn btn-outline-danger" type="submit"
+                        x-on:click="clickeado()"
+                        x-text="accion"
+                    >
+                    </button>
+                    <button id="btn_cancelar" class="btn btn-outline-dark" type="submit" 
+                        x-bind:disabled="isDisabled" 
+                    >
+                        cancelar
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mensaje de estado con alertas de Bootstrap -->
+            <div class="mt-2" >
+                <div class="alert" x-text="mensaje"></div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    function data(){
+        return{
+            FormData:{
+                idUser_origen: document.getElementById("idUser_origen").value,
+                idUser_destino: document.getElementById("idUser_destino").value,
+                comentario: '',
+            },
+            mensaje: '-',
+            isDisabled: true,
+            accion: 'editar',
+
+            init(){
+                let url = '/api/comentarios/'+this.FormData.idUser_origen+'/'+this.FormData.idUser_destino;
+                fetch(url)
+                .then(response =>{
+                    if (response.ok){
+                        return response.json();
+                    }else {
+                        // Maneja códigos de error (por ejemplo, 400, 404, 500, etc.)
+                        throw new Error(`Error: ${response.status} ${response.statusText}`);
+                    }
+                })
+                .then(data => {
+                    //console.log('Success:', data);
+                    document.getElementById("form-comentario").reset();                    
+                    this.FormData.comentario = data.registro.comentario;
+                    
+
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    this.mensaje = "Error al enviar el comentario";
+                });
+            },
+            clickeado(){
+                this.isDisabled = !this.isDisabled;
+                if (this.isDisabled){
+                    console.log("ejecutar guardado... luego cambiar a editar");
+                    this.accion = 'editar';
+                }else{
+                    this.accion = 'guardar';
+                }
+                console.log(this.accion);
+            }
+        }
+            
+    }
+</script>

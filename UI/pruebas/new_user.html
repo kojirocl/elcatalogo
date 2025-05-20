@@ -1,0 +1,25 @@
+
+<form action="/ruta-de-registro" method="POST" class="p-4 border rounded shadow-sm">
+    <h2 class="mb-4">Registro de Nuevo Usuario</h2>
+    
+    <!-- Campo de correo electrónico -->
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required placeholder="ejemplo@correo.com">
+    </div>
+
+    <!-- Campo de número de contacto -->
+    <div class="mb-3">
+        <label for="contact" class="form-label">Número de Contacto</label>
+        <input type="tel" class="form-control" id="contact" name="contact" required placeholder="ej. +56 9 1234 5678" pattern="^\+?\d{1,3}?\s?\d{1,4}\s?\d{4}\s?\d{4}$">
+    </div>
+
+    <!-- Campo de contraseña -->
+    <div class="mb-3">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" required minlength="8" placeholder="Ingrese su contraseña">
+    </div>
+
+    <!-- Botón de envío -->
+    <button type="submit" class="btn btn-primary w-100">Registrar</button>
+</form>

@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Mayonice'; /* El nombre de la fuente */
+    src: url('/recursos/fonts/Mayonice.ttf') format('truetype'); /* El archivo de la fuente */
+    font-weight: normal; /* Opcional: Establecer el peso de la fuente */
+    font-style: normal; /* Opcional: Establecer el estilo de la fuente */
+}
+
+
+
+.navbar {
+    background: linear-gradient(to right, #53008a, #444444); /* Degradado de azul oscuro a azul claro */
+    color: white; /* Asegura que el texto sea legible */
+}
+
+.principal {
+    padding-top: 0.5rem;
+
+}
+
+/* TARJETAS */
+.card-img-container {
+    height: 150px; /* Altura fija para el contenedor de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que exceda el contenedor */
+    background-color: #f8f9fa; /* Color de fondo para las tarjetas sin imagen */
+}
+
+.card-img-container img {
+    max-height: 100%; /* Ajusta la altura de la imagen al contenedor */
+    max-width: 100%; /* Asegura que la imagen no se deforme */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+}
+
+.card-img-container svg {
+    width: 100%; /* Asegura que el SVG ocupe todo el contenedor */
+    height: 100%;
+}
+
+.custom-nickname {
+    font-family: "Mayonice", cursive;    
+    font-size: 3rem; /* Tamaño de la fuente */
+    font-weight: normal;  /* Hace que el texto sea en negrita */
+    color: #8e0fc9; /* Color del texto */
+}
+
+/* .tarjeta {
+    transition: transform 0.3s ease;
+  }
+  
+.tarjeta:hover {
+animation: rebote 0.4s ease;
+}
+
+@keyframes rebote {
+0%   { transform: scale(1); }
+50%  { transform: scale(1.08); }
+100% { transform: scale(1.05); }
+} */
+.tarjeta {
+    /* background: white; */
+    border-radius: 12px;       /* esquinas redondeadas */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: scale(1.05);    /* se agranda al pasar el mouse */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+
+  .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .animar-like {
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
+
+#lista_comentarios {
+  transition: opacity 0.3s ease-out;
+}
+
+.destacado {
+  background-color: rgba(66, 153, 225, 0.1);
+  animation: resaltar 3s forwards;
+}
+
+.nuevo-comentario {
+  background-color: rgba(0, 123, 255, 0.1);
+  transition: background-color 0.5s ease;
+}
+
+@keyframes resaltar {
+  0% { background-color: rgba(66, 153, 225, 0.3); }
+  100% { background-color: rgba(66, 153, 225, 0.1); }
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 0.5s ease;
+  }
+
+  .fade-enter {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-enter-active {
+    opacity: 1;
+}

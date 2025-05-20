@@ -1,0 +1,7 @@
+<select>
+	<option selected>Seleccione la ciudad</option>
+	<repeat group="{{ @ciudades }}" value="{{ @ciudad }}" >
+		<option value="{{ @ciudad.city }}">{{ @ciudad.city }}</option>	
+	</repeat>
+</select>
+

@@ -1,0 +1,16 @@
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+ 
+    <main class="px-3">
+      <h1><?= ($error['titulo']) ?></h1>
+      <p class="lead"><?= ($error['descripcion']) ?></p>
+      <p class="lead">
+
+      </p>
+    </main>
+  
+    <footer class="mt-auto text-white-50">
+      <p class="small text-end">
+        <?= ($SITIO['nombre'] .' - '. date('Y')) ?> &copy; <?= ($SITIO['autor']) ?> <br>
+      </p>
+    </footer>
+  </div>

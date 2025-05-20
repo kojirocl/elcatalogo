@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ @title }}</title>
+	<link href="ui/css/code.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		
+		<select class="form-select" aria-label="Regiones" id="region" name="region">
+			<option selected>Seleccione la region</option>
+			<repeat group="{{ @regiones }}" value="{{ @region }}" >
+				<option value="{{ @region.admin_name }}">{{ @region.admin_name }}</option>	
+			</repeat>
+		</select>
+
+		<div class="container">
+			<select class="form-select" aria-label="Regiones" name="ciudad" id="ciudades" disabled >
+				<option selected>Seleccione la ciudad</option>
+			</select>
+		</div>
+		<button type="button" class="btn">Base class</button>
+
+	</div>
+<!-- assets-footer -->
+
+<script src="/ui/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript">
+	$('#region').on('change', function(e) {
+			var region = $('#region').val();
+
+			$.ajax({
+				data: { region: region },
+				url: "regiones",
+				type: "POST",
+				success: function(vista) {
+					$("#ciudades").html(vista);
+					$('#ciudades').prop('disabled', false);
+				},
+				error: function() {
+					alert('Error al cargar las ciudades.');
+				}
+			});
+		});
+  </script>
+
+</body>
+
+
+
+</html>

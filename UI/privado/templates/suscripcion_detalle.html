@@ -1,0 +1,50 @@
+suscripcion_detalle.html
+<div class="container">
+    <div class="fs-5 mb-3">
+        <i class="bi bi-ticket-detailed-fill"></i> Cupones disponibles (solo puedes usar uno a la vez)
+    </div>
+    <check if="{{ @cupones != null }}">
+        <true>
+            <div class="table-responsive">
+                <table class="table tabls-sm caption-top ">
+                    <caption>Cupones</caption>
+                    <thead>
+                        <th scope="col">id</th>
+                        <th scope="col">codigo</th>
+                        <th scope="col">descripcion</th>
+                        <th scope="col">descuento</th>
+                        <th scope="col"></th>
+                    </thead>
+                    <tbody>
+                        <repeat group="{{ @cupones }}" value="{{ @valor }}">
+                            <tr>
+                                <th scope="row">{{ @valor.id }}</th>
+                                <td>{{ @valor.codigo }}</td>
+                                <td>{{ @valor.descripcion }}</td>
+                                <td>{{ @valor.descuento }}</td>
+                                <td><a class="btn btn-primary" href="/privado/cupon/usar/{{ @valor.id }}" role="button">usar</a></td>
+                            </tr>
+                        </repeat>
+                    </tbody>
+                </table>
+            </div>
+        </true>
+        <false>
+            <div class="alert alert-warning" role="alert">
+                <span class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"></span> No hay historial de suscripciones
+            </div>
+        </false>
+    </check>
+
+
+
+</div>
+<div class="card text-bg-info mb-3" style="width: 25rem;">
+    <div class="card-body">
+      <h5 class="card-title"><i class="bi bi-file-earmark-text-fill"></i> Detalle de suscripcion {{ @suscripcion.descripcion }}</h5>
+      <h6 class="card-subtitle mb-2">Dias de validez: {{ @suscripcion.dias }}</h6>
+      <p class="card-text">Suscripcion valida por {{ @suscripcion.dias }} dias a contar de las 00:00 hrs del dia siguiente de efectuada la compra</p>
+      <p class="card-text">Valor: CLP ${{ number_format(@suscripcion.valor,0,",",".") }}</p>
+      <a href="/privado/suscripcion/confirmar" class="btn btn-light">confirmar >></a>
+    </div>
+</div>
