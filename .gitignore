@@ -1,0 +1,11 @@
+# Carpetas que no deben subirse al repositorio
+compressed/
+tmp/
+logs/
+uploads/
+
+# Archivos temporales del sistema
+
+
+# Archivos de entorno (si usas alguno)
+

@@ -103,12 +103,10 @@ class Registro extends General{
 
         $resultado= $user->confirmar_mail([$email,$codigo]); // mail y codigo
 
-        echo $resultado;
+        //echo $resultado;
 
         switch ($resultado) {
             case 1:
-                echo 'ok';
-                exit();
                 $f3->set('mail_verificado', 1);
                 $perfil = new \mPerfiles;
                 $perfil->crear_nuevo($user->idUser, $email);

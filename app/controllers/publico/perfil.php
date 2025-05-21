@@ -23,13 +23,26 @@ class Perfil extends General{
         $muestra = 0;
         $icono_me_gusta= 'bi-heart';
 
-        if($f3->exists('SESSION.usuario') && $f3->get('SESSION.usuario.id') != $idPerfil){
-            //$f3->set("habilitado","");
-            $habilitado ='';
-            $muestra = 1;
-            $f3->set('tengoComentario', array($comentarios->get_comentario($f3->get('SESSION.usuario.id'), $idPerfil), $idPerfil));
+        $info = ['conectado'=>0,
+                'puedo_comentar'=>0,
+                'sessionId' => 0,
+                'tengo_comentario' =>0];
+                
+        if($f3->exists('SESSION.usuario')){
+            $info['conectado'] = 1;
+            $info['sessionId'] = $f3->get('SESSION.usuario.id');
 
+            if ($f3->get('SESSION.usuario.id') != $idPerfil){
+                //$f3->set("habilitado","");
+                $info['puedo_comentar'] = 1;
+                $info['tengo_comentario'] = $comentarios->get_comentario($f3->get('SESSION.usuario.id'), $idPerfil);
+                $habilitado ='';
+                $muestra = 1;
+                //$f3->set('tengoComentario', array($comentarios->get_comentario($f3->get('SESSION.usuario.id'), $idPerfil), $idPerfil));
+            }
         }
+
+        $f3->set('info_comentarios', $info);
 
         $f3->set('estados', array('habilitado'=>$habilitado, 'icono_me_gusta'=> $icono_me_gusta, 'muestra' => $muestra));
 
@@ -40,15 +53,18 @@ class Perfil extends General{
             $f3->set('medios','');
         }
 
+        if(!$result) $f3->set('mensaje',['clases'=>'alert alert-info', 'icono'=>'bi-info-circle-fill', 'contenido'=>' no hay comentarios aun...']);
+        
         if (count($result)>0){
             $f3->set('comentarios', $result);
             $contenido_comentarios= 'frontend/templates/comentario_lista.html';
         }else{
-            $f3->set('mensaje',['clases'=>'alert alert-info', 'icono'=>'bi-info-circle-fill', 'contenido'=>' no hay comentarios aun...']);
-            $contenido_comentarios = 'frontend/templates/mensaje.html';
+            //$f3->set('mensaje',['clases'=>'alert alert-info', 'icono'=>'bi-info-circle-fill', 'contenido'=>' no hay comentarios aun...']);
+            //$contenido_comentarios = 'frontend/templates/mensaje.html';
 
         };
-
+        $contenido_comentarios= 'frontend/templates/comentario_lista.html';
+        
         $f3->set('carrusel', \Template::instance()->render('frontend/templates/perfil_carrusel.html'));
         
         $f3->set('lista_comentarios', \Template::instance()->render($contenido_comentarios));
@@ -64,7 +80,17 @@ class Perfil extends General{
 
     }
 
-    
+    function ver_perfil_2(){
+        $f3 = \Base::instance();
+        $assets = \Assets::instance();
+
+        $assets->addJs('bootstrap/js/bootstrap.min.js',5,'head');
+        $assets->addJs('js/vendor/axios.min.js',4,'head');
+
+        $assets->addJs('js/user/me_gusta.js');
+        $assets->addJs('js/user/comentarios.js');
+
+    }
 
     function contacto(){
 

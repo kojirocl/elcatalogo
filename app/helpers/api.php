@@ -109,10 +109,6 @@ class Api{
         }
     }
 
-    function nada(){
-        
-    }
-
     function actualizar_comentario($f3, $params){
 
         $f3 = \Base::instance();
@@ -152,6 +148,77 @@ class Api{
                 'success' => $success,
                 'id' => $id,
                 'texto' => $texto]);
+        
+    }
+
+
+    function nuevo_comentario($f3, $params){
+
+        $f3 = \Base::instance();
+
+        // Decodifica el cuerpo JSON manualmente
+        $input = json_decode($f3->get('BODY'), true);
+        $texto = $input['texto'] ?? '';
+
+        $id = $params['id'];
+        $idOrigen = $f3->get('SESSION.usuario.id');
+        $success = '';
+
+        // Validar + actualizar en DB
+        // TODO: agregar comentario a la BD
+        //addNew $idUserOrigen, $idUserDestino, $comentario
+
+        $comentario = new \mComentarios;
+        $result = $comentario->addNew(array(
+            'idUserOrigen' => $idOrigen,
+            'idUserDestino' => $id,
+            'comentario' => $texto
+        ));
+
+        if (!$result){
+            $texto = 'No se pudo actualizar el comentario';
+            $success= false;
+        }else{
+
+            $texto = 'Comentario guardado con id: '.$result;;
+            $success = true;
+        }  
+
+        // preparar html con lista de comentarios
+        $comentarios = new \mComentarios();
+        $result = $comentarios->get_comentarios($id,10);
+
+        $info = ['conectado'=>0,
+                'puedo_comentar'=>0,
+                'sessionId' => 0,
+                'tengo_comentario' =>0];
+                
+        if($f3->exists('SESSION.usuario')){
+            $info['conectado'] = 1;
+            $info['sessionId'] = $f3->get('SESSION.usuario.id');
+
+            if ($f3->get('SESSION.usuario.id') != $id){
+                $info['puedo_comentar'] = 1;
+                $info['tengo_comentario'] = $comentarios->get_comentario($f3->get('SESSION.usuario.id'), $id);
+
+            }
+        }
+
+        $f3->set('info_comentarios', $info);
+
+        $f3->set('comentarios', $result);
+        $contenido_comentarios= 'frontend/templates/comentario_lista.html';
+        
+        $html = \Template::instance()->render($contenido_comentarios);
+
+
+        echo json_encode([
+                'success' => $success,
+                'id' => $id,
+                'idOrigen' => $idOrigen,
+                'texto' => $texto,
+                'html' => $html
+            ]);
         
     }
 }

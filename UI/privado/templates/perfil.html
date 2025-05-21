@@ -1,4 +1,5 @@
-<form action="/privado/perfil/guardar" method="post" class="col-sm-9 p-3">
+
+<form x-data action="/privado/perfil/guardar" method="post" class="col-sm-9 p-3">
         
         <div class="form-floating mb-3">
             <input class="form-control" type="text" id="realname" name="realname" placeholder="aqui el nombre" value="{{ @perfil.realname }}"></input>
@@ -6,7 +7,7 @@
         </div>
         
         <div class="form-floating mb-3">
-            <input class="form-control" id="nick" name="nickname" placeholder="nickname" value="{{ @perfil.nickname }}"></input>
+            <input class="form-control" id="nick" name="nickname" placeholder="nickname" value="{{ @perfil.nickname }}" required></input>
             <label for="nick">nick name</label>
         </div>
 
@@ -32,7 +33,7 @@
         <div class="input-group mb-3">
             <span class="input-group-text">56</span>
             <span class="input-group-text">9</span>
-            <input type="text" class="form-control" id="wsp" name="wsp" placeholder="XXXXXXXX" value="{{ @perfil.wsp }}" pattern="[0-9]{8}" maxlength="8" required>
+            <input x-mask="9 9999 9999" type="text" class="form-control" id="wsp" name="wsp" value="{{ @perfil.wsp }}" required>
         </div>
     
         <div class="form-floating mb-3">
