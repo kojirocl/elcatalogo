@@ -3,6 +3,7 @@ compressed/
 tmp/
 logs/
 uploads/
+db/
 
 # Archivos temporales del sistema
 
