@@ -1,16 +1,16 @@
 <?php
+namespace Admin;
+
 class Seguridad{
-    const rutaBase= 'privado/layout.html';
-    const grupo = 5;
+    const grupo = 3;
 
     function beforeRoute(){
 
         $f3 = \Base::instance();
       
-        if (!Elcatalogo::revisaSiConectado()) $f3->reroute('/');
+        if (!\Elcatalogo::revisaSiConectado()) $f3->reroute('/');
 
         if ($f3->get('SESSION.usuario.grupo') != self::grupo) $f3->reroute('/');
-        
         
     }
 
@@ -21,15 +21,10 @@ class Seguridad{
         $assets->addCss('recursos/bootstrap/css/bootstrap.css',5,'head');
         $assets->addCss('recursos/css/bootstrap-icons.css');
 		$assets->addCss('recursos/css/elcatalogo.css',4,'head');
-        $assets->addJs('js/vendor/axios.min.js',3,'head');
+        $assets->addCss('recursos/css/animate.min.css');
 
-        $f3->set('items_menu', \Elcatalogo::armarMenu());
-
-        echo \Template::instance()->render(self::rutaBase);
-
+        echo \Template::instance()->render('admin/layout.html');
     }
-
-
 
 }
 

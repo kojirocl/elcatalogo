@@ -1,7 +1,7 @@
 <?php
 namespace Privado;
 
-class User extends \General{
+class User extends \Publico\General{
     const ruta = 'private/templates/user.html';
     
     function inicio(){

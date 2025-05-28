@@ -13,6 +13,7 @@ class Perfil extends General{
         $perfil = new \mPerfiles($idPerfil);
         
         $f3->set('perfil', $perfil);
+        $f3->set('mensaje','');
 
         $medios = \mMedia::get_user_media_with_likes_and_vote($idPerfil, $f3->get('SESSION.usuario.id'));
 

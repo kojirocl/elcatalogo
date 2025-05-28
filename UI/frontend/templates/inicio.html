@@ -25,16 +25,25 @@
     </div>
     <br>
     <div id="tags" class="container" name="filtros">
-        <div class="container">
-        <div class="btn-group btn-group-sm" role="group">
-        <repeat group="{{ @filtro.tags }}" value="{{ @valor }}">
-            <button class="btn btn-outline-secondary tag" data-bs-toggle="button" id="{{ @valor['idTag'] }}">{{ @valor['tag'] }}</button>
-        </repeat>
+<!--         <div class="container">
+            <div class="btn-group btn-group-sm" role="group">
+                <repeat group="{{ @filtro.tags }}" value="{{ @valor }}">
+                    <button class="btn btn-outline-secondary tag" data-bs-toggle="button" id="{{ @valor['idTag'] }}">{{ @valor['tag'] }}</button>
+                </repeat>
+            </div>  
+
+        </div> -->
+
+        <div>
+            <repeat group="{{ @filtro.tags }}" value="{{ @valor }}">
+                <button class="btn btn-outline-secondary btn-sm tag px-2" data-bs-toggle="button" id="{{ @valor['idTag'] }}">{{ @valor['tag'] }}</button>
+            </repeat>
         </div>  
 
-        </div>
     </div>
 </div>
+
+
 <div id="tarjetas" class="py-4">
     <include href="frontend/templates/tarjetas_contenido.html" />
 </div>

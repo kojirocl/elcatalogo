@@ -82,7 +82,7 @@
     <!-- 2. Comentarios de otros usuarios -->
     <div id="lista_comentarios_todos">
         <repeat group="{{ @comentarios }}" value="{{ @comentario }}">
-            <check if="{{ @comentario.idUserOrigen != @SESSION.usuario.id }}">
+            <check if="{{ isset(@SESSION.usuario) && (@comentario.idUserOrigen != @SESSION.usuario.id) }}">
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">

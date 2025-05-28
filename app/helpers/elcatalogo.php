@@ -125,7 +125,8 @@ GROUP BY perfil.idUser, media.ubicacion;
     static function datos_estadisticos($idUser){
         $db = \Base::instance()->get('BD');
   
-        $result = $db->exec("
+        //SQLITE
+/*         $result = $db->exec("
         SELECT 
             strftime('%Y-%m', datetime(fecha, 'unixepoch')) AS periodo,
         SUM(visita) AS total_visitas,
@@ -134,7 +135,18 @@ GROUP BY perfil.idUser, media.ubicacion;
         WHERE idUsuario = ?
         GROUP BY periodo
         ORDER BY periodo ASC
-        LIMIT 10", $idUser);
+        LIMIT 10", $idUser); */
+
+        //MARIADB
+        $result = $db->exec("
+            SELECT DATE_FORMAT(FROM_UNIXTIME(fecha), '%Y-%m') AS periodo,
+            SUM(visita) AS total_visitas,
+            SUM(contacto) AS total_contactos
+            FROM trafico
+            WHERE idUsuario = 4
+            GROUP BY periodo
+            ORDER BY periodo ASC
+            LIMIT 10", $idUser);
         
         return $result;
 
@@ -153,28 +165,49 @@ GROUP BY perfil.idUser, media.ubicacion;
             );
 
         }else{
-            if ($f3->get('SESSION.usuario.idGrupo')==5){
-                $menu = array(
-                    'home' => array('url'=>'/home','icono'=>'bi-house'),
-                    'indicadores' => array('url'=>'/privado/indicadores','icono'=>'bi-speedometer'),
-                    'perfil' => array('url'=>'/privado/perfil','icono'=>'bi-person-circle'),
-                    'media' => array('url'=>'/privado/media','icono'=>'bi-image'),
-                    'suscripcion' => array('url'=>'/privado/suscripcion','icono'=>'bi-cash-coin'),
-                    'contacto' => array('url'=>'/privado/contacto','icono'=>'bi-envelope-at'),
-                    'logout' => array('url'=>'/privado/salir','icono'=>'bi-box-arrow-left'),
-                );
-            }
+            $grupo = $f3->get('SESSION.usuario.idGrupo');
 
-            if ($f3->get('SESSION.usuario.idGrupo')==1){
-                $menu = array(
-                    'home' => array('url'=>'/home','icono'=>'bi-house'),
-                    'perfil' => array('url'=>'/privado/perfil','icono'=>'bi-person-circle'),
-                    'suscripcion' => array('url'=>'/privado/suscripcion','icono'=>'bi-cash-coin'),
-                    'contacto' => array('url'=>'/privado/contacto','icono'=>'bi-envelope-at'),
-                    'logout' => array('url'=>'/privado/salir','icono'=>'bi-box-arrow-left'),
-                );
+            switch ($grupo){
+                case 1: //usuario registrado con suscripcion
+                    $menu = array(
+                        'home' => array('url'=>'/home','icono'=>'bi-house'),
+                        'perfil' => array('url'=>'/privado/perfil','icono'=>'bi-person-circle'),
+                        'suscripcion' => array('url'=>'/privado/suscripcion','icono'=>'bi-cash-coin'),
+                        'contacto' => array('url'=>'/privado/contacto','icono'=>'bi-envelope-at'),
+                        'logout' => array('url'=>'/privado/salir','icono'=>'bi-box-arrow-left')
+                    );
+                    break;
+                case 5: //usuario registrado sin suscripcion
+                    $menu = array(
+                        'home' => array('url'=>'/home','icono'=>'bi-house'),
+                        'indicadores' => array('url'=>'/privado/indicadores','icono'=>'bi-speedometer'),
+                        'perfil' => array('url'=>'/privado/perfil','icono'=>'bi-person-circle'),
+                        'media' => array('url'=>'/privado/media','icono'=>'bi-image'),
+                        'suscripcion' => array('url'=>'/privado/suscripcion','icono'=>'bi-cash-coin'),
+                        'contacto' => array('url'=>'/privado/contacto','icono'=>'bi-envelope-at'),
+                        'logout' => array('url'=>'/privado/salir','icono'=>'bi-box-arrow-left')
+                    );
+                    break;
+                case 3: // administrador
+                    $menu = array(
+                        'home' => array('url'=>'/','icono'=>'bi-house'),
+                        'descuentos' => array('url'=>'/admin/descuentos','icono'=>'bi-ticket'),
+                        'cupones' => array('url'=>'/admin/cupon','icono'=>'bi-ticket'),
+                        'logout' => array('url'=>'/privado/salir','icono'=>'bi-box-arrow-left')
+                    );
+                    break;
+                default:
+                    $menu = array(
+                        'home' => array('url'=>'/home','icono'=>'bi-house'),
+                        'login' => array('url'=>'/login','icono'=>'bi-person-circle'),
+                        'registro' => array('url'=>'/registro','icono'=>'bi-person-plus'),
+                        'validar mail' => array('url'=>'/validar','icono'=>'bi-person-check'),
+                        'contacto' => array('url'=>'/contacto','icono'=>'bi-envelope-at')
+                    );
+                    break;
             }
-            //$usuario = $f3->get('SESSION.usuario.nickname');
+            
+
             $f3->set('saludo', '/ Bienvenid@ '.$f3->get('SESSION.usuario.nickname'));
         }
         return $menu;
@@ -288,7 +321,8 @@ GROUP BY perfil.idUser, media.ubicacion;
         $filtros['ciudades'] = $city->GetCiudades('Todas');
 
         $tags = new \mTags;
-        $filtros['tags']= $tags->GetTags();
+        //$filtros['tags']= $tags->GetTags(20);
+        $filtros['tags']= $tags->getTop20();
 
         return $filtros;
 
@@ -304,7 +338,7 @@ GROUP BY perfil.idUser, media.ubicacion;
     static function verificar_csrf($token, $csrf){ 
 
         if (empty($token) || empty($csrf) || $token !== $csrf) {
-            \Base::instance()->error(403, 'Token CSRF inválido o ausente');
+            \Base::instance()->error(403, 'Token CSRF inválido o ausente'.'<br>token: '.$token.'<br>csrf: '.$csrf);
         }
         return 1;
     }

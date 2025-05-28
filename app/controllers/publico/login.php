@@ -28,8 +28,8 @@ class Login extends General{
             $f3->set('contenido', \Template::instance()->render('frontend/templates/login.html'));
             //echo \Template::instance()->render('frontend/default.html');
         } else {
-            $f3->reroute('/privado/indicadores');
-            exit();
+            $f3->reroute('/privado/inicio');
+            //exit();
         }
     }
 
@@ -59,9 +59,10 @@ class Login extends General{
             $perfil->load(array('idUser=?', $user->idUser));
 
             \Elcatalogo::actualizarSession($perfil);
+
+            if ($perfil->idGrupo === 3) $f3->reroute('/admin');
             
-            //$f3->reroute('/privado/inicio');
-        } 
+        };
         
         $f3->reroute('/');
 

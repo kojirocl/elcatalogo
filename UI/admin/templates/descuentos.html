@@ -1,0 +1,43 @@
+<div class="container" >
+  <table class="table table-sm caption-top">
+      <thead>
+          <tr>
+              <repeat group="{{ @datos.campos }}" value="{{ @value }}">
+                  <th>{{ @value }}</th>
+              </repeat>
+              <th>modificar/eliminar</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td></td>
+              <td>   
+                  <input type="text" name="" id="" size="6" disabled>
+                  
+              </td>
+              <td><input type="text" name="" id="" size="12"></td>
+              <td><input type="text" name="" id="" size="2"></td>
+              <td>
+                  <button class="btn btn-sm btn-secondary">add</button> 
+              </td>
+          </tr>
+          <repeat group="{{ @datos.result }}" value="{{ @value }}">
+              <tr>
+                  <td>{{ @value.id }}</td>
+                  <td>{{ @value.codigo }}</td>
+                  <td>{{ @value.descripcion }}</td>
+                  <td>{{ @value.descuento }}</td>
+                  <td>
+                      <button class="btn btn-sm btn-success">mod</button>
+                      <button class="btn btn-sm btn-warning">del</button>
+                  </td>
+              </tr>
+              
+          </repeat>
+
+      </tbody>
+  </table>
+
+
+
+</div>

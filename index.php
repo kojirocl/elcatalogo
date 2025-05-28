@@ -15,7 +15,11 @@ date_default_timezone_set('America/Santiago');
 
 $f3->config('config/config.ini');
 
-$f3->BD = new DB\SQL($f3->get('BD_DRIVER'));
+//echo $f3->get('MariaDB.DRIVER')." ".$f3->get('MariaDB.USER')." ".$f3->get('MariaDB.PASS');
+//$f3->BD = new DB\SQL($f3->get('MariaDB.DRIVER'),$f3->get('MariaDB.USER'),$f3->get('MariaDB.PASS'));
+
+$f3->BD = new DB\SQL('mysql:host=127.0.0.1;port=3306;dbname=elcatalogo','elcatalogo','123elcatalogo'); 
+
 
 new DB\SQL\Session($f3->BD,'sessions',TRUE,NULL,'CSRF');
 

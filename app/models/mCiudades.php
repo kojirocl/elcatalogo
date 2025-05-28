@@ -4,7 +4,7 @@ class mCiudades extends \DB\Jig\Mapper{
     protected $tabla = 'cl.json';
 
     function __construct() {
-        $db = new DB\Jig('db/');
+        $db = new \DB\Jig('db/');
         parent::__construct($db, $this->tabla );
 
     }
@@ -14,12 +14,11 @@ class mCiudades extends \DB\Jig\Mapper{
     }
 
     function GetCapitales(){
-        return $this->find(null,   
-            array(
-                'group'=> 'admin_name',
-                'order'=>'admin_name'
-            )
-        );
+        $filtro = null;
+
+        $result = $this->find($filtro, array('group'=> 'admin_name','order'=>'admin_name'));
+
+        return $result;
     }
 
     function GetCiudades($region='Todas'){

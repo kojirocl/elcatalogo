@@ -16,6 +16,7 @@ class mCupones extends \DB\SQL\Mapper{
         return $result;
     }
     
+    
 
 }
 

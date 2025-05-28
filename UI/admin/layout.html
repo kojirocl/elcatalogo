@@ -17,7 +17,7 @@
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="{{ @SITIO.favicon }}" />
 
-    <link rel="stylesheet" href="/recursos/css/animate.min.css">
+
     <script src="recursos/js/vendor/alpine-mask.min.js" defer></script> 
     <script src="recursos/js/vendor/alpinejs.min.js" defer></script>
 
@@ -61,38 +61,34 @@
     <div>
         <include href="components/lightsComp.html" />
     </div>
+    <div class="row">
+        <div class="col-2">
 
-    <div class="d-flex flex-nowrap h-100">
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary toggled" style="width: 170px;">
-            <title>aqui la foto del user</title>
-            <check if="{{ strlen(@SESSION.usuario.fotoPerfilLocation) == 0 }}">
-                <true>
-                    <svg class="bd-placeholder-img img-thumbnail" width="90" height="90" role="img" aria-label="Aqui va foto!" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#868e96"></rect>
-                        <text x="25%" y="50%" fill="#dee2e6" dy=".3em">90x90</text>
-                    </svg>
-                </true>
-                <false>
-                    <img src="{{ '/'.str_replace('uploads','thumbs', @SESSION.usuario.fotoPerfilLocation) }}" width="90" height="90" style="width: 7rem;" />
-                </false>
-            </check>
-
-            <ul class="nav flex-column mb-auto">
+            <ul class="nav flex-column">
                 <repeat group="{{ @items_menu }}" key="{{ @titulo }}" value="{{ @item }}">
-                    <li class="nav-item click"><a class="nav-link" href="{{ @item.url }}"><i class="bi {{ @item.icono }}"></i> {{ @titulo }}</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ @item.url }}" data-ajax><i class="bi {{ @item.icono }}"></i> {{ @titulo }}</a>
+                    </li>
                 </repeat>
             </ul>
+            <!--
+            'logout' => array('url'=>'/privado/salir','icono'=>'bi-box-arrow-left')
+            -->
 
-            
-        </div>
-        
-        
-        <div id="contenido" class="container" name="contenido" style="margin-top: 15px;">
-            {{ @vista | raw }}
         </div>
 
+        <div class="col">
+
             
-    </div>
+            <div id="contenido" class="container" name="contenido" style="margin-top: 15px;">
+                {{ @contenido | raw }}
+            </div>
+
+        </div>
+
+    </div>  
+    
+
 
     <!-- assets-footer -->
 

@@ -2,8 +2,9 @@
 compressed/
 tmp/
 logs/
-uploads/
 db/
+lib/
+
 
 # Archivos temporales del sistema
 

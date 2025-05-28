@@ -8,6 +8,8 @@ class Inicio extends General{
         $f3 = \Base::instance();
         $assets = \Assets::instance();
         
+        $f3->set('saludo','');
+        
         if ($f3->get('SESSION.usuario.id') != NULL){
 			$usuario = $f3->get('SESSION.usuario.nombre');
 			$f3->set('saludo', '/ Bienvenid@ '.$usuario);
@@ -44,6 +46,12 @@ class Inicio extends General{
 
     }
 
+        function cargando(){
+            $f3 = \Base::instance();
+            echo \Template::instance()->render('components/loading.html');
+            exit();
+
+        }
     
 
 }

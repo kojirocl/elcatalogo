@@ -25,8 +25,11 @@ class mTags extends \DB\SQL\Mapper{
 
     }
 	
-    function GetTags(){
-        return $this->find();
+    function GetTags($n = null){
+
+        $condicion = null;
+        if ($n) $condicion = array('limit' => $n);
+        return $this->find(null, $condicion);
     }
 
     function GetId($lista){
@@ -57,6 +60,19 @@ class mTags extends \DB\SQL\Mapper{
 
         }
 
+
+    }
+
+    function getTop20(){
+        $db = \Base::instance()->get('BD');
+        $result = $db->exec("SELECT t.idTag, t.tag, COUNT(*) AS frecuencia FROM tag_perfil tp 
+                            JOIN tags t ON tp.idTag = t.idTag
+                            JOIN perfil ON tp.idUser = perfil.idUser AND perfil.activo=1
+                            GROUP BY t.idTag, t.tag
+                            ORDER BY frecuencia DESC
+                            LIMIT 20;");
+
+        return $result;
 
     }
 

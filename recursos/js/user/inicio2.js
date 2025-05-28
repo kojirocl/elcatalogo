@@ -19,6 +19,7 @@ async function enviarDatos(evento) {
         }
 
         const responseTarjetas = await axios.post('filtrar', formData);
+        
         document.getElementById('tarjetas').innerHTML = responseTarjetas.data;
 
         //inicializarVerPerfil(); // Reasigna eventos de perfil en nuevas tarjetas

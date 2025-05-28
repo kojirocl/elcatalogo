@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="/../recursos/bootstrap/css/bootstrap.min.css">
+
+        <script src="/../recursos/js/vendor/alpinejs.min.js" defer></script>
+</head>
+<body>
+
+
+<div x-data="xData()" x-init>
+
+  <div x-show="isOpen" >
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border text-primary me-2" role="status" style="width: 2rem; height: 2rem;">
+
+      </div>
+      <strong>cargando...</strong>
+    </div>
+  </div>
+  
+  <div class="container" x-show="!isOpen" >
+    seccion tarjetas
+<!--     <repeat group="{{ @usuarios }}" value="{{ @usuario }}">
+        <div class="col">
+            <div class="card h-100 tarjeta" >
+                <div class="card-img-container">
+                    <a href="/perfil/{{ @usuario.idUser }}" class="ver-perfil">
+
+                    <check if="{{ @usuario.idFotoPerfil  }}">
+                        <true>
+                            <img src="{{ @BASE.'/'.@usuario.foto_perfil }}" class="card-img-top img-thumbnail">   
+                        </true>
+                        <false>
+                            <svg class="bd-placeholder-img img-thumbnail img-rounded" role="img" aria-label="Aqui va foto!" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <rect width="100%" height="100%" fill="#868e96"></rect>
+                                <text x="35%" y="50%" fill="#dee2e6" dy=".3em">90x90</text>
+                            </svg>
+                        </false>  
+                    </check>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title custom-nickname">{{ @usuario.nickname }}</h5>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p class="fs-6"><em>{{ substr(@usuario.descripcion,0,35) }}...</em></p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer text-end">
+                            {{ @usuario.ciudad }}
+                        </figcaption>
+                    </figure>
+                    
+                </div>
+
+                <div class="card-footer text-end">
+                    <a href="/perfil/{{ @usuario.idUser }}" class="btn btn-outline-info btn-sm ver-perfil">
+                        <span>ver mas </span><i class="bi bi-arrow-right-circle-fill"></i>
+                    </a> 
+                </div>            
+            </div>
+
+        </div>
+    </repeat> -->
+  </div>
+</div>
+
+
+
+<script>
+  function xData() {
+    return {
+      isOpen : true,
+      init() {
+        setTimeout(() => {
+          this.isOpen = !this.isOpen;
+          console.log('Loading finished', this.isOpen);
+        }, 2000); // Simula un retraso de 2 segundos
+      }
+    }
+  }
+
+
+
+</script>
+
+
+<!-- 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle fill="#9816FF" stroke="#9816FF" stroke-width="16" r="15" cx="40" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.4"></animate></circle><circle fill="#9816FF" stroke="#9816FF" stroke-width="16" r="15" cx="100" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="-.2"></animate></circle><circle fill="#9816FF" stroke="#9816FF" stroke-width="16" r="15" cx="160" cy="65"><animate attributeName="cy" calcMode="spline" dur="2" values="65;135;65;" keySplines=".5 0 .5 1;.5 0 .5 1" repeatCount="indefinite" begin="0"></animate></circle></svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><linearGradient id="a12"><stop offset="0" stop-color="#7F08FF" stop-opacity="0"></stop><stop offset="1" stop-color="#7F08FF"></stop></linearGradient><circle fill="none" stroke="url(#a12)" stroke-width="26" stroke-linecap="round" stroke-dasharray="0 44 0 44 0 44 0 44 0 360" cx="100" cy="100" r="70" transform-origin="center"><animateTransform type="rotate" attributeName="transform" calcMode="discrete" dur="1.5" values="360;324;288;252;216;180;144;108;72;36" repeatCount="indefinite"></animateTransform></circle></svg>
+
+
+<svg fill="#51036d" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26.349 26.35" xml:space="preserve" stroke="#51036d"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.210792"></g><g id="SVGRepo_iconCarrier"> <g> <g> <circle cx="13.792" cy="3.082" r="3.082"></circle> <circle cx="13.792" cy="24.501" r="1.849"></circle> <circle cx="6.219" cy="6.218" r="2.774"></circle> <circle cx="21.365" cy="21.363" r="1.541"></circle> <circle cx="3.082" cy="13.792" r="2.465"></circle> <circle cx="24.501" cy="13.791" r="1.232"></circle> <path d="M4.694,19.84c-0.843,0.843-0.843,2.207,0,3.05c0.842,0.843,2.208,0.843,3.05,0c0.843-0.843,0.843-2.207,0-3.05 C6.902,18.996,5.537,18.988,4.694,19.84z"></path> <circle cx="21.364" cy="6.218" r="0.924"></circle> </g> </g> </g></svg>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect fill="#930A77" stroke="#930A77" stroke-width="15" stroke-linejoin="round" width="30" height="30" x="85" y="85" rx="0" ry="0"><animate attributeName="rx" calcMode="spline" dur="2" values="15;15;5;15;15" keySplines=".5 0 .5 1;.8 0 1 .2;0 .8 .2 1;.5 0 .5 1" repeatCount="indefinite"></animate><animate attributeName="ry" calcMode="spline" dur="2" values="15;15;10;15;15" keySplines=".5 0 .5 1;.8 0 1 .2;0 .8 .2 1;.5 0 .5 1" repeatCount="indefinite"></animate><animate attributeName="height" calcMode="spline" dur="2" values="30;30;1;30;30" keySplines=".5 0 .5 1;.8 0 1 .2;0 .8 .2 1;.5 0 .5 1" repeatCount="indefinite"></animate><animate attributeName="y" calcMode="spline" dur="2" values="40;170;40;" keySplines=".6 0 1 .4;0 .8 .2 1" repeatCount="indefinite"></animate></rect></svg>
+
+
+<div class="typewriter">Cargando...</div>
+
+
+<div class="d-flex justify-content-center">
+  <div class="spinner-border text-primary me-2" role="status" style="width: 2rem; height: 2rem;"></div>
+  <strong>cargando...</strong>
+</div>
+
+<div class="d-flex justify-content-center" >
+  <div class="spinner-border" role="status" style="width: 3rem; height: 3rem;">
+    <span class="visually-hidden">Loading...</span>    
+  </div>
+</div>
+
+<style>
+.typewriter {
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange; /* cursor */
+  font-size: 1.5rem;
+  animation:
+    typing 2s steps(10, end),
+    blink-caret 0.7s step-end infinite;
+}
+
+/* Anima la escritura letra por letra */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 10ch }
+}
+
+/* Cursor parpadeante */
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent }
+  50% { border-color: rgb(124,58, 139) }
+}
+</style>
+    
+
+<div class="typewriter-loop">
+  <span class="text">Cargando...</span>
+</div>
+
+<style>
+.typewriter-loop {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(124, 5, 139);
+  width: 0ch;
+  animation:
+    typing 2s steps(11) 1s forwards,
+    deleting 2s steps(11) 5s forwards,
+    loop 7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0ch; }
+  to { width: 10ch; }
+}
+
+@keyframes deleting {
+  from { width: 10ch; }
+  to { width: 0ch; }
+}
+
+@keyframes loop {
+  0%   { }
+  100% { }
+}
+</style> -->
+
+
+
+</body>
+</html>
+

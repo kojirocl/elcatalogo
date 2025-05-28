@@ -10,8 +10,6 @@ class Registro extends General{
         $f3->set('contenido', \Template::instance()->render(self::ruta));
         //echo \Template::instance()->render('frontend/default.html');
     }
-
-
     
     function procesar_registro(){
 
@@ -96,9 +94,6 @@ class Registro extends General{
         $email = $f3->clean($email); // Limpia el input
         $codigo = (int)$codigo; // Fuerza tipo numérico
 
-/*         print_r([$f3->VERB, $email, $codigo,$f3->get('SESSION.csrf'), $f3->get('POST.token')]);
-        exit(); */
-
         $user = new \mUsers;
 
         $resultado= $user->confirmar_mail([$email,$codigo]); // mail y codigo
@@ -111,6 +106,7 @@ class Registro extends General{
                 $perfil = new \mPerfiles;
                 $perfil->crear_nuevo($user->idUser, $email);
                 $f3->set('mensaje', '¡Correo validado! Ya puedes iniciar sesión.');
+                $f3->copy('CSRF','SESSION.csrf');
                 $pagina = 'frontend/templates/login.html';
                 break;
             case 0:

@@ -79,8 +79,8 @@ class Perfil extends \Seguridad{
         );
 
 
-        $this->inicio();
-       //$f3->reroute('/privado/perfil/inicio');
+        //$f3->set('vista',\Template::instance()->render(self::pagina));
+        $f3->reroute('/privado/perfil');
   
 
     }
