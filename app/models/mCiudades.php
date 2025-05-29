@@ -14,11 +14,20 @@ class mCiudades extends \DB\Jig\Mapper{
     }
 
     function GetCapitales(){
-        $filtro = null;
+        
+        $result = $this->find(null, array('order'=>'admin_name SORT_ASC')) ?? [];
 
-        $result = $this->find($filtro, array('group'=> 'admin_name','order'=>'admin_name'));
-
-        return $result;
+        $capitales = [];
+        $seen = [];
+        
+        foreach($result as $ciudad) {
+            if (!in_array($ciudad['admin_name'], $seen)) {
+                $capitales[] = $ciudad;
+                $seen[] = $ciudad['admin_name'];
+            }
+        }
+        
+        return $capitales;
     }
 
     function GetCiudades($region='Todas'){

@@ -1,6 +1,6 @@
 
   <div class="container" id="mensaje">
-    <check if="{{ (@mail_verificado != NULL) && (@mail_verificado == 1) }}">
+    <check if="{{ isset(@mail_verificado) && (@mail_verificado == 1) }}">
       <div class="alert alert-success" role="alert">
         <p>Mail verificado con exito!!</p>
         <p>Ahora puedes logearte para activar algunas funciones...</p>

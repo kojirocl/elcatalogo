@@ -10,7 +10,8 @@ class Media extends \Seguridad{
 
         $archivos = new \mMedia;
         $medios = $archivos->GetByIdUser($f3->get('SESSION.usuario.id'));
-        
+
+
         $f3->set('medios', $medios);
 
         $f3->set('vista',\Template::instance()->render(self::pagina));
@@ -20,7 +21,7 @@ class Media extends \Seguridad{
     function subir_archivos(){
         
         $f3 = \Base::instance();
-        \Elcatalogo::procesar_fotos();
+        \Imagenes::procesar_fotos();
 
         $f3->reroute('privado/media/inicio');
         

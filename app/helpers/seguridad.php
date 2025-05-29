@@ -9,7 +9,8 @@ class Seguridad{
       
         if (!Elcatalogo::revisaSiConectado()) $f3->reroute('/');
 
-        if ($f3->get('SESSION.usuario.grupo') != self::grupo) $f3->reroute('/');
+
+        if ($f3->get('SESSION.usuario.idGrupo') !== self::grupo) $f3->reroute('/');
         
         
     }

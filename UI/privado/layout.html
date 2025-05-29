@@ -18,6 +18,7 @@
     <link rel="icon" type="image/x-icon" href="{{ @SITIO.favicon }}" />
 
     <link rel="stylesheet" href="/recursos/css/animate.min.css">
+    
     <script src="recursos/js/vendor/alpine-mask.min.js" defer></script> 
     <script src="recursos/js/vendor/alpinejs.min.js" defer></script>
 
@@ -73,7 +74,7 @@
                     </svg>
                 </true>
                 <false>
-                    <img src="{{ '/'.str_replace('uploads','thumbs', @SESSION.usuario.fotoPerfilLocation) }}" width="90" height="90" style="width: 7rem;" />
+                    <img src="{{ 'uploads/profile/'. @SESSION.usuario.fotoPerfilLocation }}" width="90" height="90" style="width: 7rem;" />
                 </false>
             </check>
 
@@ -85,7 +86,6 @@
 
             
         </div>
-        
         
         <div id="contenido" class="container" name="contenido" style="margin-top: 15px;">
             {{ @vista | raw }}

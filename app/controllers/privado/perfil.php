@@ -27,10 +27,8 @@ class Perfil extends \Seguridad{
             if ($cadena=="") $cadena= $value->tag;
             else $cadena = $cadena." ".$value->tag;
         }
-
         //$assets->addJs('recursos/bootstrap/js/bootstrap.min.js',5,'head');
         //$assets->addJs('recursos/js/axios.min.js',4,'head');
-
 
         $f3->set('perfil',$perfil);
         $f3->set('etiquetas',$cadena);

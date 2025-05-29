@@ -1,11 +1,7 @@
 <?php
 class Elcatalogo{
     
-    function img_seguridad(){
-        $img= new \Image;
-        $img->captcha('./recursos/fonts/CHILLER.TTF',35,5,'SESSION.captcha_code');
-        $img->render();
-    }
+
 
     function estaLogeado(){
         $f3 = \Base::instance();
@@ -24,34 +20,6 @@ class Elcatalogo{
         }
     }
 
-    static function actualiza_foto_perfil($id_foto_perfil){
-        
-        $media = new \mMedia;
-        $media->load(array('id=?', $id_foto_perfil));
-
-        if ($media->dry()){
-            $ubicacion ="";
-        }else{
-            $ubicacion = $media->ubicacion;
-        }
-        \Base::instance()->set('SESSION.foto.ubicacion', $ubicacion);
-    }
-
-/*     static function GetPerfilesIncluyefoto($f3, $ciudad=NULL){
-
-        $result = Elcatalogo::getDatosPerfil(null,$ciudad);
-        
-        return $result;
-    }
- */
-/*     static function GetPerfilConFoto($f3, $id){
-        //$db = $f3->get('BD');
-        //$result = $db->exec('SELECT perfil.*, media.ubicacion FROM perfil LEFT JOIN media ON perfil.idFotoPerfil = media.id WHERE perfil.idUser=?', $id);
-        $result =  Elcatalogo::getDatosPerfil($id);
-
-        return $result;
-        
-    } */
 
     static function getDatosPerfil($id = null, $region = null, $ciudad = null){
         
@@ -143,7 +111,7 @@ GROUP BY perfil.idUser, media.ubicacion;
             SUM(visita) AS total_visitas,
             SUM(contacto) AS total_contactos
             FROM trafico
-            WHERE idUsuario = 4
+            WHERE idUsuario = ?
             GROUP BY periodo
             ORDER BY periodo ASC
             LIMIT 10", $idUser);
@@ -281,37 +249,6 @@ GROUP BY perfil.idUser, media.ubicacion;
         return $db->exec($sql, $params);
     }
 
-/*     static function homePage(){
-        $f3 = \Base::instance();
-
-
-        $contenido= "";
-
-        $city = new \mCiudades;        
-        $f3->set('regiones',$city->GetCapitales());
-        $f3->set('ciudades',$city->GetCiudades('Todas'));
-        //$contenido .= \Template::instance()->render('frontend/templates/barra_regiones.html').'<br>';
-
-        $tags = new \mTags;
-        $etiquetas = $tags->GetTags();
-        $f3->set('tags', $etiquetas);
-        //$contenido .= \Template::instance()->render('frontend/templates/barra_tags.html').'<br>';
-
-        $html['filtros'] = \Template::instance()->render('frontend/templates/barra_filtros.html');
-
-        //$f3->set('home.filtros', $contenido);
-
-        $result = \Elcatalogo::getDatosPerfil(null, null);
-        $f3->set('usuarios', $result);
-        
-        
-        $html['cuerpo'] = '<div id="tarjetas">'.\Template::instance()->render('frontend/templates/tarjetas_contenido.html').'</div>';
-
-        return $html;
-
-
-    } */
-
     static function armarFiltros(){
         $f3 = \Base::instance();
 
@@ -356,68 +293,6 @@ GROUP BY perfil.idUser, media.ubicacion;
         return password_hash($pwd, PASSWORD_DEFAULT);
     }
 
-    static function miniatura($archivo){
 
-        $directorio_miniaturas = 'thumbs/';
-        //$extension = pathinfo($archivo)['extension'];
-        $img = new \Image($archivo);
-        $img->resize(300,null,false,false);
-
-        $nombre_archivo = $directorio_miniaturas.pathinfo($archivo,PATHINFO_BASENAME);
-        $extension = pathinfo($archivo,PATHINFO_EXTENSION);
-        
-        if ($extension == 'jpg' || $extension == 'jpeg') $extension = 'jpeg';
-
-        \Base::instance()->write($nombre_archivo, $img->dump($extension));
-        
-    }
-
-    function generar_todas_miniaturas(){
-        $directorio = 'uploads/';
-        $directorio_miniaturas = 'thumbs/';
-
-        $archivos = scandir($directorio);
-
-        foreach ($archivos as $archivo)
-            if ($archivo != '.' && $archivo != '..'){
-                  self::miniatura($directorio.$archivo);
-                  //echo $directorio.$archivo.'<br>';
-            }
-        echo '<pre>';
-        var_dump($archivos);
-        echo '</pre>';
-
-    }
-
-    static function procesar_fotos(){
-    
-        $web = \Web::instance();
-        
-        $callback = function($archivo){ // QUE SE HACE DESPUES DE SUBIR LA FOTO
-            $id = \Base::instance()->get('SESSION.usuario.id');
-            //guarda en base de datos
-            
-            $result = new \mMedia($id, $archivo['name']);
-            return true; // allows the file to be moved from php tmp dir to your defined upload dir
-        };
-
-        $overwrite = true; // set to true, to overwrite an existing file; Default: false
-        
-        //$slug = true; // rename file to filesystem-friendly version
-        $slug = function($fileBaseName){
-            $id = \Base::instance()->get('SESSION.usuario.id');
-            $fileBaseName = hash('md5', $id."_".$fileBaseName).'.'.pathinfo($fileBaseName,PATHINFO_EXTENSION); 
-            return $fileBaseName;
-        };
-
-        $archivos = $web->receive($callback, $overwrite, $slug);
-        
-        // MUESTRA LOS ARCHIVOS QUE SE SUBIERON
-        //crea la miniatura
-        foreach ($archivos as $archivo => $resultado) {
-            self::miniatura($archivo);
-        }
-        
-    }
 }
 ?>

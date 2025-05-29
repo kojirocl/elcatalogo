@@ -58,9 +58,9 @@ class Perfil extends General{
         
         if (count($result)>0){
             $f3->set('comentarios', $result);
-            $contenido_comentarios= 'frontend/templates/comentario_lista.html';
+            //$contenido_comentarios= 'frontend/templates/comentario_lista.html';
         }else{
-            //$f3->set('mensaje',['clases'=>'alert alert-info', 'icono'=>'bi-info-circle-fill', 'contenido'=>' no hay comentarios aun...']);
+            $f3->set('mensaje',['clases'=>'alert alert-info', 'icono'=>'bi-info-circle-fill', 'contenido'=>' no hay comentarios aun...']);
             //$contenido_comentarios = 'frontend/templates/mensaje.html';
 
         };
