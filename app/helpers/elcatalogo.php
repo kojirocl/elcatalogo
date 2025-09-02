@@ -94,7 +94,7 @@ GROUP BY perfil.idUser, media.ubicacion;
         $db = \Base::instance()->get('BD');
   
         //SQLITE
-/*         $result = $db->exec("
+        $result = $db->exec("
         SELECT 
             strftime('%Y-%m', datetime(fecha, 'unixepoch')) AS periodo,
         SUM(visita) AS total_visitas,
@@ -103,10 +103,10 @@ GROUP BY perfil.idUser, media.ubicacion;
         WHERE idUsuario = ?
         GROUP BY periodo
         ORDER BY periodo ASC
-        LIMIT 10", $idUser); */
+        LIMIT 10", $idUser); 
 
         //MARIADB
-        $result = $db->exec("
+/*         $result = $db->exec("
             SELECT DATE_FORMAT(FROM_UNIXTIME(fecha), '%Y-%m') AS periodo,
             SUM(visita) AS total_visitas,
             SUM(contacto) AS total_contactos
@@ -114,7 +114,7 @@ GROUP BY perfil.idUser, media.ubicacion;
             WHERE idUsuario = ?
             GROUP BY periodo
             ORDER BY periodo ASC
-            LIMIT 10", $idUser);
+            LIMIT 10", $idUser); */
         
         return $result;
 

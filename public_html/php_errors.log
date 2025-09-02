@@ -1,0 +1,131 @@
+[28-Aug-2025 20:20:21 America/Santiago] PHP Warning:  require(lib/base.php): Failed to open stream: No such file or directory in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\index.php on line 5
+[28-Aug-2025 20:20:21 America/Santiago] PHP Fatal error:  Uncaught Error: Failed opening required 'lib/base.php' (include_path='.;C:\php\pear') in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\index.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\index.php on line 5
+[28-Aug-2025 21:22:19 America/Santiago] SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:549]
+[28-Aug-2025 21:22:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:549] PDO->__construct()
+[28-Aug-2025 21:22:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:23] DB\SQL->__construct()
+[28-Aug-2025 21:23:51 America/Santiago] SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:549]
+[28-Aug-2025 21:23:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:549] PDO->__construct()
+[28-Aug-2025 21:23:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:22] DB\SQL->__construct()
+[28-Aug-2025 21:31:31 America/Santiago] Class "Assets" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\index.php:34]
+[28-Aug-2025 21:33:20 America/Santiago] No routes specified
+[28-Aug-2025 21:33:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1767] 
+[28-Aug-2025 21:33:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1767] user_error()
+[28-Aug-2025 21:33:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[28-Aug-2025 21:34:16 America/Santiago] No routes specified
+[28-Aug-2025 21:34:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1767] 
+[28-Aug-2025 21:34:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1767] user_error()
+[28-Aug-2025 21:34:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[28-Aug-2025 21:34:23 America/Santiago] No routes specified
+[28-Aug-2025 21:34:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1767] 
+[28-Aug-2025 21:34:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1767] user_error()
+[28-Aug-2025 21:34:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[28-Aug-2025 21:34:36 America/Santiago] DB\SQL\Mapper::__construct(): Argument #1 ($db) must be of type DB\SQL, null given, called in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mTags.php on line 13 [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql\mapper.php:756]
+[28-Aug-2025 21:34:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/models/mTags.php:13] DB\SQL\Mapper->__construct()
+[28-Aug-2025 21:34:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/elcatalogo.php:260] mTags->__construct()
+[28-Aug-2025 21:34:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:21] Elcatalogo::armarFiltros()
+[28-Aug-2025 21:34:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[28-Aug-2025 21:34:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Aug-2025 21:34:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[28-Aug-2025 21:41:37 America/Santiago] syntax error, unexpected identifier "foto_perfil" [C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\tmp\j6wc2ffcgezd.1bmp2oym0h7jw.php:11]
+[28-Aug-2025 21:41:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[28-Aug-2025 21:41:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2fecc1pjgucks.php:48] Preview->render()
+[28-Aug-2025 21:41:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[28-Aug-2025 21:41:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[28-Aug-2025 21:41:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:24] Preview->render()
+[28-Aug-2025 21:41:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[28-Aug-2025 21:41:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Aug-2025 21:41:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[29-Aug-2025 00:06:09 America/Santiago] SQLSTATE[HY000]: General error: 1 no such function: FROM_UNIXTIME [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:208]
+[29-Aug-2025 00:06:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:208] PDO->prepare()
+[29-Aug-2025 00:06:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/elcatalogo.php:109] DB\SQL->exec()
+[29-Aug-2025 00:06:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/privado/indicadores.php:13] Elcatalogo::datos_estadisticos()
+[29-Aug-2025 00:06:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Privado\Indicadores->inicio()
+[29-Aug-2025 00:06:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[29-Aug-2025 00:06:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 19:43:37 America/Santiago] HTTP 403 (GET /home)
+[01-Sep-2025 19:43:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql/session.php:84] Base->error()
+[01-Sep-2025 19:43:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:385] session_start()
+[01-Sep-2025 19:43:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:548] Base->ref()
+[01-Sep-2025 19:43:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:13] Base->get()
+[01-Sep-2025 19:43:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[01-Sep-2025 19:43:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 19:43:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 19:43:45 America/Santiago] Undefined variable $email
+[01-Sep-2025 19:43:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.13dk4dobpjipn.php:20] 
+[01-Sep-2025 19:43:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.13dk4dobpjipn.php:20] Base->{closure}()
+[01-Sep-2025 19:43:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[01-Sep-2025 19:43:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[01-Sep-2025 19:43:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/registro.php:10] Preview->render()
+[01-Sep-2025 19:43:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Registro->inicio()
+[01-Sep-2025 19:43:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 19:43:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 19:43:57 America/Santiago] Undefined variable $email
+[01-Sep-2025 19:43:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.13dk4dobpjipn.php:20] 
+[01-Sep-2025 19:43:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.13dk4dobpjipn.php:20] Base->{closure}()
+[01-Sep-2025 19:43:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[01-Sep-2025 19:43:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[01-Sep-2025 19:43:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/registro.php:10] Preview->render()
+[01-Sep-2025 19:43:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Registro->inicio()
+[01-Sep-2025 19:43:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 19:43:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 19:44:00 America/Santiago] Undefined array key "mail"
+[01-Sep-2025 19:44:00 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1yaw12rjpnlwo.php:16] 
+[01-Sep-2025 19:44:00 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1yaw12rjpnlwo.php:16] Base->{closure}()
+[01-Sep-2025 19:44:00 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[01-Sep-2025 19:44:00 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[01-Sep-2025 19:44:00 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/registro.php:77] Preview->render()
+[01-Sep-2025 19:44:00 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Registro->confirmar_mail()
+[01-Sep-2025 19:44:00 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 19:44:00 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 20:33:23 America/Santiago] Undefined variable $email
+[01-Sep-2025 20:33:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.13dk4dobpjipn.php:20] 
+[01-Sep-2025 20:33:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.13dk4dobpjipn.php:20] Base->{closure}()
+[01-Sep-2025 20:33:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[01-Sep-2025 20:33:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[01-Sep-2025 20:33:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/registro.php:10] Preview->render()
+[01-Sep-2025 20:33:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Registro->inicio()
+[01-Sep-2025 20:33:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 20:33:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 20:36:47 America/Santiago] CAPTCHA font not found
+[01-Sep-2025 20:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/image.php:458] 
+[01-Sep-2025 20:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/image.php:458] user_error()
+[01-Sep-2025 20:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/imagenes.php:26] Image->captcha()
+[01-Sep-2025 20:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Imagenes::img_seguridad()
+[01-Sep-2025 20:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 20:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 20:39:46 America/Santiago] CAPTCHA font not found
+[01-Sep-2025 20:39:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/image.php:458] 
+[01-Sep-2025 20:39:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/image.php:458] user_error()
+[01-Sep-2025 20:39:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/imagenes.php:26] Image->captcha()
+[01-Sep-2025 20:39:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Imagenes::img_seguridad()
+[01-Sep-2025 20:39:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 20:39:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 20:39:51 America/Santiago] CAPTCHA font not found
+[01-Sep-2025 20:39:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/image.php:458] 
+[01-Sep-2025 20:39:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/image.php:458] user_error()
+[01-Sep-2025 20:39:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/imagenes.php:26] Image->captcha()
+[01-Sep-2025 20:39:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Imagenes::img_seguridad()
+[01-Sep-2025 20:39:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 20:39:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 20:39:54 America/Santiago] CAPTCHA font not found
+[01-Sep-2025 20:39:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/image.php:458] 
+[01-Sep-2025 20:39:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/image.php:458] user_error()
+[01-Sep-2025 20:39:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/imagenes.php:26] Image->captcha()
+[01-Sep-2025 20:39:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Imagenes::img_seguridad()
+[01-Sep-2025 20:39:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 20:39:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[01-Sep-2025 22:08:25 America/Santiago] Undefined array key "apodo"
+[01-Sep-2025 22:08:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/registro.php:51] 
+[01-Sep-2025 22:08:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/registro.php:51] Base->{closure}()
+[01-Sep-2025 22:08:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Registro->procesar_registro()
+[01-Sep-2025 22:08:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[01-Sep-2025 22:08:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()
+[02-Sep-2025 08:10:29 America/Santiago] Undefined array key "apodo"
+[02-Sep-2025 08:10:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/registro.php:51] 
+[02-Sep-2025 08:10:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/registro.php:51] Base->{closure}()
+[02-Sep-2025 08:10:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Registro->procesar_registro()
+[02-Sep-2025 08:10:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[02-Sep-2025 08:10:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:56] Base->run()

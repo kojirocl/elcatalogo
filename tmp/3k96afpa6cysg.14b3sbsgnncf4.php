@@ -1,0 +1,28 @@
+<div class="container-fluid" style="margin-top: 30px;">
+    <h2 class="text-center">Visitas y Contactos</h2>
+
+    <!-- Tabla de Datos -->
+    <table id="tablaDatos" class="table table-sm">
+        
+        <thead class="table-light">
+            <tr>
+                <th>Periodo</th>
+                <th>Visitas</th>
+                <th>Contactos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán dinámicamente con JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Contenedor para el gráfico -->
+    <canvas id="graficoTrafico" width="400" height="200"></canvas>
+</div>
+
+
+<script id="datosEstadisticos" type="application/json">
+     <?= ($this->raw($datos))."
+" ?>
+</script>
+

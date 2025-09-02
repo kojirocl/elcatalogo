@@ -1,0 +1,161 @@
+classDiagram
+    class Users {
+        -int idUser PK
+        -string email
+        -string password
+        -datetime fecha_ingreso
+        -int codigo_verificacion
+        -int verificado
+        +login()
+        +register()
+        +verify()
+    }
+
+    class Perfil {
+        -int idUser PK,FK
+        -string realname
+        -string nickname
+        -string descripcion
+        -string wsp
+        -string region
+        -string ciudad
+        -int activo
+        -int idFotoPerfil FK
+        -int idGrupo FK
+        +updateProfile()
+        +activate()
+        +setProfilePhoto()
+    }
+
+    class Grupos {
+        -int id PK
+        -string grupo
+        +createGroup()
+        +getGroupName()
+    }
+
+    class Media {
+        -int id PK
+        -int idUser FK
+        -string ubicacion
+        +uploadMedia()
+        +getMediaPath()
+    }
+
+    class Tags {
+        -int idTag PK
+        -string tag
+        +createTag()
+        +getTagName()
+    }
+
+    class TagPerfil {
+        -int idTag FK
+        -int idUser FK
+        +assignTag()
+        +removeTag()
+    }
+
+    class Comentarios {
+        -int id PK
+        -string comentario
+        -string fecha
+        -int idUserOrigen FK
+        -int idUserDestino FK
+        +addComment()
+        +getComments()
+    }
+
+    class MeGusta {
+        -int id PK
+        -int idUser_origen FK
+        -int idMedia FK
+        -datetime fecha
+        +likeMedia()
+        +unlikeMedia()
+    }
+
+    class Suscripcion {
+        -int id PK
+        -string descripcion
+        -int dias
+        -int valor
+        +createPlan()
+        +getPlanDetails()
+    }
+
+    class Descuentos {
+        -int id PK
+        -string codigo
+        -string descripcion
+        -int descuento
+        +createDiscount()
+        +validateCode()
+    }
+
+    class Cupones {
+        -int id PK
+        -int idDescuento FK
+        -int idUser FK
+        -int valido
+        +generateCoupon()
+        +useCoupon()
+    }
+
+    class Contrato {
+        -int id PK
+        -int idUser FK
+        -int idSuscripcion FK
+        -datetime fecha_registro
+        -int vigencia
+        -string info_cupon
+        -string info_descuento
+        -string info_suscripcion
+        -decimal valor_pagado
+        -int vigente
+        +createContract()
+        +renewContract()
+        +cancelContract()
+    }
+
+    class Trafico {
+        -int id PK
+        -int idUsuario FK
+        -datetime fecha
+        -int visita
+        -int contacto
+        +logVisit()
+        +logContact()
+        +getStats()
+    }
+
+    class Sessions {
+        -string session_id PK
+        -string data
+        -string ip
+        -string agent
+        -int stamp
+        +createSession()
+        +validateSession()
+        +destroySession()
+    }
+
+    %% Relaciones principales
+    Users ||--|| Perfil : "tiene"
+    Users ||--o{ Media : "sube"
+    Users ||--o{ Comentarios : "origen"
+    Users ||--o{ Comentarios : "destino"
+    Users ||--o{ MeGusta : "da like"
+    Users ||--o{ Cupones : "posee"
+    Users ||--o{ Contrato : "contrata"
+    Users ||--o{ Trafico : "genera"
+    Users ||--o{ TagPerfil : "tiene tags"
+    
+    Grupos ||--o{ Perfil : "clasifica"
+    Media ||--o{ MeGusta : "recibe likes"
+    Media ||--|| Perfil : "foto perfil"
+    
+    Tags ||--o{ TagPerfil : "se asigna"
+    
+    Suscripcion ||--o{ Contrato : "define plan"
+    Descuentos ||--o{ Cupones : "genera"

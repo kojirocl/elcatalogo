@@ -1,7 +1,7 @@
 <?php
 namespace Privado;
 
-class Salir extends \Seguridad{
+class Salir /*extends \Seguridad*/{
 
     function inicio(){
         $f3=\Base::instance();

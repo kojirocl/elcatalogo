@@ -1,0 +1,134 @@
+erDiagram
+    USERS {
+        integer idUser PK "AUTO_INCREMENT"
+        text email "UNIQUE"
+        text password
+        numeric fecha_ingreso "DEFAULT CURRENT_TIMESTAMP"
+        numeric codigo_verificacion
+        integer verificado "DEFAULT 0"
+    }
+
+    PERFIL {
+        integer idUser PK,FK "UNIQUE"
+        text realname
+        text nickname "UNIQUE, NOT NULL"
+        text descripcion
+        text wsp
+        text region
+        text ciudad
+        integer activo "DEFAULT 0"
+        integer idFotoPerfil "DEFAULT 0, FK"
+        integer idGrupo "DEFAULT 1, FK"
+    }
+
+    GRUPOS {
+        integer id PK "AUTO_INCREMENT"
+        text grupo
+    }
+
+    MEDIA {
+        integer id PK "AUTO_INCREMENT"
+        integer idUser FK "NOT NULL"
+        text ubicacion "NOT NULL"
+    }
+
+    TAGS {
+        integer idTag PK "AUTO_INCREMENT"
+        text tag "UNIQUE, NOT NULL"
+    }
+
+    TAG_PERFIL {
+        integer idTag FK "NOT NULL"
+        integer idUser FK "NOT NULL"
+    }
+
+    COMENTARIOS {
+        integer id PK "AUTO_INCREMENT"
+        text comentario "NOT NULL"
+        text fecha
+        integer idUserOrigen FK "NOT NULL"
+        integer idUserDestino FK "NOT NULL"
+    }
+
+    ME_GUSTA {
+        integer id PK "AUTO_INCREMENT"
+        integer idUser_origen FK
+        integer idMedia FK "DEFAULT 0"
+        numeric fecha
+    }
+
+    SUSCRIPCION {
+        integer id PK "AUTO_INCREMENT"
+        text descripcion
+        integer dias
+        integer valor
+    }
+
+    DESCUENTOS {
+        integer id PK "AUTO_INCREMENT"
+        text codigo "NOT NULL"
+        text descripcion "NOT NULL"
+        integer descuento "NOT NULL"
+    }
+
+    CUPONES {
+        integer id PK "AUTO_INCREMENT"
+        integer idDescuento FK "NOT NULL"
+        integer idUser FK "NOT NULL"
+        integer valido "DEFAULT 1"
+    }
+
+    CONTRATO {
+        integer id PK "AUTO_INCREMENT"
+        integer idUser FK "NOT NULL"
+        integer idSuscripcion FK "NOT NULL"
+        numeric fecha_registro
+        integer vigencia
+        text info_cupon
+        text info_descuento
+        text info_suscripcion
+        numeric valor_pagado
+        integer vigente "DEFAULT 1, NOT NULL"
+    }
+
+    TRAFICO {
+        integer id PK "AUTO_INCREMENT"
+        integer idUsuario FK "NOT NULL"
+        numeric fecha
+        integer visita
+        integer contacto
+    }
+
+    SESSIONS {
+        varchar session_id PK "255"
+        text data
+        varchar ip "45"
+        varchar agent "300"
+        integer stamp
+    }
+
+    %% Relaciones
+    USERS ||--|| PERFIL : "tiene perfil"
+    USERS ||--o{ MEDIA : "sube archivos"
+    USERS ||--o{ COMENTARIOS : "comenta (origen)"
+    USERS ||--o{ COMENTARIOS : "recibe comentarios (destino)"
+    USERS ||--o{ ME_GUSTA : "da me gusta"
+    USERS ||--o{ CUPONES : "tiene cupones"
+    USERS ||--o{ CONTRATO : "firma contratos"
+    USERS ||--o{ TRAFICO : "genera tráfico"
+    USERS ||--o{ TAG_PERFIL : "tiene tags"
+
+    GRUPOS ||--o{ PERFIL : "clasifica perfiles"
+    MEDIA ||--|| PERFIL : "foto de perfil"
+    MEDIA ||--o{ ME_GUSTA : "recibe me gusta"
+
+    TAGS ||--o{ TAG_PERFIL : "se asigna a perfiles"
+    
+    SUSCRIPCION ||--o{ CONTRATO : "define plan"
+    DESCUENTOS ||--o{ CUPONES : "genera cupones"
+
+    %% Vista
+    LISTA_TAGS {
+        text tag
+        integer idUser
+    }

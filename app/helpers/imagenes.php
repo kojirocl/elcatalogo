@@ -23,7 +23,7 @@ class Imagenes{
     /////////////////////////////////////////////////////////////////
     static function img_seguridad(){
         $img= new \Image;
-        $img->captcha('./recursos/fonts/CHILLER.TTF',35,5,'SESSION.captcha_code');
+        $img->captcha('fonts/CHILLER.TTF',35,5,'SESSION.captcha_code');
         $img->render();
     }
 
