@@ -8,7 +8,7 @@
 
                     <?php if ($usuario['idFotoPerfil']): ?>
                         
-                            <img src="<?= ('uploads/thumbs/'.$usuario['foto_perfil']) ?>" class="card-img-top img-thumbnail">   
+                            <img src="<?= ('/uploads/thumbs/'.$usuario['foto_perfil']) ?>" class="card-img-top img-thumbnail">   
                         
                         <?php else: ?>
                             <svg class="bd-placeholder-img img-thumbnail img-rounded" role="img" aria-label="Aqui va foto!" preserveAspectRatio="xMidYMid slice" focusable="false">

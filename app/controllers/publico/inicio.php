@@ -14,13 +14,22 @@ class Inicio extends General{
 			$usuario = $f3->get('SESSION.usuario.nombre');
 			$f3->set('saludo', '/ Bienvenid@ '.$usuario);
 		}
-
-        $assets->addJs('js/vendor/axios.min.js',4,'head');
-        $assets->addJs('js/user/inicio2.js');
         
         $f3->set('filtro', \Elcatalogo::armarFiltros());
-        $f3->set('usuarios', \Elcatalogo::getDatosPerfil(null, null));
 
+        $datos = \Helpers\ShowData::getAll(null, null,null,0);
+
+        $f3->set('usuarios', $datos['subset'] );
+        
+        $barra_paginacion = \Helpers\Paginacion::barra_paginacion(
+            $datos['pagina_actual'],
+            $datos['total_paginas'],
+            $datos['filtros']
+        );
+        
+        $f3->set('paginas', $barra_paginacion);
+        
+        
         $f3->set('contenido', \Template::instance()->render(self::ruta));
 
     }

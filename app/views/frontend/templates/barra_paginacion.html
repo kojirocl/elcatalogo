@@ -1,0 +1,15 @@
+<nav aria-label="navegacion_pagina">
+    <ul class="pagination justify-content-center">
+        
+        <repeat group="{{ @paginas }}" value="{{ @pagina }}">
+            <li class="page-item">
+                <a 
+                    class="page-link {{ @pagina.habilitada }}" 
+                    href="{{ @pagina['enlace']}}"
+                >
+                    {{ @pagina['pagina'] }}
+                </a>
+            </li>
+        </repeat>
+    </ul>
+</nav>

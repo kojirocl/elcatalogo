@@ -21,6 +21,12 @@ class Registro extends General{
         $audit = \Audit::instance();
         $error = 0;
 
+/*         echo '<pre>';
+        echo '<p>'.print_r($valores).'</p>';
+        echo '<p>el catpcha en session es: '.$f3->get('SESSION.captcha_code').'</p>';
+
+        exit(); */
+
         if ($valores['captcha'] == $f3->get('SESSION.captcha_code')) {
             
             if ($f3->get('DEBUG')!=0) $en_serio= FALSE;
@@ -48,7 +54,7 @@ class Registro extends General{
                 $error = 1;
             }
         } else {
-            $f3->set('apodo', $valores['apodo']);
+            //$f3->set('apodo', $valores['apodo']);
             $f3->set('email', $valores['email']);
             $f3->set('mensaje_captcha', 'reintente, el captcha no coincide');
             $error = 1;
@@ -107,6 +113,7 @@ class Registro extends General{
                 $perfil->crear_nuevo($user->idUser, $email);
                 $f3->set('mensaje', '¡Correo validado! Ya puedes iniciar sesión.');
                 $f3->copy('CSRF','SESSION.csrf');
+                $f3->set('emailConfirmado', $email);
                 $pagina = 'frontend/templates/login.html';
                 break;
             case 0:

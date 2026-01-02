@@ -44,12 +44,15 @@
     margin-left: 0.5rem;
   }
 </style>
+<!-- assets-head -->
 </head>
 <body>
     <div>
         <nav class="navbar navbar-expand-sm border-bottom border-body sticky-top" data-bs-theme="dark">
             <div class="container-fluid">
-               <?php echo $this->render('frontend/templates/logo.html',NULL,get_defined_vars(),0); ?>
+               
+<?php echo $this->render('frontend/templates/logo.html',NULL,get_defined_vars(),0); ?>
+
                
                 <span class="navbar-text">
                     <a class="btn" href="/privado/salir" role="button">salir</a>
@@ -59,13 +62,16 @@
         </nav>
     </div>
     <div>
-        <?php echo $this->render('components/lightsComp.html',NULL,get_defined_vars(),0); ?>
+        
+<?php echo $this->render('components/lightsComp.html',NULL,get_defined_vars(),0); ?>
+
     </div>
 
     <div class="d-flex flex-nowrap h-100">
         <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary toggled" style="width: 170px;">
             <title>aqui la foto del user</title>
-            <?php if (strlen($SESSION['usuario']['fotoPerfilLocation']) == 0): ?>
+            
+<?php if (strlen($SESSION['usuario']['fotoPerfilLocation']) == 0): ?>
                 
                     <svg class="bd-placeholder-img img-thumbnail" width="90" height="90" role="img" aria-label="Aqui va foto!" preserveAspectRatio="xMidYMid slice" focusable="false">
                         <rect width="100%" height="100%" fill="#868e96"></rect>
@@ -77,10 +83,13 @@
                 
             <?php endif; ?>
 
+
             <ul class="nav flex-column mb-auto">
-                <?php foreach (($items_menu?:[]) as $titulo=>$item): ?>
+                
+<?php foreach (($items_menu?:[]) as $titulo=>$item): ?>
                     <li class="nav-item click"><a class="nav-link" href="<?= ($item['url']) ?>"><i class="bi <?= ($item['icono']) ?>"></i> <?= ($titulo) ?></a></li>
                 <?php endforeach; ?>
+
             </ul>
 
             
@@ -97,6 +106,8 @@
     <!-- assets-footer -->
 
     
+
+<!-- assets-footer -->
 </body>
 </html>
 

@@ -25,6 +25,7 @@
     </div>
     <br>
     <div id="tags" class="container" name="filtros">
+        <h5 class="tc-heading mb-3">Filtros</h5>
 <!--         <div class="container">
             <div class="btn-group btn-group-sm" role="group">
                 <?php foreach (($filtro['tags']?:[]) as $valor): ?>

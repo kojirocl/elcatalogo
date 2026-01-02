@@ -1,14 +1,14 @@
-<div class="row row-cols-1 row-cols-md-4 g-4 " >
+<div class="row g-3" >
 
     <?php foreach (($usuarios?:[]) as $usuario): ?>
-        <div class="col">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card h-100 tarjeta" >
                 <div class="card-img-container">
                     <a href="/perfil/<?= ($usuario['idUser']) ?>" class="ver-perfil">
 
                     <?php if ($usuario['idFotoPerfil']): ?>
                         
-                            <img src="<?= ('uploads/thumbs/'.$usuario['foto_perfil']) ?>" class="card-img-top img-thumbnail">   
+                            <img src="<?= ('/uploads/thumbs/'.$usuario['foto_perfil']) ?>" class="card-img-top img-thumbnail">   
                         
                         <?php else: ?>
                             <svg class="bd-placeholder-img img-thumbnail img-rounded" role="img" aria-label="Aqui va foto!" preserveAspectRatio="xMidYMid slice" focusable="false">
@@ -48,5 +48,11 @@
 <style>
 [data-bs-theme="dark"] .card-img-container {
   background-color: inherit; 
+}
+/* evita que las tarjetas se vean gigantes en pantallas muy anchas */
+.card.tarjeta {
+  max-width: 320px;   /* o 360px si quieres un poco más grandes */
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

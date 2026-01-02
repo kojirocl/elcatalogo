@@ -24,7 +24,7 @@
           <div class="mb-4">
             <label for="email" class="form-label tc-text">Correo Electrónico</label>
             <input type="email" class="form-control" id="email" name="email" 
-                   placeholder="ejemplo@correo.com" x-model="email" required>
+                   placeholder="ejemplo@correo.com" x-model="email" value="<?= (isset($emailConfirmado)?$emailConfirmado:'') ?>" required>
           </div>
 
           <!-- Password con toggle -->

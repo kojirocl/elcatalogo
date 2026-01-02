@@ -4,7 +4,7 @@ class mCiudades extends \DB\Jig\Mapper{
     protected $tabla = 'cl.json';
 
     function __construct() {
-        $db = new \DB\Jig('db/');
+        $db = new \DB\Jig('../app/db/');
         parent::__construct($db, $this->tabla );
 
     }
@@ -21,7 +21,7 @@ class mCiudades extends \DB\Jig\Mapper{
         $seen = [];
         
         foreach($result as $ciudad) {
-            if (!in_array($ciudad['admin_name'], $seen)) {
+            if (!in_array($ciudad['admin_name'], $seen)){
                 $capitales[] = $ciudad;
                 $seen[] = $ciudad['admin_name'];
             }

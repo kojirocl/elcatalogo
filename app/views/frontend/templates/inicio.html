@@ -26,14 +26,17 @@
     <br>
     <div id="tags" class="container" name="filtros">
         <h5 class="tc-heading mb-3">Filtros</h5>
-<!--         <div class="container">
-            <div class="btn-group btn-group-sm" role="group">
-                <repeat group="{{ @filtro.tags }}" value="{{ @valor }}">
-                    <button class="btn btn-outline-secondary tag" data-bs-toggle="button" id="{{ @valor['idTag'] }}">{{ @valor['tag'] }}</button>
-                </repeat>
-            </div>  
+        <exclude>
+            <div class="container">
+                <div class="btn-group btn-group-sm" role="group">
+                    <repeat group="{{ @filtro.tags }}" value="{{ @valor }}">
+                        <button class="btn btn-outline-secondary tag" data-bs-toggle="button" id="{{ @valor['idTag'] }}">{{ @valor['tag'] }}</button>
+                    </repeat>
+                </div>  
 
-        </div> -->
+            </div>
+        </exclude>
+
 
         <div>
             <repeat group="{{ @filtro.tags }}" value="{{ @valor }}">
@@ -49,27 +52,7 @@
     <include href="frontend/templates/tarjetas_contenido.html" />
 </div>
 
-<!-- 
-<div class="modal fade" id="perfilModal" tabindex="-1" aria-labelledby="perfilModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="perfilModalLabel">Perfil de Usuario</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                 Aquí se cargará el contenido dinámico 
-                <div id="modal-content">
-                    Cargando...
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-        </div>
-    </div>
-</div> 
--->
+
 
 <style>
 #tags .btn {
@@ -98,21 +81,3 @@
 }
 
 </style>
-
-<!-- 
-<script>
-    function cargarPerfil(idUser) {
-    const modalContent = document.getElementById('modal-content');
-    modalContent.innerHTML = 'Cargando...';
-
-    axios.get('/mostrar/perfil/${idUser}')
-        .then(response => {
-        modalContent.innerHTML = response.data;
-        })
-        .catch(error => {
-        console.error('Error al cargar el perfil:', error);
-        modalContent.innerHTML = '<p>Error al cargar el perfil.</p>';
-        });
-    }
-</script> 
--->

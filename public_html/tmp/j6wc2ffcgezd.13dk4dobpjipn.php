@@ -29,9 +29,13 @@
           <!-- Captcha -->
           <div class="mb-4">
             <label class="form-label">Código de seguridad</label>
-            <div class="d-flex align-items-center gap-3">
-              <img src="/captcha" alt="captcha" class="rounded border"/>
-              <input type="text" class="form-control" name="dato[]" placeholder="Ingresa el código">
+            <div class="row g-2 align-items-center">
+              <div class="col-12 col-md-auto">
+                <img src="/captcha" alt="captcha" class="rounded border"/>
+              </div>
+              <div class="col-12 col-md">
+                <input type="text" class="form-control" name="dato[]" placeholder="Ingresa el código">
+              </div>
             </div>
           </div>
 

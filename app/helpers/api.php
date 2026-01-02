@@ -185,31 +185,20 @@ class Api{
         }  
 
         // preparar html con lista de comentarios
+        $perfil = [];
+
         $comentarios = new \mComentarios();
-        $result = $comentarios->get_comentarios($id,10);
-
-        $info = ['conectado'=>0,
-                'puedo_comentar'=>0,
-                'sessionId' => 0,
-                'tengo_comentario' =>0];
-                
-        if($f3->exists('SESSION.usuario')){
-            $info['conectado'] = 1;
-            $info['sessionId'] = $f3->get('SESSION.usuario.id');
-
-            if ($f3->get('SESSION.usuario.id') != $id){
-                $info['puedo_comentar'] = 1;
-                $info['tengo_comentario'] = $comentarios->get_comentario($f3->get('SESSION.usuario.id'), $id);
-
-            }
-        }
-
-        $f3->set('info_comentarios', $info);
-
-        $f3->set('comentarios', $result);
-        $contenido_comentarios= 'frontend/templates/comentario_lista.html';
+        $totalComentarios = $comentarios->get_comentarios($id,10);
+        $perfil['comentarios'] = $totalComentarios;
         
-        $html = \Template::instance()->render($contenido_comentarios);
+        $perfil['esMiPerfil'] = false;
+
+        $miComentario = \Elcatalogo::tengoComentario($idOrigen, $totalComentarios);
+        $perfil['miComentario'] = $miComentario ? $miComentario->cast() : null;
+        
+        $f3->set('infoPerfil', $perfil);
+               
+        $html = \Template::instance()->render('frontend/templates/comentario_lista_2.html');
 
 
         echo json_encode([

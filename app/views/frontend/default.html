@@ -19,7 +19,13 @@
 
   <link rel="stylesheet" href="css/animate.min.css">
 
+
+
   <script src="js/vendor/alpinejs.min.js" defer></script>
+  
+  <script src="js/vendor/axios.min.js"></script>
+  <script src="js/user/inicio2.js"></script>
+
 <!-- assets-head -->
 <style>
   html {
@@ -74,6 +80,19 @@
       {{ @contenido | raw }}
     </div>
 
+  </div>
+  
+  <check if="{{ isset(@paginas) }}">
+    <include href="/frontend/templates/barra_paginacion.html"></include>
+  </check>
+  
+
+  
+    
+  </div>
+
+  <div id="footer">
+    <include href="/frontend/templates/footer.html"></include>  
   </div>
 </div>
 <!-- assets-footer -->

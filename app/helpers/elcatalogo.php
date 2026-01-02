@@ -1,7 +1,15 @@
 <?php
 class Elcatalogo{
     
+    public static function tengoComentario($idMio, $comentarios){
+        foreach($comentarios as $info){
+            if ($info['idUserOrigen'] === $idMio)
+                return $info; 
+        }
 
+        return null;
+
+    } 
 
     function estaLogeado(){
         $f3 = \Base::instance();
@@ -20,45 +28,6 @@ class Elcatalogo{
         }
     }
 
-
-    static function getDatosPerfil($id = null, $region = null, $ciudad = null){
-        
-        $db = Base::instance()->get('BD');
-
-        $condicion ='';
-
-        if ($id) $condicion .= " AND perfil.idUser=$id";
-
-        if ($ciudad != 'Todas' && $ciudad != null){
-            $condicion .= " AND perfil.ciudad='$ciudad'";
-        }else if ($region!='Todas' && $region != null){
-            $condicion .= " AND perfil.region='$region'";
-            
-        }
-
-        $sql= "SELECT perfil.*, media.ubicacion AS foto_perfil 
-            FROM perfil 
-            LEFT JOIN media ON perfil.idFotoPerfil = media.id
-            WHERE perfil.activo = 1".$condicion;
-
-
-        $result = $db->exec($sql);
-        
-        return $result;
-
-    }
-    /*
-SELECT perfil.*, 
-       media.ubicacion, 
-       COUNT(me_gusta.id) AS total_me_gusta
-FROM perfil
-LEFT JOIN media ON perfil.idFotoPerfil = media.id
-LEFT JOIN me_gusta ON perfil.idUser = me_gusta.idUser_destino
-WHERE perfil.activo = 1
-GROUP BY perfil.idUser, media.ubicacion;
-
-    */
-
     static function mail_confirmacion($f3,$codigo, $valores){
         $host="smtp.elcatalogo.cl";
         $port=587;
@@ -69,7 +38,7 @@ GROUP BY perfil.idUser, media.ubicacion;
         $smtp = new \SMTP( $host, $port, $scheme, $user, $pw );
 
         $smtp->set('Errors-to', '<contacto@elcatalogo.cl>');
-        $smtp->set('To', '"'.$valores['apodo'].'" <'.$valores['email'].'>');
+        $smtp->set('To', '"'.$valores['apodo']? $valores['apodo'] :'' .'" <'.$valores['email'].'>');
         $smtp->set('From', $user);
         $smtp->set('Subject', 'Codigo verificacion ElCatalogo.cl');
 
@@ -261,6 +230,7 @@ GROUP BY perfil.idUser, media.ubicacion;
         //$filtros['tags']= $tags->GetTags(20);
         $filtros['tags']= $tags->getTop20();
 
+
         return $filtros;
 
     }
@@ -269,7 +239,6 @@ GROUP BY perfil.idUser, media.ubicacion;
         $f3 = \Base::instance();
 
         return $f3->exists('SESSION.usuario');
-
     }
 
     static function verificar_csrf($token, $csrf){ 
@@ -292,6 +261,55 @@ GROUP BY perfil.idUser, media.ubicacion;
         $pwd = $f3->get('SALT').$pwd;
         return password_hash($pwd, PASSWORD_DEFAULT);
     }
+
+    static function GetContenido($condiciones = null){
+		
+		$db = \Base::instance()->get('DB');
+
+        
+        $sql = "SELECT perfil.*, media.ubicacion AS foto_perfil 
+            FROM perfil 
+            LEFT JOIN media ON perfil.idFotoPerfil = media.id
+            WHERE perfil.activo = 1 ".$condiciones;
+
+        $result = $db->exec($sql);
+
+        return $result;
+    }
+
+    /*
+    static function ArmarCondiciones(){
+		$datos = $mapper->paginate($f3->get('GET.page')-1, self::por_pagina, $filtro_f3);
+
+		$seo = [
+            'title' => ' El Catalogo ',
+        	//'description' => ucwords($datos['titulo']),
+			'url' => $f3->get('REALM')
+		];
+
+		$f3->set('seo', $seo);	
+		$f3->set('titulo_de_pagina', ucwords($texto));
+
+
+
+		$f3->set('barra_back_home', \Template::instance()->render('barra_back_home.html'));
+		$f3->set('tarjetas' , \Componentes::tarjetas_frontend($datos));
+		$f3->set('barra_paginacion', \Componentes::barra_paginacion($f3->get('GET.page'), $datos['count'], \Gealib::filtros_url($filtro)));
+	
+/*
+        $sql= "SELECT perfil.*, media.ubicacion AS foto_perfil 
+            FROM perfil 
+            LEFT JOIN media ON perfil.idFotoPerfil = media.id
+            WHERE perfil.activo = 1".$condicion;
+
+
+        $result = $db->exec($sql);
+
+
+
+    }
+*/
+        
 
 
 }

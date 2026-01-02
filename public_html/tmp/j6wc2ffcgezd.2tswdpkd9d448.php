@@ -19,7 +19,13 @@
 
   <link rel="stylesheet" href="css/animate.min.css">
 
+
+
   <script src="js/vendor/alpinejs.min.js" defer></script>
+  
+  <script src="js/vendor/axios.min.js"></script>
+  <script src="js/user/inicio2.js"></script>
+
 <!-- assets-head -->
 <style>
   html {
@@ -41,31 +47,38 @@
   }
 </style>
 
+<!-- assets-head -->
 </head>
 <body>
   <div id="barra">
     <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
 
-        <?php echo $this->render('frontend/templates/logo.html',NULL,get_defined_vars(),0); ?>
+        
+<?php echo $this->render('frontend/templates/logo.html',NULL,get_defined_vars(),0); ?>
+
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barraNavegacion" aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="barraNavegacion">
             <ul class="navbar-nav">
-                <?php foreach (($items_menu?:[]) as $titulo=>$item): ?>
+                
+<?php foreach (($items_menu?:[]) as $titulo=>$item): ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= ($item['url']) ?>" data-ajax><i class="bi <?= ($item['icono']) ?>"></i> <?= ($titulo) ?></a>
                     </li>
                 <?php endforeach; ?>
+
             </ul>
         </div>
       </div>
     </nav>
   </div>
   <div>
-    <?php echo $this->render('components/lightsComp.html',NULL,get_defined_vars(),0); ?>
+    
+<?php echo $this->render('components/lightsComp.html',NULL,get_defined_vars(),0); ?>
+
   </div>
 
   <div class="principal container container-fluid">
@@ -75,6 +88,23 @@
 " ?>
     </div>
 
+  </div>
+  
+  
+<?php if (isset($paginas)): ?>
+    <?php echo $this->render('/frontend/templates/barra_paginacion.html',NULL,get_defined_vars(),0); ?>
+  <?php endif; ?>
+
+  
+
+  
+    
+  </div>
+
+  <div id="footer">
+    
+<?php echo $this->render('/frontend/templates/footer.html',NULL,get_defined_vars(),0); ?>
+  
   </div>
 </div>
 <!-- assets-footer -->
@@ -87,5 +117,7 @@
       document.documentElement.setAttribute('data-bs-theme', modo ? 'dark' : 'light');
     });
   </script>
+
+<!-- assets-footer -->
 </body>
 </html>

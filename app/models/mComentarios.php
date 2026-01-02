@@ -45,17 +45,18 @@ class mComentarios extends \DB\SQL\Mapper{
 
     function get_comentarios($idPerfil, $cuantos=0){
         
-        if ($cuantos){
-            return $this->find(array('idUserDestino=?', $idPerfil),array('order'=>'fecha DESC', 'limit'=>$cuantos));
-        }
-        
-        return $this->find(array('idUserDestino=?', $idPerfil),array('order'=>'fecha DESC'));
+        if ($cuantos)
+            $r = $this->find(array('idUserDestino=?', $idPerfil),array('order'=>'fecha DESC', 'limit'=>$cuantos));
+        else
+            $r = $this->find(array('idUserDestino=?', $idPerfil),array('order'=>'fecha DESC'));
+
+        return $r;
 
     }
 
     function get_comentario($idUserOrigen, $idUserDestino){
 
-        return $this->count(array('idUserOrigen=? AND idUserDestino=?', $idUserOrigen, $idUserDestino));
+        return $this->load(array('idUserOrigen=? AND idUserDestino=?', $idUserOrigen, $idUserDestino));
     }
 
 }

@@ -4,7 +4,6 @@ namespace Publico;
 class Perfil extends General{
     const ruta = 'frontend/templates/perfil.html';
 
-
     function verPerfil(){
         $f3 = \Base::instance();
         $assets = \Assets::instance();
@@ -36,12 +35,19 @@ class Perfil extends General{
             if ($f3->get('SESSION.usuario.id') != $idPerfil){
                 //$f3->set("habilitado","");
                 $info['puedo_comentar'] = 1;
-                $info['tengo_comentario'] = $comentarios->get_comentario($f3->get('SESSION.usuario.id'), $idPerfil);
+                $mi_comentario = $comentarios->get_comentario($f3->get('SESSION.usuario.id'), $idPerfil);
+                
+                if ($mi_comentario){
+                    $info['tengo_comentario'] = 1;
+                    $info['mi_comentario'] = $mi_comentario;
+                }
+                
                 $habilitado ='';
                 $muestra = 1;
                 //$f3->set('tengoComentario', array($comentarios->get_comentario($f3->get('SESSION.usuario.id'), $idPerfil), $idPerfil));
             }
         }
+
 
         $f3->set('info_comentarios', $info);
 
@@ -64,32 +70,21 @@ class Perfil extends General{
             //$contenido_comentarios = 'frontend/templates/mensaje.html';
 
         };
-        $contenido_comentarios= 'frontend/templates/comentario_lista.html';
+
+        
+        $contenido_comentarios= \Template::instance()->render('frontend/templates/comentario_lista.html');
         
         $f3->set('carrusel', \Template::instance()->render('frontend/templates/perfil_carrusel.html'));
         
-        $f3->set('lista_comentarios', \Template::instance()->render($contenido_comentarios));
+        $f3->set('lista_comentarios', $contenido_comentarios);
 
 
-        $assets->addJs('bootstrap/js/bootstrap.min.js',5,'head');
         $assets->addJs('js/vendor/axios.min.js',4,'head');
 
         $assets->addJs('js/user/me_gusta.js');
         $assets->addJs('js/user/comentarios.js');
 
         $f3->set('contenido', \Template::instance()->render(self::ruta));
-
-    }
-
-    function ver_perfil_2(){
-        $f3 = \Base::instance();
-        $assets = \Assets::instance();
-
-        $assets->addJs('bootstrap/js/bootstrap.min.js',5,'head');
-        $assets->addJs('js/vendor/axios.min.js',4,'head');
-
-        $assets->addJs('js/user/me_gusta.js');
-        $assets->addJs('js/user/comentarios.js');
 
     }
 
