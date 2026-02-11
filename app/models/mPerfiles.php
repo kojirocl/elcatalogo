@@ -1,4 +1,5 @@
 <?php
+
 class mPerfiles extends \DB\SQL\Mapper{
     protected $tabla='perfil';
 

@@ -1,0 +1,276 @@
+<!-- Contenedor principal con Alpine.js -->
+<div x-data="filtrosApp()" x-init="init()">
+    <div id="filtros" class="container">
+        <div id="regiones" class="container">
+            <form id="filtrar-form">
+                <div class="row">
+                    <div class="col-auto">
+                        <select 
+                            class="form-select form-select-sm" 
+                            aria-label="Regiones" 
+                            id="region" 
+                            name="region"
+                            x-model="region"
+                            @change="onRegionChange($event)"
+                        >
+                            <option value="" selected>Todas</option>
+                            <repeat group="{{ @regiones }}" value="{{ @region }}">
+                                <option value="{{ @region }}">{{ @region }}</option>	
+                            </repeat>
+                        </select>
+                    </div>
+
+                    <div class="col-auto">
+                        <select 
+                            class="form-select form-select-sm" 
+                            aria-label="Ciudades" 
+                            name="ciudad" 
+                            id="ciudades"
+                            x-model="ciudad"
+                            @change="filtrarTarjetas()"
+                        >
+                            <option value="" selected>Todas</option>
+                            <!-- Ciudades se cargarán dinámicamente -->
+                            <template x-if="ciudadesCargadas.length > 0">
+                                <template x-for="ciudad in ciudadesCargadas" :key="ciudad">
+                                    <option :value="ciudad" x-text="ciudad"></option>
+                                </template>
+                            </template>
+                            <!-- Fallback para carga inicial -->
+                            <repeat group="{{ @ciudades }}" value="{{ @ciudad }}">
+                                <option value="{{ @ciudad.city }}">{{ @ciudad.city }}</option>	
+                            </repeat>
+                        </select>
+                    </div>
+                </div>
+            </form>	
+        </div>
+    </div>
+
+    <div id="tags" class="container" name="filtros">
+        <h5 class="tc-heading mb-3">Filtros</h5>
+        <div>
+            <repeat group="{{ @tags }}" value="{{ @valor }}">
+                <button 
+                    class="btn btn-outline-secondary btn-sm tag px-2" 
+                    :class="{ 'active': tagsSeleccionados.includes('{{ @valor['idTag'] }}') }"
+                    id="{{ @valor['idTag'] }}"
+                    @click="toggleTag('{{ @valor['idTag'] }}')"
+                    x-text="{{ @valor['tag'] }}"
+                ></button>
+            </repeat>
+        </div>  
+    </div>
+
+    <!-- Contenedor para las tarjetas (debe existir en tu HTML) -->
+    <div id="tarjetas-container">
+        <!-- Aquí se cargarán las tarjetas dinámicamente -->
+    </div>
+</div>
+
+<script>
+    // Definición del componente Alpine.js
+function filtrosApp() {
+    return {
+        // Estado reactivo
+        region: '',
+        ciudad: '',
+        tagsSeleccionados: [],
+        ciudadesCargadas: [],
+        isLoading: false,
+        
+        // Inicialización
+        init() {
+            console.log('Alpine.js inicializado');
+            // Inicializar con valores del HTML si existen
+            this.region = document.getElementById('region')?.value || '';
+            this.ciudad = document.getElementById('ciudades')?.value || '';
+            
+            // Cargar tags activos iniciales
+            this.cargarTagsActivosIniciales();
+        },
+        
+        // Cargar tags que ya estaban activos (si los hay)
+        cargarTagsActivosIniciales() {
+            const tagsActivos = document.querySelectorAll('.btn.tag.active');
+            this.tagsSeleccionados = Array.from(tagsActivos).map(btn => btn.id);
+        },
+        
+        // Cuando cambia la región
+        async onRegionChange(event) {
+            this.region = event.target.value;
+            this.ciudad = ''; // Resetear ciudad
+            
+            // Si no hay región seleccionada, mostrar todas las ciudades iniciales
+            if (!this.region) {
+                this.ciudadesCargadas = [];
+                this.filtrarTarjetas();
+                return;
+            }
+            
+            // Cargar ciudades para la región seleccionada
+            await this.cargarCiudades();
+        },
+        
+        // Cargar ciudades dinámicamente
+        async cargarCiudades() {
+            this.isLoading = true;
+            
+            const formData = new FormData();
+            formData.append('region', this.region);
+            
+            try {
+                const response = await fetch('regiones', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) throw new Error('Error al cargar ciudades');
+                
+                const ciudadesHTML = await response.text();
+                
+                // Parsear el HTML para extraer las opciones
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(ciudadesHTML, 'text/html');
+                const options = doc.querySelectorAll('option');
+                
+                // Extraer valores de las ciudades
+                this.ciudadesCargadas = Array.from(options)
+                    .map(opt => opt.value)
+                    .filter(value => value !== ''); // Filtrar opción "Todas"
+                
+                // Filtrar tarjetas después de cargar ciudades
+                this.filtrarTarjetas();
+                
+            } catch (error) {
+                console.error('Error cargando ciudades:', error);
+                this.ciudadesCargadas = [];
+            } finally {
+                this.isLoading = false;
+            }
+        },
+        
+        // Manejar tags
+        toggleTag(tagId) {
+            const index = this.tagsSeleccionados.indexOf(tagId);
+            
+            if (index === -1) {
+                // Añadir tag
+                this.tagsSeleccionados.push(tagId);
+            } else {
+                // Quitar tag
+                this.tagsSeleccionados.splice(index, 1);
+            }
+            
+            // Actualizar clase visual del botón
+            const btn = document.getElementById(tagId);
+            if (btn) {
+                btn.classList.toggle('active');
+                btn.classList.toggle('btn-outline-secondary');
+                btn.classList.toggle('btn-secondary');
+            }
+            
+            // Filtrar después de cambiar tags
+            this.filtrarTarjetas();
+        },
+        
+        // Función principal de filtrado
+        async filtrarTarjetas() {
+            this.isLoading = true;
+            
+            const formData = new FormData();
+            formData.append('region', this.region);
+            formData.append('ciudad', this.ciudad);
+            
+            // Añadir tags seleccionados
+            this.tagsSeleccionados.forEach(tag => {
+                formData.append('tag[]', tag);
+            });
+            
+            formData.append('cuantos', this.tagsSeleccionados.length);
+            
+            try {
+                const response = await fetch('filtrar', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) throw new Error('Error al filtrar');
+                
+                const tarjetasHTML = await response.text();
+                
+                // Actualizar el contenedor de tarjetas
+                const tarjetasContainer = document.getElementById('tarjetas');
+                if (tarjetasContainer) {
+                    tarjetasContainer.innerHTML = tarjetasHTML;
+                }
+                
+                // Re-inicializar cualquier funcionalidad en las nuevas tarjetas
+                this.reinicializarEventosTarjetas();
+                
+            } catch (error) {
+                console.error('Error filtrando tarjetas:', error);
+                const tarjetasContainer = document.getElementById('tarjetas');
+                if (tarjetasContainer) {
+                    tarjetasContainer.innerHTML = '<p class="text-danger">Error al cargar los resultados.</p>';
+                }
+            } finally {
+                this.isLoading = false;
+            }
+        },
+        
+        // Reinicializar eventos en las nuevas tarjetas
+        reinicializarEventosTarjetas() {
+            // Aquí puedes agregar lógica para reinicializar
+            // eventos en las tarjetas recién cargadas
+            
+            // Ejemplo: Reasignar eventos de "ver perfil"
+            document.querySelectorAll('a.ver-perfil').forEach(enlace => {
+                enlace.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const url = enlace.getAttribute('href');
+                    this.cargarContenido(url);
+                });
+            });
+        },
+        
+        // Cargar contenido dinámico (para perfiles, etc.)
+        async cargarContenido(url, pushHistory = true) {
+            try {
+                const response = await fetch(url);
+                const contenidoHTML = await response.text();
+                
+                // Actualizar algún contenedor específico
+                const contenidoContainer = document.getElementById('contenido');
+                if (contenidoContainer) {
+                    contenidoContainer.innerHTML = contenidoHTML;
+                }
+                
+                if (pushHistory) {
+                    history.pushState({ url }, '', url);
+                }
+                
+            } catch (error) {
+                console.error('Error cargando contenido:', error);
+            }
+        }
+    };
+}
+
+// Inicializar Alpine.js cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', function() {
+    // Alpine.js ya debería estar cargado
+    console.log('DOM cargado, Alpine.js activo');
+    
+    // Manejar el historial del navegador
+    window.addEventListener('popstate', function(e) {
+        if (e.state?.url) {
+            // Si hay un componente Alpine activo, podrías emitir un evento
+            const event = new CustomEvent('cargar-url', { 
+                detail: { url: e.state.url, pushHistory: false } 
+            });
+            document.dispatchEvent(event);
+        }
+    });
+});
+</script>

@@ -27,24 +27,28 @@ class mCiudades extends \DB\Jig\Mapper{
             }
         }
         
-        return $capitales;
+        return $seen;
     }
 
     function GetCiudades($region='Todas'){
 
-        $filtro = null;
+        $condicion = null;
 
-        if ($region != 'Todas') $filtro = array('@admin_name=:region', ':region'=> $region);
+        if ($region != 'Todas') $condicion = array('@admin_name=:region', ':region'=> $region);
         
-        return $this->find($filtro, array('order'=>'city SORT_ASC'));
-        
+        $ciudades = $this->find($condicion, array('order'=>'city SORT_ASC'));
 
+        $respuesta = [];
+        foreach($ciudades as $ciudad){
+            $respuesta[]= $ciudad;
+        }
+
+        return $respuesta;
     }
 
     function GetRegion($ciudad){
         $filtro = array('@city=:ciudad', ':ciudad'=> $ciudad);
         $this->load($filtro);
-
 
         return $this->get('admin_name');
     }

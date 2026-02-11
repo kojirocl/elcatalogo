@@ -7,7 +7,7 @@
                     <select class="form-select form-select-sm" aria-label="Regiones" id="region" name="region">
                         <option selected>Todas</option>
                         <?php foreach (($filtro['regiones']?:[]) as $region): ?>
-                            <option value="<?= ($region['admin_name']) ?>"><?= ($region['admin_name']) ?></option>	
+                            <option value="<?= ($region) ?>"><?= ($region) ?></option>	
                         <?php endforeach; ?>
                     </select>
                 </div>

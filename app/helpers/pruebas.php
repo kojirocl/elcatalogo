@@ -1,4 +1,5 @@
 <?php
+
 class Pruebas{
 
     function inicio($f3, $params){

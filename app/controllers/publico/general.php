@@ -2,14 +2,12 @@
 namespace Publico;
 
 class General{
-	const ruta = 'frontend/default.html';
+	const ruta = 'frontend/default_copy.html';
 
 	function afterRoute(){
 
 		$f3 = \Base::instance();
 		$assets = \Assets::instance(); 
-
-		
         //CSS
         $assets->addCss('bootstrap/css/bootstrap.css',5,'head');
         $assets->addCss('css/bootstrap-icons.css');

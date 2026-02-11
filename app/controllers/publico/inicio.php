@@ -2,67 +2,59 @@
 namespace Publico;
 
 class Inicio extends General{
-    const ruta = 'frontend/templates/inicio.html';
+    const ruta = 'frontend/templates/inicio_copy.html';
 
-    function inicio(){
-        $f3 = \Base::instance();
-        $assets = \Assets::instance();
-        
+    function beforeRoute($f3){
         $f3->set('saludo','');
         
         if ($f3->get('SESSION.usuario.id') != NULL){
 			$usuario = $f3->get('SESSION.usuario.nombre');
 			$f3->set('saludo', '/ Bienvenid@ '.$usuario);
 		}
-        
-        $f3->set('filtro', \Elcatalogo::armarFiltros());
 
-        $datos = \Helpers\ShowData::getAll(null, null,null,0);
+        $filtros = \Elcatalogo::armarFiltros();
 
-        $f3->set('usuarios', $datos['subset'] );
-        
-        $barra_paginacion = \Helpers\Paginacion::barra_paginacion(
-            $datos['pagina_actual'],
-            $datos['total_paginas'],
-            $datos['filtros']
+        $contenido_html ='';
+        $f3->set('filtros', \Template::instance()->render(
+                                                'frontend/templates/filtros.html', 
+                                                'text/html', 
+                                                $filtros)
         );
-        
-        $f3->set('paginas', $barra_paginacion);
-        
-        
-        $f3->set('contenido', \Template::instance()->render(self::ruta));
-
     }
 
-    
-    function comboCiudades(){
-        $f3 = \Base::instance();  
-        
-        try{
-            $region = $f3->get('POST.region');
+    function inicio($f3){
+        $assets = \Assets::instance();
+      
+        $pagina = $_GET['page'] ?? 1;
+        $params = array(
+            'pagina' => $pagina
+        );
 
-            $city = new \mCiudades;
-            //$result = $city->GetCiudades($region);
+        $datos = \Paginacion::buscarPerfiles($params);
+        $info['usuarios'] = $datos['subset'];
 
-            $f3->set('ciudades',$city->GetCiudades($region));
-            echo \Template::instance()->render('frontend/templates/combo_ciudades.html');
+        $contenido_html ='';
+        $f3->set('tarjetas', \Template::instance()->render(
+                                                    'frontend/templates/tarjetas_contenido.html', 
+                                                    'text/html', 
+                                                    $info)
+        );
 
-        } catch (\Exception $e) {   
-            echo $e->getMessage();
-        }
+        $barra_paginacion = \Paginacion::barra_paginacion($pagina, $datos['paginas'], []);
+        $aux['paginas'] = $barra_paginacion;
+        $f3->set('paginacion', \Template::instance()->render(
+                                                    'frontend/templates/barra_paginacion.html', 
+                                                    'text/html', 
+                                                    $aux)
+        ); 
+        //$f3->concat('contenido_html', $contenido_html);
+    }
 
+    function cargando(){
+        $f3 = \Base::instance();
+        echo \Template::instance()->render('components/loading.html');
         exit();
-
     }
-
-        function cargando(){
-            $f3 = \Base::instance();
-            echo \Template::instance()->render('components/loading.html');
-            exit();
-
-        }
-    
-
 }
 
 ?>

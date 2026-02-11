@@ -1,0 +1,432 @@
+Listado de rutas de carpetas para el volumen Windows
+El número de serie del volumen es 2A2B-2D5D
+C:.
+¦   .gitignore
+¦   dir.txt
+¦   directorio.txt
+¦   
++---app
+¦   +---config
+¦   ¦       config.ini
+¦   ¦       pruebas.ini
+¦   ¦       
+¦   +---controllers
+¦   ¦   +---admin
+¦   ¦   ¦       comun.php
+¦   ¦   ¦       descuentos.php
+¦   ¦   ¦       inicio.php
+¦   ¦   ¦       seguridad.php
+¦   ¦   ¦       
+¦   ¦   +---privado
+¦   ¦   ¦       contacto.php
+¦   ¦   ¦       indicadores.php
+¦   ¦   ¦       inicio.php
+¦   ¦   ¦       media.php
+¦   ¦   ¦       perfil.php
+¦   ¦   ¦       salir.php
+¦   ¦   ¦       suscripcion.php
+¦   ¦   ¦       user.php
+¦   ¦   ¦       
+¦   ¦   +---publico
+¦   ¦           contacto.php
+¦   ¦           general.php
+¦   ¦           inicio.php
+¦   ¦           login.php
+¦   ¦           perfil.php
+¦   ¦           registro.php
+¦   ¦           
+¦   +---db
+¦   ¦   ¦   chile.json
+¦   ¦   ¦   cl.json
+¦   ¦   ¦   elcatalogo.sqbpro
+¦   ¦   ¦   elcatalogo.sqlite
+¦   ¦   ¦   elcatalogo2.sqbpro
+¦   ¦   ¦   
+¦   ¦   +---consultasSQLelCatalogo
+¦   ¦   ¦       catalogo_script.sql
+¦   ¦   ¦       catalogo_script_solo_tablas.sql
+¦   ¦   ¦       crear bd.sql
+¦   ¦   ¦       datos.bd.sql
+¦   ¦   ¦       elcatalogo.sqlite.23may.sql
+¦   ¦   ¦       elcatalogo.sqlite.september.sql
+¦   ¦   ¦       tres.sql
+¦   ¦   ¦       uno.sql
+¦   ¦   ¦       
+¦   ¦   +---mermaid
+¦   ¦   ¦       er_diagram.mermaid
+¦   ¦   ¦       uml_class_diagram (1).mermaid
+¦   ¦   ¦       uml_class_diagram.mermaid
+¦   ¦   ¦       
+¦   ¦   +---old
+¦   ¦   ¦       catalogo.sqlite
+¦   ¦   ¦       elcatalogo.sqlite.sql
+¦   ¦   ¦       usuarios.sqlite
+¦   ¦   ¦       
+¦   ¦   +---vistas
+¦   ¦           VISTA contenido_principal.txt
+¦   ¦           VISTA lista_tags.txt
+¦   ¦           
+¦   +---helpers
+¦   ¦       ajax.php
+¦   ¦       api.php
+¦   ¦       assets.php
+¦   ¦       elcatalogo.php
+¦   ¦       imagenes.php
+¦   ¦       LogMailer.php
+¦   ¦       LoremIpsum.php
+¦   ¦       paginacion.php
+¦   ¦       pruebas.php
+¦   ¦       revisar.php
+¦   ¦       seguridad.php
+¦   ¦       showdata.php
+¦   ¦       
+¦   +---logs
+¦   ¦       login.log
+¦   ¦       media.log
+¦   ¦       smtp.log
+¦   ¦       
+¦   +---models
+¦   ¦       mBaseModel.php
+¦   ¦       mCatalogo.php
+¦   ¦       mCiudades.php
+¦   ¦       mComentarios.php
+¦   ¦       mContrato.php
+¦   ¦       mCupones.php
+¦   ¦       mDescuentos.php
+¦   ¦       mMedia.php
+¦   ¦       mMeGusta.php
+¦   ¦       mPerfiles.php
+¦   ¦       mRegistro.php
+¦   ¦       mSuscripcion.php
+¦   ¦       mTags.php
+¦   ¦       mTag_perfil.php
+¦   ¦       mTrafico.php
+¦   ¦       mUsers.php
+¦   ¦       
+¦   +---rutas
+¦   ¦       rutas.ini
+¦   ¦       
+¦   +---views
+¦       +---admin
+¦       ¦   ¦   layout.html
+¦       ¦   ¦   
+¦       ¦   +---templates
+¦       ¦           descuentos.html
+¦       ¦           inicio.html
+¦       ¦           
+¦       +---components
+¦       ¦       lightsComp.html
+¦       ¦       loading.html
+¦       ¦       
+¦       +---frontend
+¦       ¦   ¦   default.html
+¦       ¦   ¦   
+¦       ¦   +---templates
+¦       ¦           barra_filtros.html
+¦       ¦           barra_paginacion.html
+¦       ¦           barra_regiones.html
+¦       ¦           barra_tags.html
+¦       ¦           combo_ciudades.html
+¦       ¦           comentario.html
+¦       ¦           comentarioNew.html
+¦       ¦           comentario_lista.html
+¦       ¦           comentario_lista_2.html
+¦       ¦           comentario_nuevo.html
+¦       ¦           contacto.html
+¦       ¦           correo.html
+¦       ¦           email_confirmacion.html
+¦       ¦           error.html
+¦       ¦           footer.html
+¦       ¦           home.html
+¦       ¦           inicio.html
+¦       ¦           lista_comentarios.html
+¦       ¦           lista_medios.html
+¦       ¦           login.html
+¦       ¦           logo.html
+¦       ¦           mensaje.html
+¦       ¦           menu.html
+¦       ¦           navbar.html
+¦       ¦           perfil.html
+¦       ¦           perfil.html.bak
+¦       ¦           perfil2.html
+¦       ¦           perfil_carrusel.html
+¦       ¦           perfil_carrusel.html.bak
+¦       ¦           registro.html
+¦       ¦           registro2.html
+¦       ¦           tarjeta.html
+¦       ¦           tarjetas_contenido.html
+¦       ¦           
+¦       +---privado
+¦       ¦   ¦   layout.html
+¦       ¦   ¦   
+¦       ¦   +---templates
+¦       ¦           contacto.html
+¦       ¦           indicadores.html
+¦       ¦           media.html
+¦       ¦           perfil.html
+¦       ¦           suscripcion.html
+¦       ¦           suscripcion_contratar.html
+¦       ¦           suscripcion_detalle.html
+¦       ¦           user.html
+¦       ¦           
+¦       +---pruebas
+¦               heroic.html
+¦               inicio.html
+¦               logo.html
+¦               new_user.html
+¦               new_user2.html
+¦               test copy.html
+¦               test.html
+¦               test2.html
+¦               
++---lib
+¦   ¦   audit.php
+¦   ¦   auth.php
+¦   ¦   base.php
+¦   ¦   basket.php
+¦   ¦   bcrypt.php
+¦   ¦   CHANGELOG.md
+¦   ¦   code.css
+¦   ¦   composer.json
+¦   ¦   COPYING
+¦   ¦   f3.php
+¦   ¦   image.php
+¦   ¦   log.php
+¦   ¦   magic.php
+¦   ¦   markdown.php
+¦   ¦   matrix.php
+¦   ¦   README.md
+¦   ¦   session.php
+¦   ¦   sessionadapter.php
+¦   ¦   smtp.php
+¦   ¦   template.php
+¦   ¦   test.php
+¦   ¦   utf.php
+¦   ¦   web.php
+¦   ¦   
+¦   +---cli
+¦   ¦       ws.php
+¦   ¦       
+¦   +---db
+¦   ¦   ¦   cursor.php
+¦   ¦   ¦   jig.php
+¦   ¦   ¦   mongo.php
+¦   ¦   ¦   sql.php
+¦   ¦   ¦   
+¦   ¦   +---jig
+¦   ¦   ¦       mapper.php
+¦   ¦   ¦       session.php
+¦   ¦   ¦       
+¦   ¦   +---mongo
+¦   ¦   ¦       mapper.php
+¦   ¦   ¦       session.php
+¦   ¦   ¦       
+¦   ¦   +---sql
+¦   ¦           mapper.php
+¦   ¦           session.php
+¦   ¦           
+¦   +---web
+¦       ¦   geo.php
+¦       ¦   oauth2.php
+¦       ¦   openid.php
+¦       ¦   pingback.php
+¦       ¦   
+¦       +---google
+¦               recaptcha.php
+¦               staticmap.php
+¦               
++---public_html
+    ¦   .htaccess
+    ¦   index.php
+    ¦   php_errors.log
+    ¦   test.php
+    ¦   
+    +---bootstrap
+    ¦   +---css
+    ¦   ¦       bootstrap-grid.css
+    ¦   ¦       bootstrap-grid.css.map
+    ¦   ¦       bootstrap-grid.min.css
+    ¦   ¦       bootstrap-grid.min.css.map
+    ¦   ¦       bootstrap-grid.rtl.css
+    ¦   ¦       bootstrap-grid.rtl.css.map
+    ¦   ¦       bootstrap-grid.rtl.min.css
+    ¦   ¦       bootstrap-grid.rtl.min.css.map
+    ¦   ¦       bootstrap-reboot.css
+    ¦   ¦       bootstrap-reboot.css.map
+    ¦   ¦       bootstrap-reboot.min.css
+    ¦   ¦       bootstrap-reboot.min.css.map
+    ¦   ¦       bootstrap-reboot.rtl.css
+    ¦   ¦       bootstrap-reboot.rtl.css.map
+    ¦   ¦       bootstrap-reboot.rtl.min.css
+    ¦   ¦       bootstrap-reboot.rtl.min.css.map
+    ¦   ¦       bootstrap-utilities.css
+    ¦   ¦       bootstrap-utilities.css.map
+    ¦   ¦       bootstrap-utilities.min.css
+    ¦   ¦       bootstrap-utilities.min.css.map
+    ¦   ¦       bootstrap-utilities.rtl.css
+    ¦   ¦       bootstrap-utilities.rtl.css.map
+    ¦   ¦       bootstrap-utilities.rtl.min.css
+    ¦   ¦       bootstrap-utilities.rtl.min.css.map
+    ¦   ¦       bootstrap.css
+    ¦   ¦       bootstrap.css.map
+    ¦   ¦       bootstrap.min.css
+    ¦   ¦       bootstrap.min.css.map
+    ¦   ¦       bootstrap.rtl.css
+    ¦   ¦       bootstrap.rtl.css.map
+    ¦   ¦       bootstrap.rtl.min.css
+    ¦   ¦       bootstrap.rtl.min.css.map
+    ¦   ¦       
+    ¦   +---js
+    ¦           bootstrap.bundle.js
+    ¦           bootstrap.bundle.js.map
+    ¦           bootstrap.bundle.min.js
+    ¦           bootstrap.bundle.min.js.map
+    ¦           bootstrap.esm.js
+    ¦           bootstrap.esm.js.map
+    ¦           bootstrap.esm.min.js
+    ¦           bootstrap.esm.min.js.map
+    ¦           bootstrap.js
+    ¦           bootstrap.js.map
+    ¦           bootstrap.min.js
+    ¦           bootstrap.min.js.map
+    ¦           
+    +---compressed
+    +---css
+    ¦       animate.min.css
+    ¦       bootstrap-icons.css
+    ¦       bootstrap-icons.json
+    ¦       bootstrap-icons.min.css
+    ¦       bootstrap-icons.scss
+    ¦       bulma.min.css
+    ¦       elcatalogo.css
+    ¦       elcatalogo_oscuro.css
+    ¦       lavish.css
+    ¦       login.css
+    ¦       moleculer.css
+    ¦       styles.css
+    ¦       tw_estilo.css
+    ¦       
+    +---fonts
+    ¦       bootstrap-icons.woff
+    ¦       bootstrap-icons.woff2
+    ¦       CHILLER.TTF
+    ¦       Lucide.ttf
+    ¦       Mayonice.ttf
+    ¦       
+    +---img
+    ¦   ¦   bouncing-ball.svg
+    ¦   ¦   bouncing-circles.svg
+    ¦   ¦   elcatalogo.png
+    ¦   ¦   favicon.bak.ico
+    ¦   ¦   favicon.ico
+    ¦   ¦   favicon.ico.bak
+    ¦   ¦   favicon2.ico
+    ¦   ¦   favicon_io (1).zip
+    ¦   ¦   favicon_io.zip
+    ¦   ¦   icons8-libro-ios-17-outlined-16.png
+    ¦   ¦   icons8-libro-ios-17-outlined-32.png
+    ¦   ¦   icons8-libro-ios-17-outlined-96.png
+    ¦   ¦   IMG-20250826-WA0001.jpg
+    ¦   ¦   IMG-20250826-WA0001_2.png
+    ¦   ¦   IMG-20250826-WA0001_para_favicon.jpg
+    ¦   ¦   IMG-20250826-WA0002.jpg
+    ¦   ¦   IMG-20250826-WA0002_transparente.png
+    ¦   ¦   loading-svgrepo-com.svg
+    ¦   ¦   para_favicon.png
+    ¦   ¦   spinning-dots.svg
+    ¦   ¦   
+    ¦   +---f3-logos
+    ¦           logo-dark.png
+    ¦           logo-dark.svg
+    ¦           logo-light.png
+    ¦           logo-light.svg
+    ¦           powered-dark.png
+    ¦           powered-dark.svg
+    ¦           powered-light.png
+    ¦           powered-light.svg
+    ¦           
+    +---js
+    ¦   +---user
+    ¦   ¦       ax_indicadores.js
+    ¦   ¦       ax_perfil_public.js
+    ¦   ¦       comentarios.js
+    ¦   ¦       contrasenas_iguales.js
+    ¦   ¦       frontend.js
+    ¦   ¦       inicio.js
+    ¦   ¦       inicio2.js
+    ¦   ¦       me_gusta.js
+    ¦   ¦       navegacion.js
+    ¦   ¦       
+    ¦   +---vendor
+    ¦           alpine-ajax.min.js
+    ¦           alpine-mask.min.js
+    ¦           alpinejs.min.js
+    ¦           axios.min.js
+    ¦           chart2.js
+    ¦           holder.js
+    ¦           jquery-3.7.1.min.js
+    ¦           ky.js
+    ¦           ky.min.js
+    ¦           petite-vue.iife.js
+    ¦           vue.global.js
+    ¦           
+    +---tmp
+    ¦       1rhmuqyegwrps.1bmp2oym0h7jw.php
+    ¦       1rhmuqyegwrps.2fecc1pjgucks.php
+    ¦       1rhmuqyegwrps.2tswdpkd9d448.php
+    ¦       1rhmuqyegwrps.38wk27r7bh0k4.php
+    ¦       1rhmuqyegwrps.uy0zktimhtrp.php
+    ¦       j6wc2ffcgezd.12skxnrwrxy61.php
+    ¦       j6wc2ffcgezd.13dk4dobpjipn.php
+    ¦       j6wc2ffcgezd.1azvin96cbprs.php
+    ¦       j6wc2ffcgezd.1bmp2oym0h7jw.php
+    ¦       j6wc2ffcgezd.1yaw12rjpnlwo.php
+    ¦       j6wc2ffcgezd.200rhho3k5foc.php
+    ¦       j6wc2ffcgezd.24nj1m53t4jog.php
+    ¦       j6wc2ffcgezd.28sqagn7ybtwc.php
+    ¦       j6wc2ffcgezd.2fecc1pjgucks.php
+    ¦       j6wc2ffcgezd.2fj05m6kc7ggo.php
+    ¦       j6wc2ffcgezd.2tswdpkd9d448.php
+    ¦       j6wc2ffcgezd.3831guurj1eso.php
+    ¦       j6wc2ffcgezd.38wk27r7bh0k4.php
+    ¦       j6wc2ffcgezd.3t4bbw0ltz0g8.php
+    ¦       j6wc2ffcgezd.ddgn4rgazrs0.php
+    ¦       j6wc2ffcgezd.jcllzwo548xu.php
+    ¦       j6wc2ffcgezd.uy0zktimhtrp.php
+    ¦       j6wc2ffcgezd.yyq1kl648jpc.php
+    ¦       j6wc2ffcgezd.z5wzsmzl8ujx.php
+    ¦       
+    +---uploads
+        +---carrusel
+        ¦       48ba3671bc2ebb81997b982aecac0736.png
+        ¦       5bd8f5d29edff002dae35970267533c5.png
+        ¦       8146a470ed00819fa012526a2e5c7eee.jpg
+        ¦       831f06e402ee9b84fd831d2e91bd331b.png
+        ¦       96481090be5709c3babb6ba91c20d4c4.png
+        ¦       bf5aa3ef84206670f21a4bf644cd0aa2.png
+        ¦       f866c4917d402b0cb97a2ce6f0e0c251.png
+        ¦       
+        +---original
+        ¦       48ba3671bc2ebb81997b982aecac0736.png
+        ¦       5bd8f5d29edff002dae35970267533c5.png
+        ¦       8146a470ed00819fa012526a2e5c7eee.jpg
+        ¦       831f06e402ee9b84fd831d2e91bd331b.png
+        ¦       96481090be5709c3babb6ba91c20d4c4.png
+        ¦       bf5aa3ef84206670f21a4bf644cd0aa2.png
+        ¦       f866c4917d402b0cb97a2ce6f0e0c251.png
+        ¦       
+        +---profile
+        ¦       831f06e402ee9b84fd831d2e91bd331b.png
+        ¦       96481090be5709c3babb6ba91c20d4c4.png
+        ¦       bf5aa3ef84206670f21a4bf644cd0aa2.png
+        ¦       f866c4917d402b0cb97a2ce6f0e0c251.png
+        ¦       
+        +---thumbs
+                48ba3671bc2ebb81997b982aecac0736.png
+                5bd8f5d29edff002dae35970267533c5.png
+                8146a470ed00819fa012526a2e5c7eee.jpg
+                831f06e402ee9b84fd831d2e91bd331b.png
+                96481090be5709c3babb6ba91c20d4c4.png
+                bf5aa3ef84206670f21a4bf644cd0aa2.png
+                f866c4917d402b0cb97a2ce6f0e0c251.png
+                

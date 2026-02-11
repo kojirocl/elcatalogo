@@ -1,5 +1,7 @@
 <?php
 
+use function PHPSTORM_META\type;
+
 class Ajax{
 
     private $mensaje_error='<div class="container alert alert-info" role="alert">No hay resultados para la selección!</div>';
@@ -26,7 +28,8 @@ class Ajax{
 
     function filtrar_usuarios($region=null, $ciudad=null){
 
-        $result = \Elcatalogo::getDatosPerfil(null, $region , $ciudad);
+        //$result = \Elcatalogo::getDatosPerfil(null, $region , $ciudad);
+        $result = self::tag_get_usuarios(0,null,$region, $ciudad);
 
         return $result;
 
@@ -38,7 +41,8 @@ class Ajax{
         $ciudad = $f3->get('POST.ciudad');
         if ($ciudad == 'Todas') $ciudad = NULL;
         
-        $result = \Elcatalogo::getDatosPerfil(null, null, $ciudad);
+        //$result = \Elcatalogo::getDatosPerfil(null, null, $ciudad);
+        $result = self::tag_get_usuarios(0,null,null, $ciudad);
 
         if (empty($result)) {
             echo $this->mensaje_error;
@@ -75,34 +79,36 @@ class Ajax{
 
     function filtrar(){ //} tag_filtrar(){  #### VIGENTE
 
-        $f3 = \Base::instance();
-
-        $region = $f3->get('POST.region');
-        $ciudad = $f3->get('POST.ciudad');
-        $tags = $f3->get('POST.tag');
-        $cuantos = $f3->get('POST.cuantos');
-
-        if ($ciudad == 'Todas') $ciudad = NULL;
-        if ($region == 'Todas') $region = NULL;
-
-
-        if ($cuantos){
-            $usuarios = self::tag_get_usuarios($cuantos, $tags, $region, $ciudad);
+        $params = [];
         
-        }else{
-            $usuarios = self::filtrar_usuarios($region, $ciudad);
-            
-        }   
+        $pagina = $_GET['page'] ?? 1;
 
-        if (empty($usuarios)) {
+        $region = $_POST['region'] ?? 'Todas';
+        $ciudad = $_POST['ciudad'] ?? 'Todas';
+        $tags = $_POST['tag'] ? explode(',', $_POST['tag']) : [];
+
+        $condicion = [];
+        if ($ciudad !== 'Todas') $condicion[] = "perfil.ciudad = '$ciudad'";
+        if ($region !== 'Todas') $condicion[] = "perfil.region = '$region'";
+
+        $resultado = Paginacion::buscarPerfiles([
+                        'pagina' => $pagina,
+                        'tags' => $tags, // IDs de tags
+                        'condicion' => implode(' AND ', $condicion)
+                    ]);
+
+        if (empty($resultado['subset'])) {
             echo $this->mensaje_error;
             return;
-
         }
 
-        $f3->set('usuarios', $usuarios);
-        echo \Template::instance()->render('frontend/templates/tarjetas_contenido.html');
+        $info['usuarios'] = $resultado['subset'];
+        echo \Template::instance()->render('frontend/templates/tarjetas_contenido.html',
+                                            'text/html', 
+                                            $info
+                                        );
         
+        // PENDIENTE ACTUALIZAR BARRA PAGINACION        
     
     }
 
@@ -114,8 +120,6 @@ class Ajax{
             if ($ciudad) $condicion = " AND perfil.ciudad = '$ciudad'";
             if ($region) $condicion = " AND perfil.region = '$region'";
     
-            
-
             // Asegúrate de que $tags sea un array de enteros
             //$tags = array_map('intval', (array)$tags);
             
@@ -125,14 +129,23 @@ class Ajax{
             // Crear la cadena de tags para la consulta SQL
             //$tags = implode(',', $tags);  // Esto generará "1,5,6"
 
+            if ($cuantos == 0)
+                $sql = "SELECT perfil.* , media.ubicacion AS foto_perfil
+                        FROM perfil
+                        LEFT JOIN media ON perfil.idFotoPerfil = media.id
+                        WHERE perfil.activo=1 AND perfil.idGrupo=5$condicion
+                        GROUP BY perfil.idUser";
+            else
+                $sql="SELECT perfil.* , media.ubicacion AS foto_perfil
+                        FROM perfil
+                        LEFT JOIN media ON perfil.idFotoPerfil = media.id
+                        LEFT JOIN tag_perfil ON perfil.idUser = tag_perfil.idUser 
+                        WHERE tag_perfil.idTag IN ($tags) AND perfil.activo=1 AND perfil.idGrupo=5$condicion
+                        GROUP BY perfil.idUser
+                        HAVING COUNT(DISTINCT idTag) = $cuantos";
 
-            $result = $db->exec("SELECT perfil.* , media.ubicacion AS foto_perfil
-                FROM perfil
-                LEFT JOIN media ON perfil.idFotoPerfil = media.id
-                LEFT JOIN tag_perfil ON perfil.idUser = tag_perfil.idUser 
-                WHERE tag_perfil.idTag IN ($tags) AND perfil.activo=1 AND perfil.idGrupo=5$condicion
-                GROUP BY perfil.idUser
-                HAVING COUNT(DISTINCT idTag) = $cuantos");
+
+            $result = $db->exec($sql);
             // SELECT DISTINCT perfil.* FROM perfil LEFT JOIN tag_perfil ON perfil.idUser=tag_perfil.idUser WHERE tag_perfil.idTag IN (1,4) AND perfil.idGrupo=5
 
 
@@ -169,7 +182,24 @@ class Ajax{
         return $result;
     }
 
+    public function ciudadesPorRegion(){
 
+        $ciudades = new \mCiudades();
+
+        $aux = $ciudades->GetCiudades($_POST['region']);
+
+        $respuesta = "<option selected>Todas</option>";
+
+        foreach($aux as $ciudad){
+            $respuesta .= "<option value='$ciudad->city'>$ciudad->city</option>";
+            //$respuesta .= "<option value=''>algo</option>";
+
+        }
+
+        echo $respuesta;
+        //exit();
+
+    }
 
 
 

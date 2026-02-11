@@ -1316,3 +1316,814 @@ Stack trace:
 [02-Jan-2026 10:30:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
 [02-Jan-2026 10:30:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
 [02-Jan-2026 10:30:04 America/Santiago] Call to undefined function html_build_query() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php:44]
+[03-Jan-2026 16:41:15 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:20]
+[03-Jan-2026 16:41:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:41:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:41:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:41:16 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:20]
+[03-Jan-2026 16:41:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:41:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:41:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:42:24 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:42:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:42:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:42:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:43:02 America/Santiago] Class "Publico\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:43:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:43:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:43:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:43:16 America/Santiago] Class "App\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:43:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:43:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:43:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:43:33 America/Santiago] Class "App\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:44:06 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:44:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:44:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:44:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:44:17 America/Santiago] Class "App\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:44:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:44:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:44:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:44:19 America/Santiago] Class "App\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:44:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:44:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:44:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:50:56 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:50:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:50:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:50:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:51:26 America/Santiago] Class "Helpers\Showdata" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:51:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:51:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:51:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:51:50 America/Santiago] Class "Helpers\Showdata" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:51:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:51:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:51:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:52:02 America/Santiago] Class "Helpers\Showdata" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:52:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:52:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:52:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:52:39 America/Santiago] Class "Publico\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:52:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:52:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:52:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:52:47 America/Santiago] Class "Publico\App\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:52:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:52:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:52:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:52:53 America/Santiago] Class "App\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:52:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:52:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:52:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:53:22 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:53:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:53:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:53:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:53:24 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:53:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:53:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:53:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:53:26 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:53:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:53:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:53:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 16:57:44 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 16:57:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 16:57:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 16:57:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:09:33 America/Santiago] Class "Publico\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 17:09:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:09:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:09:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:09:47 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 17:09:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:09:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:09:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:10:23 America/Santiago] Class "app\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 17:10:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:10:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:10:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:10:29 America/Santiago] Class "Publico\app\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 17:10:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:10:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:10:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:10:43 America/Santiago] Class "app\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 17:10:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:10:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:10:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:12:18 America/Santiago] Class "app\helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 17:12:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:12:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:12:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:12:37 America/Santiago] Class "app\helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 17:12:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:12:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:12:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:12:38 America/Santiago] Class "app\helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:21]
+[03-Jan-2026 17:12:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:12:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:12:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:13:40 America/Santiago] Class "Publico\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:13:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:13:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:13:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:13:55 America/Santiago] Class "Publico\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:13:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:13:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:13:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:14:01 America/Santiago] Class "ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:14:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:14:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:14:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:14:12 America/Santiago] Class "app\helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:14:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:14:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:14:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:14:26 America/Santiago] Class "Publico\app\helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:14:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:14:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:14:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:14:31 America/Santiago] Class "app\helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:14:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:14:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:14:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:18:38 America/Santiago] Class "Hhelpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:19:06 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:19:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:19:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:19:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:20:18 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:23]
+[03-Jan-2026 17:20:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:20:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:20:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:20:56 America/Santiago] Class "app\Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:22]
+[03-Jan-2026 17:20:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:20:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:20:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:21:28 America/Santiago] Class "helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:20]
+[03-Jan-2026 17:21:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:21:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:21:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:22:01 America/Santiago] Class "helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:20]
+[03-Jan-2026 17:22:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:22:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:22:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:23:16 America/Santiago] Class "Ayudas\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:20]
+[03-Jan-2026 17:23:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:23:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:23:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:26:07 America/Santiago] PHP Fatal error:  Uncaught Error: Class "Base" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php on line 10
+[03-Jan-2026 17:26:25 America/Santiago] PHP Fatal error:  Uncaught Error: Class "Base" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php on line 10
+[03-Jan-2026 17:27:05 America/Santiago] PHP Warning:  Undefined variable $baseDir in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php on line 10
+[03-Jan-2026 17:27:05 America/Santiago] PHP Warning:  require(/lib/base.php): Failed to open stream: No such file or directory in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php on line 10
+[03-Jan-2026 17:27:05 America/Santiago] PHP Fatal error:  Uncaught Error: Failed opening required '/lib/base.php' (include_path='.;C:\php\pear') in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php on line 10
+[03-Jan-2026 17:36:03 America/Santiago] include(..\helpers\showdata.php): Failed to open stream: No such file or directory
+[03-Jan-2026 17:36:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:7] 
+[03-Jan-2026 17:36:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:7] Base->{closure}()
+[03-Jan-2026 17:36:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:7] include()
+[03-Jan-2026 17:37:51 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:20]
+[03-Jan-2026 17:37:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:37:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:37:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:39:06 America/Santiago] Class "Helpers\ShowData" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php:20]
+[03-Jan-2026 17:39:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:39:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:39:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 17:45:24 America/Santiago] Undefined array key "total_paginas"
+[03-Jan-2026 17:45:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:26] 
+[03-Jan-2026 17:45:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:26] Base->{closure}()
+[03-Jan-2026 17:45:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 17:45:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 17:45:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:00:35 America/Santiago] SQLSTATE[HY000]: General error: 1 near "1": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:208]
+[03-Jan-2026 18:00:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:208] PDO->prepare()
+[03-Jan-2026 18:00:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:24] DB\SQL->exec()
+[03-Jan-2026 18:00:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/showData.php:32] Paginacion::paginar()
+[03-Jan-2026 18:00:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:20] ShowData::getAll()
+[03-Jan-2026 18:00:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 18:00:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 18:00:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:01:34 America/Santiago] array_merge(): Argument #1 must be of type array, string given [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\paginacion.php:36]
+[03-Jan-2026 18:01:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:36] array_merge()
+[03-Jan-2026 18:01:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:24] Paginacion::barra_paginacion()
+[03-Jan-2026 18:01:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 18:01:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 18:01:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:07:42 America/Santiago] Call to undefined function print_f() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\showData.php:36]
+[03-Jan-2026 18:07:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:20] ShowData::getAll()
+[03-Jan-2026 18:07:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 18:07:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 18:07:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:10:36 America/Santiago] array_merge(): Argument #1 must be of type array, string given [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\paginacion.php:36]
+[03-Jan-2026 18:10:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:36] array_merge()
+[03-Jan-2026 18:10:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:24] Paginacion::barra_paginacion()
+[03-Jan-2026 18:10:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 18:10:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 18:10:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:12:31 America/Santiago] HTTP 404 (GET /ver?page=2)
+[03-Jan-2026 18:12:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1904] Base->error()
+[03-Jan-2026 18:12:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:12:40 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[03-Jan-2026 18:12:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[03-Jan-2026 18:12:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[03-Jan-2026 18:12:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 18:12:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:12:45 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[03-Jan-2026 18:12:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[03-Jan-2026 18:12:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[03-Jan-2026 18:12:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 18:12:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:12:57 America/Santiago] HTTP 404 (GET /ver?page=2)
+[03-Jan-2026 18:12:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1904] Base->error()
+[03-Jan-2026 18:12:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:44:54 America/Santiago] Undefined variable $pagina
+[03-Jan-2026 18:44:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/showData.php:12] 
+[03-Jan-2026 18:44:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/showData.php:12] Base->{closure}()
+[03-Jan-2026 18:44:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:20] ShowData::getAll()
+[03-Jan-2026 18:44:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 18:44:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 18:44:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:45:23 America/Santiago] HTTP 404 (GET /ver?page=2)
+[03-Jan-2026 18:45:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1904] Base->error()
+[03-Jan-2026 18:45:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 18:53:06 America/Santiago] HTTP 404 (GET /ver?page=2)
+[03-Jan-2026 18:53:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1904] Base->error()
+[03-Jan-2026 18:53:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 19:12:43 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[03-Jan-2026 19:12:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[03-Jan-2026 19:12:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[03-Jan-2026 19:12:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 19:12:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 19:36:47 America/Santiago] Trying to access array offset on null
+[03-Jan-2026 19:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/jig/mapper.php:271] 
+[03-Jan-2026 19:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/jig/mapper.php:271] Base->{closure}()
+[03-Jan-2026 19:36:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:13] DB\Jig\Mapper->find()
+[03-Jan-2026 19:41:05 America/Santiago] Using $this when not in object context [C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php:13]
+[03-Jan-2026 19:45:47 America/Santiago] Cannot access offset of type string on string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\tmp\j6wc2ffcgezd.2fecc1pjgucks.php:10]
+[03-Jan-2026 19:45:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 19:45:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 19:45:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:33] Preview->render()
+[03-Jan-2026 19:45:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 19:45:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 19:45:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 19:53:46 America/Santiago] Too few arguments to function Elcatalogo::armarFiltros(), 0 passed in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\inicio.php on line 18 and exactly 1 expected [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\elcatalogo.php:221]
+[03-Jan-2026 19:53:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:18] Elcatalogo::armarFiltros()
+[03-Jan-2026 19:53:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 19:53:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 19:53:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:31:59 America/Santiago] Unable to open frontend/default_copy.html
+[03-Jan-2026 20:31:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[03-Jan-2026 20:31:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[03-Jan-2026 20:31:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/general.php:25] Preview->render()
+[03-Jan-2026 20:31:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2078] Publico\General->afterRoute()
+[03-Jan-2026 20:31:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:31:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:32:19 America/Santiago] syntax error, unexpected token ":", expecting ")" [C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\tmp\j6wc2ffcgezd.1k6f0r8hyqt8c.php:85]
+[03-Jan-2026 20:32:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 20:32:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/general.php:25] Preview->render()
+[03-Jan-2026 20:32:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2078] Publico\General->afterRoute()
+[03-Jan-2026 20:32:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:32:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:39:55 America/Santiago] Undefined variable $filtro
+[03-Jan-2026 20:39:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:8] 
+[03-Jan-2026 20:39:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:8] Base->{closure}()
+[03-Jan-2026 20:39:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 20:39:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 20:39:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:21] Preview->render()
+[03-Jan-2026 20:39:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 20:39:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:39:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:40:36 America/Santiago] Undefined variable $filtros
+[03-Jan-2026 20:40:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:8] 
+[03-Jan-2026 20:40:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:8] Base->{closure}()
+[03-Jan-2026 20:40:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 20:40:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 20:40:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:21] Preview->render()
+[03-Jan-2026 20:40:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 20:40:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:40:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:41:41 America/Santiago] Undefined variable $filtros
+[03-Jan-2026 20:41:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:8] 
+[03-Jan-2026 20:41:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:8] Base->{closure}()
+[03-Jan-2026 20:41:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 20:41:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 20:41:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:22] Preview->render()
+[03-Jan-2026 20:41:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 20:41:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:41:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:43:33 America/Santiago] Undefined variable $hive
+[03-Jan-2026 20:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:8] 
+[03-Jan-2026 20:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:8] Base->{closure}()
+[03-Jan-2026 20:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 20:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 20:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:22] Preview->render()
+[03-Jan-2026 20:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 20:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:43:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:48:02 America/Santiago] Undefined variable $filtro
+[03-Jan-2026 20:48:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:17] 
+[03-Jan-2026 20:48:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2cu09zzny1wkg.php:17] Base->{closure}()
+[03-Jan-2026 20:48:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 20:48:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 20:48:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:22] Preview->render()
+[03-Jan-2026 20:48:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 20:48:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:48:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:48:14 America/Santiago] Undefined variable $filtro
+[03-Jan-2026 20:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2fecc1pjgucks.php:9] 
+[03-Jan-2026 20:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2fecc1pjgucks.php:9] Base->{closure}()
+[03-Jan-2026 20:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 20:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 20:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:36] Preview->render()
+[03-Jan-2026 20:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 20:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:49:43 America/Santiago] Undefined variable $filtro
+[03-Jan-2026 20:49:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2fecc1pjgucks.php:9] 
+[03-Jan-2026 20:49:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2fecc1pjgucks.php:9] Base->{closure}()
+[03-Jan-2026 20:49:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 20:49:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 20:49:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:36] Preview->render()
+[03-Jan-2026 20:49:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 20:49:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:49:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 20:57:48 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[03-Jan-2026 20:57:48 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[03-Jan-2026 20:57:48 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[03-Jan-2026 20:57:48 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 20:57:48 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 21:26:03 America/Santiago] Undefined variable $usuarios
+[03-Jan-2026 21:26:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1bmp2oym0h7jw.php:3] 
+[03-Jan-2026 21:26:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1bmp2oym0h7jw.php:3] Base->{closure}()
+[03-Jan-2026 21:26:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[03-Jan-2026 21:26:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[03-Jan-2026 21:26:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:29] Preview->render()
+[03-Jan-2026 21:26:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 21:26:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 21:26:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 21:26:37 America/Santiago] Undefined array key "subset"
+[03-Jan-2026 21:26:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:28] 
+[03-Jan-2026 21:26:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:28] Base->{closure}()
+[03-Jan-2026 21:26:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[03-Jan-2026 21:26:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 21:26:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[03-Jan-2026 22:28:40 America/Santiago] HTTP 405 (POST /regiones)
+[03-Jan-2026 22:28:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[03-Jan-2026 22:28:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[03-Jan-2026 22:28:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 17:58:51 America/Santiago] HTTP 405 (POST /regiones)
+[23-Jan-2026 17:58:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[23-Jan-2026 17:58:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 17:58:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 18:07:18 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[23-Jan-2026 18:07:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[23-Jan-2026 18:07:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[23-Jan-2026 18:07:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 18:07:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 18:07:24 America/Santiago] HTTP 405 (POST /regiones)
+[23-Jan-2026 18:07:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[23-Jan-2026 18:07:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 18:07:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 18:09:50 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[23-Jan-2026 18:09:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[23-Jan-2026 18:09:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[23-Jan-2026 18:09:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 18:09:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 18:09:56 America/Santiago] HTTP 405 (POST /regiones)
+[23-Jan-2026 18:09:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[23-Jan-2026 18:09:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 18:09:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 18:12:27 America/Santiago] HTTP 404 (GET /home)
+[23-Jan-2026 18:12:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1904] Base->error()
+[23-Jan-2026 18:12:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 18:21:26 America/Santiago] HTTP 405 (POST /regiones)
+[23-Jan-2026 18:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[23-Jan-2026 18:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 18:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 21:01:41 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[23-Jan-2026 21:01:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[23-Jan-2026 21:01:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[23-Jan-2026 21:01:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 21:01:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 21:02:09 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[23-Jan-2026 21:02:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[23-Jan-2026 21:02:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[23-Jan-2026 21:02:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 21:02:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 21:57:01 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[23-Jan-2026 21:57:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[23-Jan-2026 21:57:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[23-Jan-2026 21:57:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 21:57:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Jan-2026 21:57:06 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[23-Jan-2026 21:57:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[23-Jan-2026 21:57:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[23-Jan-2026 21:57:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Jan-2026 21:57:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[25-Jan-2026 17:00:12 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[25-Jan-2026 17:00:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[25-Jan-2026 17:00:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[25-Jan-2026 17:00:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[25-Jan-2026 17:00:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[25-Jan-2026 17:00:19 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[25-Jan-2026 17:00:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[25-Jan-2026 17:00:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[25-Jan-2026 17:00:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[25-Jan-2026 17:00:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[25-Jan-2026 17:00:27 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[25-Jan-2026 17:00:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[25-Jan-2026 17:00:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[25-Jan-2026 17:00:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[25-Jan-2026 17:00:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:38:23 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:38:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:93] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:38:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:38:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:38:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:39:33 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:39:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:39:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:39:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:39:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:45:59 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:45:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:45:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:45:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:45:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:47:16 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:47:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:47:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:47:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:47:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:47:36 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:47:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:47:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:47:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:47:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:53:08 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:53:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:53:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:53:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:53:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:53:13 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:53:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:53:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:53:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:53:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:53:18 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:53:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:53:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:53:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:53:18 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:53:27 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:53:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:53:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:53:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:53:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[26-Jan-2026 21:53:49 America/Santiago] Call to undefined method Elcatalogo::getDatosPerfil() [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:29]
+[26-Jan-2026 21:53:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] Ajax->filtrar_usuarios()
+[26-Jan-2026 21:53:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[26-Jan-2026 21:53:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[26-Jan-2026 21:53:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 20:41:39 America/Santiago] explode(): Passing null to parameter #2 ($string) of type string is deprecated
+[27-Jan-2026 20:41:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:120] 
+[27-Jan-2026 20:41:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:120] explode()
+[27-Jan-2026 20:41:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:32] Ajax->tag_get_usuarios()
+[27-Jan-2026 20:41:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:96] Ajax->filtrar_usuarios()
+[27-Jan-2026 20:41:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[27-Jan-2026 20:41:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 20:41:39 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 20:41:44 America/Santiago] explode(): Passing null to parameter #2 ($string) of type string is deprecated
+[27-Jan-2026 20:41:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:120] 
+[27-Jan-2026 20:41:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:120] explode()
+[27-Jan-2026 20:41:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:32] Ajax->tag_get_usuarios()
+[27-Jan-2026 20:41:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:96] Ajax->filtrar_usuarios()
+[27-Jan-2026 20:41:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[27-Jan-2026 20:41:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 20:41:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 21:40:13 America/Santiago] Array to string conversion
+[27-Jan-2026 21:40:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/showData.php:88] 
+[27-Jan-2026 21:40:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/showData.php:88] Base->{closure}()
+[27-Jan-2026 21:40:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:92] ShowData::get_tarjetas()
+[27-Jan-2026 21:40:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[27-Jan-2026 21:40:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 21:40:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 22:42:13 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:182]
+[27-Jan-2026 22:42:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax::ciudadesPorRegion()
+[27-Jan-2026 22:42:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 22:42:13 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 22:42:59 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:182]
+[27-Jan-2026 22:42:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[27-Jan-2026 22:42:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 22:42:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 22:44:42 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:183]
+[27-Jan-2026 22:44:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[27-Jan-2026 22:44:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 22:44:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 22:46:17 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:183]
+[27-Jan-2026 22:46:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[27-Jan-2026 22:46:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 22:46:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 22:47:08 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:183]
+[27-Jan-2026 22:47:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[27-Jan-2026 22:47:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 22:47:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 23:30:35 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:183]
+[27-Jan-2026 23:30:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[27-Jan-2026 23:30:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 23:30:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[27-Jan-2026 23:33:02 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:183]
+[27-Jan-2026 23:33:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[27-Jan-2026 23:33:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[27-Jan-2026 23:33:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 16:24:22 America/Santiago] Optional parameter $pagina_actual declared before required parameter $total_paginas is implicitly treated as a required parameter
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:7] 
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2321] Base->{closure}()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2321] require()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:29] Base->autoload()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 16:24:22 America/Santiago] Optional parameter $pagina_actual declared before required parameter $total_paginas is implicitly treated as a required parameter
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:7] 
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2321] Base->{closure}()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2321] require()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:29] Base->autoload()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 16:24:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 16:25:10 America/Santiago] array_merge(): Argument #2 must be of type array, string given [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\paginacion.php:12]
+[28-Jan-2026 16:25:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:12] array_merge()
+[28-Jan-2026 16:25:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:40] Paginacion::barra_paginacion()
+[28-Jan-2026 16:25:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[28-Jan-2026 16:25:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 16:25:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 16:34:31 America/Santiago] SQLSTATE[HY000]: General error: 1 near "AND": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:525]
+[28-Jan-2026 16:34:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:525] call_user_func_array()
+[28-Jan-2026 16:34:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:132] DB\SQL->__call()
+[28-Jan-2026 16:34:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:101] Paginacion::buscarPerfiles()
+[28-Jan-2026 16:34:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 16:34:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 16:34:31 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 16:47:49 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 16:47:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 16:47:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 16:47:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 16:47:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 16:47:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 16:49:58 America/Santiago] HTTP 405 (GET /ver?page=2)
+[28-Jan-2026 16:49:58 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[28-Jan-2026 16:49:58 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 16:49:58 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 16:50:25 America/Santiago] HTTP 405 (GET /ver?page=2)
+[28-Jan-2026 16:50:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[28-Jan-2026 16:50:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 16:50:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 17:12:51 America/Santiago] Undefined variable $usuarios
+[28-Jan-2026 17:12:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1bmp2oym0h7jw.php:3] 
+[28-Jan-2026 17:12:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1bmp2oym0h7jw.php:3] Base->{closure}()
+[28-Jan-2026 17:12:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[28-Jan-2026 17:12:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[28-Jan-2026 17:12:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:37] Preview->render()
+[28-Jan-2026 17:12:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[28-Jan-2026 17:12:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 17:12:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 20:52:08 America/Santiago] Undefined array key "pagina"
+[28-Jan-2026 20:52:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:33] 
+[28-Jan-2026 20:52:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:33] Base->{closure}()
+[28-Jan-2026 20:52:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[28-Jan-2026 20:52:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 20:52:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 20:59:32 America/Santiago] Undefined variable $page
+[28-Jan-2026 20:59:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:43] 
+[28-Jan-2026 20:59:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/inicio.php:43] Base->{closure}()
+[28-Jan-2026 20:59:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Inicio->inicio()
+[28-Jan-2026 20:59:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 20:59:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:00:06 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:211]
+[28-Jan-2026 21:00:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[28-Jan-2026 21:00:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:00:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:01:37 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:211]
+[28-Jan-2026 21:01:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[28-Jan-2026 21:01:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:01:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:02:32 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:211]
+[28-Jan-2026 21:02:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[28-Jan-2026 21:02:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:02:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:03:23 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 21:03:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 21:03:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 21:03:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 21:03:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:03:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:04:19 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 21:04:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 21:04:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 21:04:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 21:04:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:04:19 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:05:03 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 21:05:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 21:05:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 21:05:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 21:05:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:05:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:05:35 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:213]
+[28-Jan-2026 21:05:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[28-Jan-2026 21:05:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:05:35 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:06:15 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:213]
+[28-Jan-2026 21:06:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[28-Jan-2026 21:06:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:06:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:07:21 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 21:07:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 21:07:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 21:07:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 21:07:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:07:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:12:16 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:213]
+[28-Jan-2026 21:12:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[28-Jan-2026 21:12:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:12:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:16:46 America/Santiago] HTTP 404 (GET /tets)
+[28-Jan-2026 21:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1904] Base->error()
+[28-Jan-2026 21:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:16:52 America/Santiago] PHP Warning:  include(app\models\mCiudades.php): Failed to open stream: No such file or directory in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php on line 3
+[28-Jan-2026 21:16:52 America/Santiago] PHP Warning:  include(): Failed opening 'app\models\mCiudades.php' for inclusion (include_path='.;C:\php\pear') in C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php on line 3
+[28-Jan-2026 21:16:52 America/Santiago] Fatal error: include(): Failed opening 'app\models\mCiudades.php' for inclusion (include_path='.;C:\php\pear')
+[28-Jan-2026 21:16:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:3] 
+[28-Jan-2026 21:17:17 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 21:19:05 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 21:21:01 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 21:22:51 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 21:25:13 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 21:25:36 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 21:25:39 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 21:27:08 America/Santiago] Object of class mCiudades could not be converted to string [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:213]
+[28-Jan-2026 21:27:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->ciudadesPorRegion()
+[28-Jan-2026 21:27:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:27:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:45:49 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 21:45:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 21:45:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 21:45:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 21:45:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:45:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:46:52 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 21:46:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 21:46:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 21:46:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 21:46:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:46:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:47:06 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 21:47:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 21:47:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 21:47:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 21:47:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:47:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 21:47:12 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 21:47:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 21:47:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 21:47:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 21:47:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 21:47:12 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 22:00:32 America/Santiago] SQLSTATE[HY000]: General error: 1 near "AND": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:525]
+[28-Jan-2026 22:00:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:525] call_user_func_array()
+[28-Jan-2026 22:00:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:129] DB\SQL->__call()
+[28-Jan-2026 22:00:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:101] Paginacion::buscarPerfiles()
+[28-Jan-2026 22:00:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 22:00:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 22:00:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 22:00:34 America/Santiago] Undefined variable $etiquetas
+[28-Jan-2026 22:00:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] 
+[28-Jan-2026 22:00:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:103] Base->{closure}()
+[28-Jan-2026 22:00:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 22:00:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 22:00:34 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 22:04:21 America/Santiago] strlen(): Argument #1 ($string) must be of type string, array given [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:95]
+[28-Jan-2026 22:04:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 22:04:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 22:04:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 22:53:56 America/Santiago] SQLSTATE[HY000]: General error: 1 near "AND": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:525]
+[28-Jan-2026 22:53:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:525] call_user_func_array()
+[28-Jan-2026 22:53:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:139] DB\SQL->__call()
+[28-Jan-2026 22:53:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:95] Paginacion::buscarPerfiles()
+[28-Jan-2026 22:53:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 22:53:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 22:53:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 22:58:41 America/Santiago] SQLSTATE[HY000]: General error: 1 near "AND": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:525]
+[28-Jan-2026 22:58:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:525] call_user_func_array()
+[28-Jan-2026 22:58:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:139] DB\SQL->__call()
+[28-Jan-2026 22:58:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:95] Paginacion::buscarPerfiles()
+[28-Jan-2026 22:58:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 22:58:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 22:58:41 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 23:00:39 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 23:00:56 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 23:00:59 America/Santiago] PHP Fatal error:  Uncaught Error: Class "DB\Jig\Mapper" not found in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php:3
+Stack trace:
+#0 C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php(3): include()
+#1 {main}
+  thrown in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mCiudades.php on line 3
+[28-Jan-2026 23:03:54 America/Santiago] implode(): Argument #2 ($array) must be of type ?array, string given [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\helpers\ajax.php:99]
+[28-Jan-2026 23:03:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:99] implode()
+[28-Jan-2026 23:03:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 23:03:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 23:03:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 23:04:49 America/Santiago] SQLSTATE[HY000]: General error: 1 near "AND": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:525]
+[28-Jan-2026 23:04:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:525] call_user_func_array()
+[28-Jan-2026 23:04:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:139] DB\SQL->__call()
+[28-Jan-2026 23:04:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:96] Paginacion::buscarPerfiles()
+[28-Jan-2026 23:04:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 23:04:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 23:04:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 23:04:57 America/Santiago] SQLSTATE[HY000]: General error: 1 near "AND": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:525]
+[28-Jan-2026 23:04:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:525] call_user_func_array()
+[28-Jan-2026 23:04:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:139] DB\SQL->__call()
+[28-Jan-2026 23:04:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:96] Paginacion::buscarPerfiles()
+[28-Jan-2026 23:04:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 23:04:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 23:04:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 23:17:28 America/Santiago] SQLSTATE[HY000]: General error: 1 near "AND": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:525]
+[28-Jan-2026 23:17:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:525] call_user_func_array()
+[28-Jan-2026 23:17:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:143] DB\SQL->__call()
+[28-Jan-2026 23:17:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:96] Paginacion::buscarPerfiles()
+[28-Jan-2026 23:17:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 23:17:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 23:17:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 23:20:54 America/Santiago] SQLSTATE[HY000]: General error: 1 near "AND": syntax error [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql.php:525]
+[28-Jan-2026 23:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql.php:525] call_user_func_array()
+[28-Jan-2026 23:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/paginacion.php:139] DB\SQL->__call()
+[28-Jan-2026 23:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:96] Paginacion::buscarPerfiles()
+[28-Jan-2026 23:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 23:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 23:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[28-Jan-2026 23:47:02 America/Santiago] Undefined variable $usuarios
+[28-Jan-2026 23:47:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1bmp2oym0h7jw.php:3] 
+[28-Jan-2026 23:47:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1bmp2oym0h7jw.php:3] Base->{closure}()
+[28-Jan-2026 23:47:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[28-Jan-2026 23:47:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[28-Jan-2026 23:47:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/helpers/ajax.php:105] Preview->render()
+[28-Jan-2026 23:47:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Ajax->filtrar()
+[28-Jan-2026 23:47:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[28-Jan-2026 23:47:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[29-Jan-2026 00:00:10 America/Santiago] HTTP 405 (GET /perfil/2)
+[29-Jan-2026 00:00:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[29-Jan-2026 00:00:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[29-Jan-2026 00:00:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()

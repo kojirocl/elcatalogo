@@ -1,4 +1,4 @@
-<div class="row g-3" >
+<div class="row g-3 p-4" >
 
     <?php foreach (($usuarios?:[]) as $usuario): ?>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">

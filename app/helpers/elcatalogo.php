@@ -94,7 +94,7 @@ class Elcatalogo{
 
         if (!$f3->exists('SESSION.usuario')){
             $menu = array(
-                'home' => array('url'=>'/home','icono'=>'bi-house'),
+                'home' => array('url'=>'/','icono'=>'bi-house'),
                 'login' => array('url'=>'/login','icono'=>'bi-person-circle'),
                 'registro' => array('url'=>'/registro','icono'=>'bi-person-plus'),
                 'validar mail' => array('url'=>'/validar','icono'=>'bi-person-check'),
@@ -219,20 +219,15 @@ class Elcatalogo{
     }
 
     static function armarFiltros(){
-        $f3 = \Base::instance();
-
-        $city = new \mCiudades;        
         
-        $filtros['regiones'] = $city->GetCapitales();
-        $filtros['ciudades'] = $city->GetCiudades('Todas');
+        $chile = new \mCiudades;
+        $filtros['regiones'] = $chile->GetCapitales();
+        $filtros['ciudades'] = $chile->GetCiudades('Todas');
 
         $tags = new \mTags;
-        //$filtros['tags']= $tags->GetTags(20);
         $filtros['tags']= $tags->getTop20();
 
-
         return $filtros;
-
     }
 
     static function revisaSiConectado(){
