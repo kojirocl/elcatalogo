@@ -46,9 +46,9 @@ class mMedia extends \DB\SQL\Mapper{
         return $this->find(array('idUser=?', $idUser));
     }
 
-    static function get_user_media_with_likes_and_vote($user_id, $viewer_id) {
+    static function get_user_media_with_likes_and_vote($user_id, $viewer_id = 0) {
         // Código para ejecutar la consulta SQL...
-        $db = Base::instance()->get('BD');
+        $db = \Base::instance()->get('BD');
 
         $consulta= "SELECT media.*, 
             COUNT(me_gusta.id) AS total_me_gusta,
@@ -57,6 +57,7 @@ class mMedia extends \DB\SQL\Mapper{
             LEFT JOIN me_gusta ON media.id = me_gusta.idMedia
             WHERE media.idUser = ?
             GROUP BY media.id";
+
         $result = $db->exec($consulta, [$viewer_id, $user_id]);
 
         return $result;

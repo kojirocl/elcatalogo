@@ -44,6 +44,34 @@ CREATE TABLE "me_gusta" (
         return boolval($cuantos);
 
     }
+
+    /**
+     * Obtener todos los likes de un medio
+     */
+    function getByMedia($idMedia) {
+        return $this->find(['idMedia = ?', $idMedia]);
+    }
+    
+    /**
+     * Obtener todos los likes de un usuario
+     */
+    function getByUser($idUser) {
+        return $this->find(['idUser_origen = ?', $idUser]);
+    }
+    
+    /**
+     * Verificar si un usuario ya dio like a un medio
+     */
+    function check($idUser, $idMedia) {
+        return $this->count(['idUser_origen = ? AND idMedia = ?', $idUser, $idMedia]) > 0;
+    }
+    
+    /**
+     * Obtener total de likes de un medio
+     */
+    function countByMedia($idMedia) {
+        return $this->count(['idMedia = ?', $idMedia]);
+    }    
 }
 
 ?>

@@ -44,13 +44,20 @@ class mComentarios extends \DB\SQL\Mapper{
     }
 
     function get_comentarios($idPerfil, $cuantos=0){
-        
-        if ($cuantos)
+    
+        if ($cuantos>0)
             $r = $this->find(array('idUserDestino=?', $idPerfil),array('order'=>'fecha DESC', 'limit'=>$cuantos));
         else
             $r = $this->find(array('idUserDestino=?', $idPerfil),array('order'=>'fecha DESC'));
 
         return $r;
+
+    }
+
+    public function getAll($idPerfil){
+        $x = $this->find(array('idUserDestino=?', $idPerfil),array('order'=>'fecha DESC'));
+        
+        return $x;
 
     }
 

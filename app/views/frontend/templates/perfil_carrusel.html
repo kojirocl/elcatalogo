@@ -1,77 +1,137 @@
-<check if="{{ isset(@infoPerfil['medios']) }}">
-    <true>
-        <div id="carruselslide" class="carousel slide position-relative">
-            <div class="carousel-inner ratio ratio-16x9">
-                <repeat group="{{ @infoPerfil['medios'] }}" value="{{ @medio }}" counter="{{ @ctr }}">
-                    <div class="carousel-item {{ @ctr==1?'active':'' }}" 
-                        x-data="likeSystem({{ @medio.id }}, {{ @medio.si_me_gusta ? 'true' : 'false' }}, {{ @medio.total_me_gusta }})">
+<div id="carruselslide" class="carousel slide">
+    <div class="carousel-inner">
+        <repeat group="{{ @datos.medios }}" value="{{ @medio }}" counter="{{ @ctr }}">
+            <div class="carousel-item {{ @ctr==1?'active':'' }}" 
+                 x-data="carruselItem(
+                    {{ @medio.id }}, 
+                    {{ @medio.total_me_gusta }}, 
+                    {{ @medio.si_me_gusta == 1 ? 'true' : 'false' }},
+                    {{ @datos.info.conectado ? 'true' : 'false' }},
+                    {{ @datos.info.propietario ? 'true' : 'false' }}
+                )">
+                
+                <!-- Imagen -->
+                <div class="text-center">
+                    <img src="{{ 'uploads/carrusel/'.@medio['ubicacion'] }}" 
+                         class="img-fluid" 
+                         style="max-height: 500px; width: auto;" />
+                </div>
+                
+                <!-- Botón de Me gusta según estado de conexión -->
+                <div class="text-center mt-3 mb-4">
+                    <button @click="toggleLike()" 
+                            :disabled="!conectado || cargando || propietario"
+                            class="btn"
+                            :class="liked ? 'btn-primary' : 'btn-outline-secondary'">
                         
-                        <div class="position-relative h-100">
-                            <img src="{{ 'uploads/carrusel/'.@medio.ubicacion }}" 
-                                 class="d-block w-100 h-100 object-fit-contain" />
-                            
-                            <!-- Botón de Me gusta -->
-                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 z-3">
-
-                                <!-- Caso: visitante es dueño del perfil -->
-                                <check if="{{ @infoPerfil['esMiPerfil'] }}">
-                                    <true>
-                                        <button class="btn btn-sm btn-outline-secondary" disabled>
-                                            <i class="bi bi-heart"></i>
-                                            <span x-text="total"></span> me gusta
-                                        </button>
-                                    </true>
-                                    <false>
-                                        <!-- Caso: no es su perfil -->
-                                        <check if="{{ isset(@SESSION.usuario) }}">
-                                            <true>
-                                                <!-- Usuario logueado puede dar like -->
-                                                <button @click="toggle()" 
-                                                        :class="`btn btn-sm ${meGusta ? 'btn-primary' : 'btn-outline-primary'}`">
-                                                    <i :class="`bi ${meGusta ? 'bi-heart-fill' : 'bi-heart'}`"></i>
-                                                    <span x-text="total"></span> me gusta
-                                                </button>
-                                            </true>
-                                            <false>
-                                                <!-- Usuario no logueado: solo visualización -->
-                                                <button class="btn btn-sm btn-outline-secondary" disabled>
-                                                    <i class="bi bi-heart"></i>
-                                                    <span x-text="total"></span> me gusta
-                                                </button>
-                                            </false>
-                                        </check>
-                                    </false>
-                                </check>
-                            </div>
-                        </div>
-                    </div>
-                </repeat>
+                        <i class="bi" :class="liked ? 'bi-heart-fill' : 'bi-heart'"></i>
+                        <span x-text="likes"></span> me gusta
+                        
+                        <span x-show="cargando" class="spinner-border spinner-border-sm"></span>
+                    </button>
+                </div>
             </div>
-            
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carruselslide" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carruselslide" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </repeat>
+    </div>
+    
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselslide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselslide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
 
-        <style>
-        .carousel-control-prev, .carousel-control-next {
-            z-index: 2; /* Menor que el botón (z-3) */
+<script>
+function carruselItem(mediaId, likesIniciales, likedInicial, conectado, propietario) {
+    return {
+        mediaId: mediaId,
+        likes: likesIniciales,
+        liked: likedInicial,
+        conectado: conectado,      // Nuevo parámetro
+        propietario: propietario,  // Nuevo parámetro
+        cargando: false,
+        
+        async toggleLike() {
+            // Ahora puedes usar conectado y propietario aquí
+            if (this.cargando || !this.conectado || this.propietario) return;
+            
+            console.log('toggleLike - mediaId:', this.mediaId);
+            
+            this.cargando = true;
+            
+            // Optimistic update
+            const wasLiked = this.liked;
+            this.liked = !this.liked;
+            this.likes += this.liked ? 1 : -1;
+            
+            try {
+                const response = await fetch('/api/like/toggle', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        idMedia: this.mediaId,
+                        accion: wasLiked ? 'unlike' : 'like'
+                    })
+                });
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                if (!data.success) {
+                    throw new Error(data.error || 'Error en el servidor');
+                }
+                if (!data.success) {
+                    // Revertir cambios
+                    this.liked = wasLiked;
+                    this.likes = likesIniciales;
+                    alert('Error al procesar el like');
+                } else {
+                    // Actualizar con el total real del servidor
+                    this.likes = data.total_likes;
+                }
+                
+            } catch (error) {
+                console.error('Error:', error);
+                // Revertir cambios
+                this.liked = wasLiked;
+                this.likes = likesIniciales;
+                alert('Error de conexión');
+            } finally {
+                this.cargando = false;
+            }
         }
-        .object-fit-contain {
-            object-position: center;
-        }
-        </style>
-    </true>
-    <false>
+    }
+}
+</script>
+
+<style>
+    [x-cloak] { display: none !important; }
+
+    .carousel-control-prev, .carousel-control-next {
+        z-index: 2; /* Menor que el botón (z-3) */
+    }
+    .object-fit-contain {
+        object-position: center;
+    }
+    .carousel-item {
+        background-color: #f8f9fa; /* Fondo gris claro para contrastar */
+    }
+
+    .carousel-item img {
+        max-height: 500px;
+        width: auto;
+        margin: 0 auto;
+    }
+</style>
+
+<exclude>
         <div class="alert alert-secondary" role="alert">
             <img src="img/IMG-20250826-WA0001_2.png" width="50%" alt="">
             <p><i class="bi bi-info-circle-fill"></i> no hay medios cargados aún...</p>
         </div>         
-    </false>
-</check>
+</exclude>

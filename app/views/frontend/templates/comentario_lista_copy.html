@@ -1,0 +1,12 @@
+<div id="mi-comentario" class="row g-2">
+    <check if="{{ isset(@datos['mi_comentario']) }}">
+        <include href="frontend/templates/comentario.html" with="comentario={{ @datos['mi_comentario'] }}" />
+    </check>
+    
+</div>
+<div id="lista_comentarios_todos" class="row g-2">
+    <repeat group="{{ @datos['comentarios'] }}" value="{{ @comentario }}">
+        <include href="frontend/templates/comentario.html" />
+
+    </repeat>
+</div>

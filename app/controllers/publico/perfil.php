@@ -8,83 +8,58 @@ class Perfil extends General{
         $f3 = \Base::instance();
         $assets = \Assets::instance();
         
+        $datos =[];
         $idPerfil = $f3->get('PARAMS.idPerfil');
         $perfil = new \mPerfiles($idPerfil);
         
-        $f3->set('perfil', $perfil);
-        $f3->set('mensaje','');
+        $datos['perfil'] = $perfil;
 
-        $medios = \mMedia::get_user_media_with_likes_and_vote($idPerfil, $f3->get('SESSION.usuario.id'));
+        $medios = \mMedia::get_user_media_with_likes_and_vote($idPerfil, $f3->get('SESSION.usuario.id') ?? 0);
+        $datos['medios'] = $medios;
 
         $comentarios = new \mComentarios();
-        $result = $comentarios->get_comentarios($idPerfil,10);
+        $comentarios_temporal= $comentarios->getAll($idPerfil);
+
+        $info = [
+            'conectado' => 0,
+            'propietario' => 0,
+            'id_usuario' => $f3->get('SESSION.usuario.id') ?? 0
+        ];
         
-        $habilitado ='disabled';
-        $muestra = 0;
-        $icono_me_gusta= 'bi-heart';
 
-        $info = ['conectado'=>0,
-                'puedo_comentar'=>0,
-                'sessionId' => 0,
-                'tengo_comentario' =>0];
-                
-        if($f3->exists('SESSION.usuario')){
-            $info['conectado'] = 1;
-            $info['sessionId'] = $f3->get('SESSION.usuario.id');
-
-            if ($f3->get('SESSION.usuario.id') != $idPerfil){
-                //$f3->set("habilitado","");
-                $info['puedo_comentar'] = 1;
-                $mi_comentario = $comentarios->get_comentario($f3->get('SESSION.usuario.id'), $idPerfil);
-                
-                if ($mi_comentario){
-                    $info['tengo_comentario'] = 1;
-                    $info['mi_comentario'] = $mi_comentario;
-                }
-                
-                $habilitado ='';
-                $muestra = 1;
-                //$f3->set('tengoComentario', array($comentarios->get_comentario($f3->get('SESSION.usuario.id'), $idPerfil), $idPerfil));
+        if($f3->get('SESSION.usuario.id')){
+            $info['conectado'] =1;
+            if($idPerfil === $f3->get('SESSION.usuario.id')){
+                $info['propietario'] =1;
             }
         }
 
+        $datos['info'] = $info;
+        $datos['mi_comentario'] = null;
+        $datos['comentarios'] = [];
 
-        $f3->set('info_comentarios', $info);
-
-        $f3->set('estados', array('habilitado'=>$habilitado, 'icono_me_gusta'=> $icono_me_gusta, 'muestra' => $muestra));
-
-        if(count($medios)>0){
-            $f3->set('medios', $medios);
-        }else{
-            $f3->set('mensaje',['clases'=>'alert alert-info', 'icono'=>'bi-info-circle-fill', 'contenido'=>' no hay medios cargados aun...']);
-            $f3->set('medios','');
+        
+        foreach($comentarios_temporal as $comentario){
+            if ($comentario['idUserOrigen'] === $info['id_usuario']){
+                $datos['mi_comentario'] = $comentario->cast();
+            }else{
+                $datos['comentarios'][] = $comentario->cast();
+            }
         }
 
-        if(!$result) $f3->set('mensaje',['clases'=>'alert alert-info', 'icono'=>'bi-info-circle-fill', 'contenido'=>' no hay comentarios aun...']);
-        
-        if (count($result)>0){
-            $f3->set('comentarios', $result);
-            //$contenido_comentarios= 'frontend/templates/comentario_lista.html';
-        }else{
-            $f3->set('mensaje',['clases'=>'alert alert-info', 'icono'=>'bi-info-circle-fill', 'contenido'=>' no hay comentarios aun...']);
-            //$contenido_comentarios = 'frontend/templates/mensaje.html';
+        $f3->set('datos', $datos);
+        //$f3->set('carrusel', 'frontend/templates/perfil_carrusel.html');
+        // aqui voy
 
-        };
-
-        
-        $contenido_comentarios= \Template::instance()->render('frontend/templates/comentario_lista.html');
-        
-        $f3->set('carrusel', \Template::instance()->render('frontend/templates/perfil_carrusel.html'));
-        
-        $f3->set('lista_comentarios', $contenido_comentarios);
-
-
+/*
         $assets->addJs('js/vendor/axios.min.js',4,'head');
+
 
         $assets->addJs('js/user/me_gusta.js');
         $assets->addJs('js/user/comentarios.js');
+*/
 
-        $f3->set('contenido', \Template::instance()->render(self::ruta));
+        $f3->set('contenido_perfil', \Template::instance()->render(self::ruta));
 
     }
 
@@ -132,7 +107,10 @@ class Perfil extends General{
 
     }
 
-
+    public function pruebaLikes(){
+        echo 'llega!';
+        exit;
+    }
 }
 
 ?>

@@ -5,7 +5,7 @@
              type="checkbox"
              id="switchModoOscuro"
              role="switch"
-             x-model="darkMode">
+             x-model="darkMode" />
       <label class="form-check-label animate__animated animate__fadeIn"
              for="switchModoOscuro">
         <i :class="darkMode ? 'bi bi-moon-stars-fill text-warning' : 'bi bi-brightness-high-fill text-primary'"></i>

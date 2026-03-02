@@ -10,7 +10,7 @@ class Login extends General{
         $paginaError = 'frontend/templates/error.html';
         $salida ='frontend/templates/login.html';
 
-        if (\Elcatalogo::revisaSiConectado()){
+        if (\Api\Login::revisaSiConectado()){
             $salida = $paginaError;
             $f3->set('error', [
                 'titulo' => 'Error de sesión',
@@ -18,7 +18,7 @@ class Login extends General{
             ]);
         }else $f3->copy('CSRF','SESSION.csrf');
         
-        $f3->set('contenido', \Template::instance()->render($salida));
+        $f3->set('contenido', $salida);
     }
 
     function login_user(){
@@ -58,7 +58,7 @@ class Login extends General{
             $perfil = new \mPerfiles;
             $perfil->load(array('idUser=?', $user->idUser));
 
-            \Elcatalogo::actualizarSession($perfil);
+            \Api\Login::actualizarSession($perfil);
 
             if ($perfil->idGrupo === 3) $f3->reroute('/admin');
             

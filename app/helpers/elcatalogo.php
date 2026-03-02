@@ -150,27 +150,7 @@ class Elcatalogo{
         return $menu;
     }
 
-    static function actualizarSession(mPerfiles $perfil){
-
-        $fotoPerfilsrc = $perfil->GetUbicacionFotoPerfil();
-        
-        $usuario  = array(
-            'id' => $perfil->idUser,
-            'realName' => $perfil->realname,
-            'nickname' => $perfil->nickname,
-            'region' => $perfil->region,
-            'ciudad' => $perfil->ciudad,
-            'activo' => $perfil->activo,
-            'idFotoPerfil' => $perfil->idFotoPerfil,
-            'fotoPerfilLocation' => $fotoPerfilsrc,
-            'idGrupo' => $perfil->idGrupo
-        );
-
-        $f3 = \Base::instance();
-        $f3->set('SESSION.usuario', $usuario);
-        return 1;
-    }
-    
+   
     static function filtrarUsuarios($tags = [], $ciudad = null, $region = null){
         $db = \Base::instance()->get('BD');
 
@@ -216,24 +196,6 @@ class Elcatalogo{
         }
 
         return $db->exec($sql, $params);
-    }
-
-    static function armarFiltros(){
-        
-        $chile = new \mCiudades;
-        $filtros['regiones'] = $chile->GetCapitales();
-        $filtros['ciudades'] = $chile->GetCiudades('Todas');
-
-        $tags = new \mTags;
-        $filtros['tags']= $tags->getTop20();
-
-        return $filtros;
-    }
-
-    static function revisaSiConectado(){
-        $f3 = \Base::instance();
-
-        return $f3->exists('SESSION.usuario');
     }
 
     static function verificar_csrf($token, $csrf){ 

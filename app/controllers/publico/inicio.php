@@ -12,7 +12,7 @@ class Inicio extends General{
 			$f3->set('saludo', '/ Bienvenid@ '.$usuario);
 		}
 
-        $filtros = \Elcatalogo::armarFiltros();
+        $filtros = \Filtros::armarFiltros();
 
         $contenido_html ='';
         $f3->set('filtros', \Template::instance()->render(

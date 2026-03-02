@@ -79,27 +79,40 @@
   
   <div class="principal container container-fluid" style="padding-bottom: 350px;">
     
-    <div id="filtros">
-      {{ isset(@filtros)?@filtros:'' | raw }}
-    </div>
+     <check if="{{ isset(@contenido) }}">
+      
+        <include href="{{ @contenido }}" />
+      
+    </check>   
+
+    <check if="{{ isset(@datos['perfil']) }}">
+      <div id="perfil">
+        {{ @contenido_perfil | raw }}
+      </div>
+    </check>
+
+    <check if="{{ isset(@filtros) }}">
+      <div id="filtros">
+        {{ @filtros | raw }}
+      </div>
     
-    <div id="tarjetas">
-      {{ isset(@tarjetas)?@tarjetas:'' | raw }}  
-    </div>
-    <div id="paginacion">
-      {{ isset(@paginacion)?@paginacion:'' | raw }}
-    </div>
-    <exclude>
-    {{ isset(@contenido_html)?@contenido_html:'' | raw }}
-    </exclude>
+      <div id="tarjetas">
+        {{ isset(@tarjetas)?@tarjetas:'' | raw }}  
+      </div>
+    
+      <div id="paginacion">
+        {{ isset(@paginacion)?@paginacion:'' | raw }}
+      </div>
+    </check>
+
   </div>
   
   <exclude>
   <div id="footer" class="footer">
-      <include href="/frontend/templates/footer.html"></include> 
+      <include href="frontend/templates/footer.html"></include> 
   </div>
   </exclude>
-</div>
+
 <!-- assets-footer -->
 
 

@@ -2127,3 +2127,785 @@ Stack trace:
 [29-Jan-2026 00:00:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
 [29-Jan-2026 00:00:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
 [29-Jan-2026 00:00:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[16-Feb-2026 23:09:58 America/Santiago] HTTP 405 (GET /perfil/2)
+[16-Feb-2026 23:09:58 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2055] Base->error()
+[16-Feb-2026 23:09:58 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[16-Feb-2026 23:09:58 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[16-Feb-2026 23:13:20 America/Santiago] Undefined variable $infoPerfil
+[16-Feb-2026 23:13:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] 
+[16-Feb-2026 23:13:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] Base->{closure}()
+[16-Feb-2026 23:13:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[16-Feb-2026 23:13:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[16-Feb-2026 23:13:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:87] Preview->render()
+[16-Feb-2026 23:13:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[16-Feb-2026 23:13:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[16-Feb-2026 23:13:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[16-Feb-2026 23:46:37 America/Santiago] Undefined field datos
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql/mapper.php:132] 
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql/mapper.php:132] user_error()
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/magic.php:89] DB\SQL\Mapper->get()
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] Magic->offsetget()
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:87] Preview->render()
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[16-Feb-2026 23:46:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[16-Feb-2026 23:48:03 America/Santiago] Undefined array key "datos"
+[16-Feb-2026 23:48:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] 
+[16-Feb-2026 23:48:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] Base->{closure}()
+[16-Feb-2026 23:48:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[16-Feb-2026 23:48:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[16-Feb-2026 23:48:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:87] Preview->render()
+[16-Feb-2026 23:48:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[16-Feb-2026 23:48:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[16-Feb-2026 23:48:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[17-Feb-2026 22:08:47 America/Santiago] Undefined variable $infoPerfil
+[17-Feb-2026 22:08:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:5] 
+[17-Feb-2026 22:08:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:5] Base->{closure}()
+[17-Feb-2026 22:08:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[17-Feb-2026 22:08:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[17-Feb-2026 22:08:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:22] Preview->render()
+[17-Feb-2026 22:08:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[17-Feb-2026 22:08:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[17-Feb-2026 22:08:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[17-Feb-2026 23:53:33 America/Santiago] Class "Api\Login" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:36]
+[17-Feb-2026 23:53:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[17-Feb-2026 23:53:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[17-Feb-2026 23:53:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[17-Feb-2026 23:57:27 America/Santiago] Class "Api\Login" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:36]
+[17-Feb-2026 23:57:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[17-Feb-2026 23:57:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[17-Feb-2026 23:57:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 00:02:22 America/Santiago] Class "Api\Login" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:36]
+[18-Feb-2026 00:02:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 00:02:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 00:02:22 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 00:04:27 America/Santiago] Class "App\Api\Login" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:36]
+[18-Feb-2026 00:04:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 00:04:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 00:04:27 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 00:06:17 America/Santiago] Class "Api\Login" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:36]
+[18-Feb-2026 00:06:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 00:06:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 00:06:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 00:12:38 America/Santiago] Class "Api\Login" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:36]
+[18-Feb-2026 00:12:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 00:12:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 00:12:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 00:12:59 America/Santiago] Undefined variable $info
+[18-Feb-2026 00:12:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:15] 
+[18-Feb-2026 00:12:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:15] Base->{closure}()
+[18-Feb-2026 00:12:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[18-Feb-2026 00:12:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[18-Feb-2026 00:12:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:58] Preview->render()
+[18-Feb-2026 00:12:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 00:12:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 00:12:59 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 14:53:52 America/Santiago] Call to a member function cast() on array [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:30]
+[18-Feb-2026 14:53:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 14:53:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 14:53:52 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 14:55:36 America/Santiago] Undefined constant "Publico\id" [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:30]
+[18-Feb-2026 14:55:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 14:55:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 14:55:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 14:55:45 America/Santiago] Undefined array key "id"
+[18-Feb-2026 14:55:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:30] 
+[18-Feb-2026 14:55:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:30] Base->{closure}()
+[18-Feb-2026 14:55:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 14:55:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 14:55:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:13:02 America/Santiago] Undefined variable $infoPerfil
+[18-Feb-2026 15:13:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:6] 
+[18-Feb-2026 15:13:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:6] Base->{closure}()
+[18-Feb-2026 15:13:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[18-Feb-2026 15:13:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[18-Feb-2026 15:13:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:78] Preview->render()
+[18-Feb-2026 15:13:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 15:13:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 15:13:02 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:13:06 America/Santiago] Undefined variable $infoPerfil
+[18-Feb-2026 15:13:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:6] 
+[18-Feb-2026 15:13:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:6] Base->{closure}()
+[18-Feb-2026 15:13:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[18-Feb-2026 15:13:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[18-Feb-2026 15:13:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:78] Preview->render()
+[18-Feb-2026 15:13:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 15:13:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 15:13:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:13:56 America/Santiago] Undefined variable $miComentario
+[18-Feb-2026 15:13:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:6] 
+[18-Feb-2026 15:13:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:6] Base->{closure}()
+[18-Feb-2026 15:13:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[18-Feb-2026 15:13:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[18-Feb-2026 15:13:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:78] Preview->render()
+[18-Feb-2026 15:13:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 15:13:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 15:13:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:16:25 America/Santiago] Undefined variable $infoPerfil
+[18-Feb-2026 15:16:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:72] 
+[18-Feb-2026 15:16:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:72] Base->{closure}()
+[18-Feb-2026 15:16:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[18-Feb-2026 15:16:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[18-Feb-2026 15:16:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:78] Preview->render()
+[18-Feb-2026 15:16:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 15:16:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 15:16:25 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:16:36 America/Santiago] Undefined variable $infoPerfil
+[18-Feb-2026 15:16:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:72] 
+[18-Feb-2026 15:16:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:72] Base->{closure}()
+[18-Feb-2026 15:16:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[18-Feb-2026 15:16:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[18-Feb-2026 15:16:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:78] Preview->render()
+[18-Feb-2026 15:16:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 15:16:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 15:16:36 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:16:43 America/Santiago] Undefined variable $infoPerfil
+[18-Feb-2026 15:16:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:72] 
+[18-Feb-2026 15:16:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:72] Base->{closure}()
+[18-Feb-2026 15:16:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[18-Feb-2026 15:16:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[18-Feb-2026 15:16:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:78] Preview->render()
+[18-Feb-2026 15:16:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 15:16:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 15:16:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:17:30 America/Santiago] Undefined array key "miComentario"
+[18-Feb-2026 15:17:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:72] 
+[18-Feb-2026 15:17:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.24nj1m53t4jog.php:72] Base->{closure}()
+[18-Feb-2026 15:17:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[18-Feb-2026 15:17:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[18-Feb-2026 15:17:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:78] Preview->render()
+[18-Feb-2026 15:17:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 15:17:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 15:17:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:25:15 America/Santiago] Unable to open frontend/templates/comentario_lista_copy.html
+[18-Feb-2026 15:25:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[18-Feb-2026 15:25:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[18-Feb-2026 15:25:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:79] Preview->render()
+[18-Feb-2026 15:25:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[18-Feb-2026 15:25:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[18-Feb-2026 15:25:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[18-Feb-2026 15:48:14 America/Santiago] require(C:\Users\aespi012\Documents\Personal\web\elcatalogoapp\models\mComentarios.php): Failed to open stream: No such file or directory
+[18-Feb-2026 15:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:10] 
+[18-Feb-2026 15:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:10] Base->{closure}()
+[18-Feb-2026 15:48:14 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:10] require()
+[18-Feb-2026 15:48:33 America/Santiago] DB\SQL\Mapper::__construct(): Argument #1 ($db) must be of type DB\SQL, null given, called in C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\models\mComentarios.php on line 7 [C:\Users\aespi012\Documents\Personal\web\elcatalogo\lib\db\sql\mapper.php:756]
+[18-Feb-2026 15:48:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/models/mComentarios.php:7] DB\SQL\Mapper->__construct()
+[18-Feb-2026 15:48:33 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:13] mComentarios->__construct()
+[20-Feb-2026 19:39:20 America/Santiago] Call to a member function cast() on int [C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php:20]
+[20-Feb-2026 19:43:08 America/Santiago] Undefined field cast
+[20-Feb-2026 19:43:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/db/sql/mapper.php:132] 
+[20-Feb-2026 19:43:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/magic.php:89] DB\SQL\Mapper->get()
+[20-Feb-2026 19:43:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/magic.php:131] Magic->offsetget()
+[20-Feb-2026 19:43:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:20] Magic->__get()
+[20-Feb-2026 20:05:05 America/Santiago] Undefined variable $miComentario
+[20-Feb-2026 20:05:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:73] 
+[20-Feb-2026 20:05:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:73] Base->{closure}()
+[20-Feb-2026 20:05:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[20-Feb-2026 20:05:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[20-Feb-2026 20:05:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:77] Preview->render()
+[20-Feb-2026 20:05:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[20-Feb-2026 20:05:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[20-Feb-2026 20:05:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[20-Feb-2026 21:45:45 America/Santiago] count(): Argument #1 ($value) must be of type Countable|array, mComentarios given [C:\Users\aespi012\Documents\Personal\web\elcatalogo\public_html\test.php:22]
+[20-Feb-2026 22:15:42 America/Santiago] Call to a member function cast() on array [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:23]
+[20-Feb-2026 22:15:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[20-Feb-2026 22:15:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[20-Feb-2026 22:15:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[20-Feb-2026 22:15:55 America/Santiago] syntax error, unexpected token "=>" [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:39]
+[20-Feb-2026 22:15:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1832] class_exists()
+[20-Feb-2026 22:15:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:31:50 America/Santiago] Undefined variable $perfil
+[21-Feb-2026 21:31:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] 
+[21-Feb-2026 21:31:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] Base->{closure}()
+[21-Feb-2026 21:31:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:31:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:31:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:69] Preview->render()
+[21-Feb-2026 21:31:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:31:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:31:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:32:43 America/Santiago] Undefined variable $perfil
+[21-Feb-2026 21:32:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] 
+[21-Feb-2026 21:32:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] Base->{closure}()
+[21-Feb-2026 21:32:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:32:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:32:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:71] Preview->render()
+[21-Feb-2026 21:32:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:32:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:32:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:33:28 America/Santiago] Undefined variable $datos
+[21-Feb-2026 21:33:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] 
+[21-Feb-2026 21:33:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:4] Base->{closure}()
+[21-Feb-2026 21:33:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:33:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:33:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:71] Preview->render()
+[21-Feb-2026 21:33:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:33:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:33:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:34:20 America/Santiago] Undefined variable $medios
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:4] 
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:4] Base->{closure}()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:72] Preview->render()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:34:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:35:06 America/Santiago] Undefined variable $medios
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:4] 
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:4] Base->{closure}()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:72] Preview->render()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:35:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:35:28 America/Santiago] Undefined variable $info_perfil
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:14] 
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:14] Base->{closure}()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:72] Preview->render()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:35:28 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:36:06 America/Santiago] Undefined array key "ubicacion"
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:7] 
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:7] Base->{closure}()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:72] Preview->render()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:36:06 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:36:40 America/Santiago] Undefined variable $info_perfil
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:14] 
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:14] Base->{closure}()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:72] Preview->render()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:40:20 America/Santiago] Undefined variable $lista_comentarios
+[21-Feb-2026 21:40:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:27] 
+[21-Feb-2026 21:40:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:27] Base->{closure}()
+[21-Feb-2026 21:40:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:40:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:40:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:72] Preview->render()
+[21-Feb-2026 21:40:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:40:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:40:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 21:42:30 America/Santiago] Undefined variable $comentarios_lista
+[21-Feb-2026 21:42:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:27] 
+[21-Feb-2026 21:42:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:27] Base->{closure}()
+[21-Feb-2026 21:42:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 21:42:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 21:42:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:72] Preview->render()
+[21-Feb-2026 21:42:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 21:42:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 21:42:30 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:16:46 America/Santiago] Unable to open /app/views/frontend/templates/comentario_lista_copy.html
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:27] Preview->render()
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:16:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:18:38 America/Santiago] Unable to open /app/views/frontend/templates/perfil_carrusel.html
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:18:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:18:56 America/Santiago] Unable to open views/frontend/templates/perfil_carrusel.html
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:18:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:19:29 America/Santiago] Unable to open app/views/frontend/templates/perfil_carrusel.html
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:19:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:19:37 America/Santiago] Unable to open templates/perfil_carrusel.html
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:19:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:19:43 America/Santiago] Unable to open /templates/perfil_carrusel.html
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:19:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:20:54 America/Santiago] Unable to open perfil_carrusel.html
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:20:54 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:21:03 America/Santiago] Unable to open /perfil_carrusel.html
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:21:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:21:20 America/Santiago] Unable to open templates/perfil_carrusel.html
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:21:20 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:21:26 America/Santiago] Unable to open /templates/perfil_carrusel.html
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:21:26 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:21:37 America/Santiago] Unable to open app/views/templates/perfil_carrusel.html
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:21:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:21:50 America/Santiago] Unable to open app/views/frontend/templates/perfil_carrusel.html
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:21:50 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:21:57 America/Santiago] Unable to open /app/views/frontend/templates/perfil_carrusel.html
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:21:57 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:22:04 America/Santiago] Unable to open ../app/views/frontend/templates/perfil_carrusel.html
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:22:04 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:22:51 America/Santiago] Unable to open /../app/views/frontend/templates/perfil_carrusel.html
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:22:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[21-Feb-2026 22:27:44 America/Santiago] Unable to open views/frontend/templates/perfil_carrusel.html
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] 
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3290] user_error()
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[21-Feb-2026 22:27:44 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[22-Feb-2026 00:22:49 America/Santiago] Undefined variable $comentarios
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:70] 
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:70] Base->{closure}()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[22-Feb-2026 00:22:49 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[22-Feb-2026 00:36:16 America/Santiago] Undefined array key "mi_comentario"
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:2] 
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:2] Base->{closure}()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[22-Feb-2026 00:36:16 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[22-Feb-2026 00:37:10 America/Santiago] Undefined array key "mi_comentario"
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:2] 
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:2] Base->{closure}()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:73] Preview->render()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[22-Feb-2026 00:37:10 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[22-Feb-2026 01:12:03 America/Santiago] Undefined variable $ya_dio_like
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:5] 
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:5] Base->{closure}()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:54] Preview->render()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[22-Feb-2026 01:12:03 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[22-Feb-2026 01:14:56 America/Santiago] Trying to access array offset on int
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:5] 
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:5] Base->{closure}()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:54] Preview->render()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[22-Feb-2026 01:14:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[22-Feb-2026 01:18:53 America/Santiago] Undefined variable $es_propietario
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:24] 
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:24] Base->{closure}()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:54] Preview->render()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[22-Feb-2026 01:18:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[22-Feb-2026 01:26:23 America/Santiago] Undefined array key "porpietario"
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:24] 
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.z5wzsmzl8ujx.php:24] Base->{closure}()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:8] Preview->render()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:59] Preview->render()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[22-Feb-2026 01:26:23 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[22-Feb-2026 01:26:43 America/Santiago] HTTP 404 (POST /api/toggle-like)
+[22-Feb-2026 01:26:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1904] Base->error()
+[22-Feb-2026 01:26:43 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Feb-2026 22:25:56 America/Santiago] Trying to access array offset on int
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] 
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] Base->{closure}()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:3] Preview->render()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:62] Preview->render()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Feb-2026 22:25:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Feb-2026 22:26:05 America/Santiago] Trying to access array offset on int
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] 
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] Base->{closure}()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:3] Preview->render()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:62] Preview->render()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Feb-2026 22:26:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Feb-2026 22:29:29 America/Santiago] Trying to access array offset on int
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] 
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] Base->{closure}()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:3] Preview->render()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:62] Preview->render()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Feb-2026 22:29:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[23-Feb-2026 23:29:47 America/Santiago] Trying to access array offset on int
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] 
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] Base->{closure}()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:3] Preview->render()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:62] Preview->render()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[23-Feb-2026 23:29:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 11:57:21 America/Santiago] Trying to access array offset on null
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] 
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] Base->{closure}()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:2] Preview->render()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:62] Preview->render()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[24-Feb-2026 11:57:21 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 11:57:29 America/Santiago] Trying to access array offset on null
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] 
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] Base->{closure}()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:2] Preview->render()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:62] Preview->render()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[24-Feb-2026 11:57:29 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 11:57:32 America/Santiago] Trying to access array offset on null
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] 
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] Base->{closure}()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:2] Preview->render()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:62] Preview->render()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[24-Feb-2026 11:57:32 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 11:59:45 America/Santiago] Trying to access array offset on null
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] 
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.2ltz5160etog4.php:2] Base->{closure}()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.1rqe6gpkj3cji.php:2] Preview->render()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/tmp/j6wc2ffcgezd.yyq1kl648jpc.php:26] Preview->render()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3036] require()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:3281] View->sandbox()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/app/controllers/publico/perfil.php:62] Preview->render()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Publico\Perfil->verPerfil()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[24-Feb-2026 11:59:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 12:25:05 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 12:25:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 12:25:05 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 12:25:09 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 12:25:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 12:25:09 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 12:25:24 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 12:25:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 12:25:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 12:26:01 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 12:26:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 12:26:01 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 14:29:38 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 14:29:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 14:29:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 14:33:37 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 14:33:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 14:33:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 14:33:45 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 14:33:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 14:33:45 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 14:33:51 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 14:33:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 14:33:51 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 14:38:17 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 14:38:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 14:38:17 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 15:18:15 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 15:18:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 15:18:15 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 15:24:42 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 15:24:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 15:24:42 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 15:27:56 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 15:27:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 15:27:56 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 15:33:53 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 15:33:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 15:33:53 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 15:36:40 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 15:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 15:36:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 15:39:37 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 15:39:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 15:39:37 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 15:43:38 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 15:43:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 15:43:38 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 16:07:40 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 16:07:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 16:07:40 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 16:08:11 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 16:08:11 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 16:08:11 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 16:11:46 America/Santiago] HTTP 404 (POST /api/like/toggle)
+[24-Feb-2026 16:11:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1833] Base->error()
+[24-Feb-2026 16:11:46 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 16:14:24 America/Santiago] Class "Publico\General" not found [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\controllers\publico\perfil.php:4]
+[24-Feb-2026 16:14:24 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/test.php:12] require()
+[24-Feb-2026 16:23:31 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:23:31 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:23:47 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:23:47 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:24:47 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:24:47 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:24:47 America/Santiago] Call to a member function exec() on null [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\api\ApiLikesSimple.php:35]
+[24-Feb-2026 16:24:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Api\ApiLikesSimple->toggle()
+[24-Feb-2026 16:24:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[24-Feb-2026 16:24:47 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 16:24:55 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:24:55 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:24:55 America/Santiago] Call to a member function exec() on null [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\api\ApiLikesSimple.php:41]
+[24-Feb-2026 16:24:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Api\ApiLikesSimple->toggle()
+[24-Feb-2026 16:24:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[24-Feb-2026 16:24:55 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 16:29:08 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:29:08 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:29:08 America/Santiago] Call to a member function exec() on null [C:\Users\aespi012\Documents\Personal\web\elcatalogo\app\api\ApiLikesSimple.php:49]
+[24-Feb-2026 16:29:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:2072] Api\ApiLikesSimple->toggle()
+[24-Feb-2026 16:29:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/lib/base.php:1870] Base->call()
+[24-Feb-2026 16:29:08 America/Santiago] [C:/Users/aespi012/Documents/Personal/web/elcatalogo/public_html/index.php:65] Base->run()
+[24-Feb-2026 16:29:40 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:29:40 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:29:55 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:29:55 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:33:02 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:33:02 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:33:15 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:33:15 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:33:21 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:33:21 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:33:26 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:33:26 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:33:32 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:33:32 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:34:05 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:34:05 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:34:06 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:34:06 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:34:11 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:34:11 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:34:15 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:34:15 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:34:18 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:34:18 America/Santiago] URL: /api/like/toggle
+[24-Feb-2026 16:34:27 America/Santiago] Método recibido: POST
+[24-Feb-2026 16:34:27 America/Santiago] URL: /api/like/toggle
+[25-Feb-2026 12:56:44 America/Santiago] Método recibido: POST
+[25-Feb-2026 12:56:44 America/Santiago] URL: /api/like/toggle
+[25-Feb-2026 12:56:51 America/Santiago] Método recibido: POST
+[25-Feb-2026 12:56:51 America/Santiago] URL: /api/like/toggle
+[25-Feb-2026 12:56:59 America/Santiago] Método recibido: POST
+[25-Feb-2026 12:56:59 America/Santiago] URL: /api/like/toggle
+[25-Feb-2026 12:57:02 America/Santiago] Método recibido: POST
+[25-Feb-2026 12:57:02 America/Santiago] URL: /api/like/toggle
+[25-Feb-2026 12:57:05 America/Santiago] Método recibido: POST
+[25-Feb-2026 12:57:05 America/Santiago] URL: /api/like/toggle
+[25-Feb-2026 12:58:47 America/Santiago] Método recibido: POST
+[25-Feb-2026 12:58:47 America/Santiago] URL: /api/like/toggle
+[25-Feb-2026 12:58:48 America/Santiago] Método recibido: POST
+[25-Feb-2026 12:58:48 America/Santiago] URL: /api/like/toggle
