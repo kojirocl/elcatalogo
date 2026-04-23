@@ -20,16 +20,29 @@ class Perfiles {
 
         $body = json_decode($this->f3->get('BODY'), true);
 
-        $region = $body['region'] ?? '';
-        $ciudad = $body['ciudad'];
-        $tags   = $body['tags'];
+        $region = isset($body['region']) ? trim($body['region']) : '';
+        $ciudad = isset($body['ciudad']) ? trim($body['ciudad']) : '';
+        $tags   = isset($body['tags']) ? (array)$body['tags'] : [];
 
         $datos_ciudades = new \Modelos\mCiudades;
+        $datos_perfiles = new \Modelos\mPerfiles;
 
         // traes ciudades según la región
         $ciudades = $region ? $datos_ciudades->GetCiudades($region) : $datos_ciudades->GetCiudades();
-        \Base::instance()->set('respuestaApi', $ciudades);
 
+        $perfiles = $datos_perfiles->getPerfiles(
+            $region ?: null,
+            $ciudad ?: null,
+            $tags
+        );
+
+        $this->f3->set('usuarios', $perfiles);
+        $html = \Template::instance()->render('frontend/templates/tarjetas_contenido.html');
+
+        \Base::instance()->set('respuestaApi', [
+            'ciudades' => $ciudades,
+            'html' => $html
+        ]);
     }
 
 }

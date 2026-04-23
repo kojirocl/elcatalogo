@@ -89,7 +89,6 @@ function filtros() {
     },
 
     enviar() {
-
       fetch('/perfiles', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -97,8 +96,12 @@ function filtros() {
       })
       .then(r => r.json())
       .then(data => {
-        this.ciudades = data.ciudades;  // ← actualiza el select
-        // acá actualizas los resultados
+        if (data.ciudades) {
+          this.ciudades = data.ciudades;  // <- actualiza el select
+        }
+        if (data.html) {
+          document.getElementById('cuerpo').innerHTML = data.html;
+        }
       })
       .catch(err => console.error('Error:', err));
     }
