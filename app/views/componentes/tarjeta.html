@@ -1,0 +1,39 @@
+<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card h-100 tarjeta" >
+        <div class="card-img-container">
+            <a href="/perfil/{{ @perfil.idUser }}" class="ver-perfil">
+
+            <check if="{{ @perfil.idFotoPerfil  }}">
+                <true>
+                    <img src="{{ '/img/uploads/thumbs/'.@perfil.foto_perfil }}" class="card-img-top img-thumbnail">   
+                </true>
+                <false>
+                    <svg class="bd-placeholder-img img-thumbnail img-rounded" role="img" aria-label="Aqui va foto!" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                        <text x="35%" y="50%" fill="#dee2e6" dy=".3em">90x90</text>
+                    </svg>
+                </false>  
+            </check>
+            </a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title custom-nickname">{{ @perfil.nickname }}</h5>
+            <figure>
+                <blockquote class="blockquote">
+                    <p class="fs-6"><em>{{ substr(@perfil.descripcion,0,35) }}...</em></p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-end">
+                    {{ @perfil.ciudad }}
+                </figcaption>
+            </figure>
+            
+        </div>
+
+        <div class="card-footer text-end">
+            <a href="/perfil/{{ @perfil.idUser }}" class="btn btn-outline-info btn-sm ver-perfil">
+                <span>ver mas </span><i class="bi bi-arrow-right-circle-fill"></i>
+            </a> 
+        </div>            
+    </div>
+
+</div>

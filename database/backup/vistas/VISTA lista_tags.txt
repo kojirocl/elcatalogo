@@ -1,0 +1,4 @@
+CREATE VIEW lista_tags AS 
+SELECT tags.tag, tag_perfil.idUser 
+FROM tags, tag_perfil 
+WHERE tag_perfil.idTag=tags.idTag

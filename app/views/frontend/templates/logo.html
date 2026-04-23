@@ -1,7 +1,7 @@
 
-<div x-data="logo" x-bind:class="clase"  x-on:mouseover="animate">
+<div x-data="logo()" x-bind:class="clase"  x-on:mouseover="animate">
     <a class="navbar-brand"  href="/" >
-        <img src="/img/IMG-20250826-WA0001_2.png" alt="" style="height: 30px;" /><span> {{ @SITIO.nombre }} {{ isset(@saludo)? @saludo : '' }}</span>
+        <img x-ref="logoImg" src="/img/IMG-20250826-WA0001_2.png" alt="" style="height: 30px;" /><span> {{ @SITIO.nombre }} {{ isset(@saludo)? @saludo : '' }}</span>
     </a>
 </div>
 
@@ -10,7 +10,7 @@
         return {
             clase: "",
             init() {
-                console.log('Logo component initialized');
+                console.log('Alpine.js inicializado')
             },
             animate() {
                 this.clase= "animate__animated animate__rubberBand";

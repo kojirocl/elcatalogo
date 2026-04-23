@@ -1,0 +1,5 @@
+CREATE VIEW contenido_principal AS
+SELECT perfil.*, media.ubicacion AS foto_perfil 
+FROM perfil 
+LEFT JOIN media ON perfil.idFotoPerfil = media.id
+WHERE perfil.activo = 1

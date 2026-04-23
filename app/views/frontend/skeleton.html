@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es"
+      x-data="{ darkMode: localStorage.getItem('darkMode') === 'true' }"
+      x-init="$watch('darkMode', val => {
+          document.documentElement.setAttribute('data-bs-theme', val ? 'dark' : 'light');
+          localStorage.setItem('darkMode', val);
+      })"
+      :data-bs-theme="darkMode ? 'light' : 'dark'"
+>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="{{@SCHEME.'://'. @HOST .':'. @PORT.'/'}}">
+
+	<title>{{ @SITIO.titulo }}</title>
+  
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="{{ @SITIO.favicon }}" />
+
+  <!-- assets-head -->
+
+  <asset href="vendor/bootstrap/css/bootstrap.min.css"></asset>
+  <asset href="css/animate.min.css"></asset>
+  <asset href="css/elcatalogo.css"></asset>
+
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/vendor/alpinejs.min.js" defer></script>
+
+
+
+
+</head>
+<body>
+  <include href="frontend/templates/barra_navegacion.html" />
+
+  <include href="componentes/lightsComp.html" />
+  
+  <div class="principal container container-fluid" style="padding-bottom: 350px;">
+    
+    <check if="{{ isset(@contenido) }}">
+      <true>
+        <include href="{{ @contenido }}" />
+      </true>
+      <false>
+        <include href="componentes/loading.html" />
+      </false>
+    </check>
+    
+  </div>
+  
+  <exclude>
+  <div id="footer" class="footer">
+      <include href="frontend/templates/footer.html"></include> 
+  </div>
+  </exclude>
+
+<!-- assets-footer -->
+
+<!-- Inicializa el tema según localStorage -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const modo = localStorage.getItem('darkMode') === 'true';
+      document.documentElement.setAttribute('data-bs-theme', modo ? 'dark' : 'light');
+    });
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+Listado de rutas de carpetas para el volumen Windows
+El número de serie del volumen es 2A2B-2D5D
+C:.
++---app
+¦   +---api
+¦   +---config
+¦   +---controllers
+¦   ¦   +---admin
+¦   ¦   +---privado
+¦   ¦   +---publico
+¦   +---db
+¦   ¦   +---consultasSQLelCatalogo
+¦   ¦   +---mermaid
+¦   ¦   +---old
+¦   ¦   +---vistas
+¦   +---helpers
+¦   +---logs
+¦   +---models
+¦   +---rutas
+¦   +---views
+¦       +---admin
+¦       ¦   +---templates
+¦       +---components
+¦       +---frontend
+¦       ¦   +---templates
+¦       +---privado
+¦       ¦   +---templates
+¦       +---pruebas
++---lib
+¦   +---cli
+¦   +---db
+¦   ¦   +---jig
+¦   ¦   +---mongo
+¦   ¦   +---sql
+¦   +---web
+¦       +---google
++---public_html
+    +---bootstrap
+    ¦   +---css
+    ¦   +---js
+    +---compressed
+    +---css
+    +---fonts
+    +---img
+    ¦   +---f3-logos
+    +---js
+    ¦   +---user
+    ¦   +---vendor
+    +---tmp
+    +---uploads
+        +---carrusel
+        +---original
+        +---profile
+        +---thumbs

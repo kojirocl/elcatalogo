@@ -1,7 +1,108 @@
-<div id="filtros">
-    {{ @home.filtros | raw }}
+<div x-data="filtros()">
+
+  <div id="selectores">
+    <div class="row">
+      <div class="col-auto">
+        <!-- Regiones -->
+        <select class="form-select form-select-sm"
+        @change="cambiarRegion($el.value)">
+            <option value="">Todas</option>
+            <template x-for="region in regiones" :key="region">
+                <option :value="region" x-text="region"></option>
+            </template>
+        </select>
+      </div>
+
+      <div class="col-auto">
+        <!-- Ciudades -->
+        <select class="form-select form-select-sm"
+        @change="estado.ciudad = $el.value; enviar()">
+            <option value="">Todas</option>
+            <template x-for="ciudad in ciudades" :key="ciudad">
+                <option :value="ciudad" x-text="ciudad"></option>
+            </template>
+        </select>
+      </div>
+    </div>
   </div>
-<br>
-  <div id="cuerpo">
-    {{ @home.cuerpo | raw }}
+
+  <div id="tags" class="mt-3">
+    <div class="btn-group btn-group-sm" role="group">
+      <repeat group="{{ @tags }}" value="{{ @valor }}">
+        <button 
+          class="btn btn-outline-secondary"
+          :class="{ 'active': estado.tags.includes('{{ @valor['idTag'] }}') }"
+          @click="toggleTag('{{ @valor['idTag'] }}')">
+          {{ @valor['tag'] }}
+        </button>
+      </repeat>
+    </div>
   </div>
+
+</div>
+
+<div id="cuerpo">
+  <div class="row g-3 p-4" >
+    <repeat group="{{ @perfiles }}" value="{{ @perfil }}">
+      <include href="componentes/tarjeta.html">
+    </repeat>
+  </div>
+</div>
+
+<style>
+[data-bs-theme="dark"] .card-img-container {
+  background-color: inherit; 
+}
+/* evita que las tarjetas se vean gigantes en pantallas muy anchas */
+.card.tarjeta {
+  max-width: 320px;   /* o 360px si quieres un poco más grandes */
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+
+<script>
+function filtros() {
+  return {
+    estado: {
+      region: '',
+      ciudad: '',
+      tags: []
+    },
+
+    regiones: {{ @combo['regiones']['datos'] | json_encode }},  // inicial desde FF
+    ciudades: {{ @combo['ciudades']['datos'] | json_encode }},  // inicial desde FF
+
+    toggleTag(idTag) {
+      const i = this.estado.tags.indexOf(idTag);
+      i === -1
+        ? this.estado.tags.push(idTag)
+        : this.estado.tags.splice(i, 1);
+      this.enviar();
+    },
+
+    cambiarRegion(valor) {
+      this.estado.region = valor;
+      this.estado.ciudad = '';  // ← resetea ciudad al cambiar región
+      this.enviar();
+    },
+
+    enviar() {
+
+      fetch('/perfiles', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(this.estado)
+      })
+      .then(r => r.json())
+      .then(data => {
+        this.ciudades = data.ciudades;  // ← actualiza el select
+        // acá actualizas los resultados
+      })
+      .catch(err => console.error('Error:', err));
+    }
+  }
+}
+</script>
+
